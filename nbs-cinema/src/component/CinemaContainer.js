@@ -34,14 +34,14 @@ class LunaCinemaApp extends Component {
                                 <Route path="/" exact component={HomeComponent} />
                                 <Route path="/home" component={HomeComponent} />
                                 <Route path="/about" exact component={About} />
-                                <Route path="/Booking" component={Booking} />
+                                <Route path="/Booking/:id" component={Booking} />
                                 <Route path="/classifications" component={Classification} />
                                 <Route path="/contact" component={Contact} />
                                 <Route path="/CurrentFilms" component={CurrentFilms} />
                                 <Route path="/DeluxeScreen" component={Deluxe} />
                                 <Route path="/DiscussionBoard" component={Discussion} />
                                 <Route path="/email" component={EMail} />
-                                <Route path="/FilmDetails" component={FilmDetails} />
+                                <Route path="/FilmDetails/:id" component={FilmDetails} />
                                 <Route path="/travel" component={GettingThere} />
                                 <Route path="/OpeningTimes" component={Opening} />
                                 <Route path="/payment" component={Payment} />

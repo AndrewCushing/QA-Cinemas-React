@@ -1,62 +1,32 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-
-
 class MovieRow extends React.Component {
-    moreInfo (){
-        console.log("Trying to obtain more info")
-        console.log(this.props.movie.title)
-        return(this.props.history.push())
-        
-      
-      }
-      
-
-    bookMovie() {
-      console.log("Trying to book movie")
-      console.log(this.props.movie.title)
-      console.log(this.props.movie.id)
-      console.log(this.props.movie.path)
-  //     if (this.props.movie.id == "0"){
-         return(this.props.history.push("/Booking/"+this.props.movie.path)
-         );
-        }
-
-  //       this.props.history.push("/Booking/Spiderman")
-  //       );
-  //     }
-  //     else if (this.props.movie.id == "1"){
-  //       return(
-  //       this.props.history.push("/Booking/LionKing")
-  //       );
-  //     }
-  //     else if (this.props.movie.id == "2"){
-  //       return(
-  //       this.props.history.push("/Booking/ToyStory")
-  //       );
-  //     }
-  //     else if (this.props.movie.id){
-  //       this.props.history.push("/Booking/Yesterday")
-  //     }
-  // };
-    
-
 
     render () {
+      console.log(this.props.movie.poster_src)
         return <table className="navbar navbar-expand-md navbar-dark bg-secondary text-white" style ={{marginTop:50,marginBottom:100,padding:10}} key={this.props.movie.id}>
         <tbody>
           <tr>
             <td>
+              
+              <a href ={"/FilmDetails/" + this.props.movie.id}>
               <img alt="poster" width="200" src={this.props.movie.poster_src}/>
+              </a>
+  
             </td>
-            <td> 
-              <h2>{this.props.movie.title}</h2>
+            <td>
+              <a href ={"/FilmDetails/" + this.props.movie.id}>
+              <h2>{this.props.movie.title}<img alt="poster" width="50" src={this.props.movie.classification_src}/></h2>
+              </a> 
               <p>{this.props.movie.shortoverview}</p>
-              {/* <p>Cast: {this.props.movie.cast}</p>
-              <p>Director: {this.props.movie.director}</p> */}
-              <button onClick = { (e) => {this.bookMovie(); }}>Book</button>
-              <button onClick = { (e) => {this.moreInfo(); }}>More Info</button>
+              <a href ={"/Booking/" + this.props.movie.id}>
+              <button>Book</button>
+              </a>
+              <a href ={"/FilmDetails/" + this.props.movie.id}>
+              <button>More Info</button>
+              </a>
+             
               
             </td>
           </tr>
