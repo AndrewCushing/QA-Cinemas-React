@@ -1,8 +1,12 @@
 @import url(https://unpkg.com/bootstrap@4.1.0/dist/css/bootstrap.min.css);
 @import "../node_modules/font-awesome/css/font-awesome.css";
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+
 
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -19,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: red;
 }
 
 .App-link {
@@ -88,3 +92,42 @@
   color: hsl(9, 40%, 60%);
 }
 
+.filmTable {
+  margin: 100px;
+  background-color:
+  #6C757E;
+  text-align: center;
+} 
+
+.fa-ticket-alt {
+  color: black;
+  padding-right: 5px;
+}
+
+.bookButton {
+  padding: 10px;
+}
+
+.fa-info-circle {
+  color: black;
+  padding-right: 5px;
+}
+
+.infoButton {
+  padding: 10px;
+}
+
+  
+
+.cPoster {
+  margin-left: 15px;
+  margin-bottom: 20px;
+
+}
+
+
+a {
+  color: #1c1918;
+  text-decoration: none;
+  letter-spacing: 1px;
+}

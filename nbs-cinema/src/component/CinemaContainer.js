@@ -22,13 +22,16 @@ import Scrum from './ScrumDescription'
 import Standard from './StandardScreen'
 import NewReleases from './UpcomingFilms'
 
+
 class LunaCinemaApp extends Component {
     render() {
         return (
             <>
+            <head><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link></head>
                 <Router>
                     <>
                         <HeaderComponent />
+                       
                         <div className="container">
                             <Switch>
                                 <Route path="/" exact component={HomeComponent} />
