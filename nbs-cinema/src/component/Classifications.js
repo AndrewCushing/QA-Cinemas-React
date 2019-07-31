@@ -1,7 +1,7 @@
-import React from 'react';
-import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
-import classnames from 'classnames';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import React from "react";
+import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
+import classnames from "classnames";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 
 export default class Classifications extends React.Component {
@@ -10,7 +10,7 @@ export default class Classifications extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: '1'
+      activeTab: "1"
     };
   }
 
@@ -24,7 +24,7 @@ export default class Classifications extends React.Component {
   
   handleClick = (e) => {
     e.preventDefault();
-    console.log('The link was clicked.');
+    console.log("The link was clicked.");
   };
       render() { 
         return (  
@@ -40,9 +40,9 @@ export default class Classifications extends React.Component {
               <Nav tabs vertical pills>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === '1'})}
+                    className={classnames({active: this.state.activeTab === "1"})}
                     onClick={() => {
-                      this.toggle('1');
+                      this.toggle("1");
                     }}
                   >
                     Ratings info
@@ -50,53 +50,53 @@ export default class Classifications extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === '2'})}
+                    className={classnames({active: this.state.activeTab === "2"})}
                     onClick={() => {
-                      this.toggle('2');
+                      this.toggle("2");
                     }}
                   >
                   
-     <img src={ require('../images/Classifications images/BBFC_U.png') } ></img>
+     <img src={ require("../images/Classifications images/BBFC_U.png") } ></img>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === '3'})}
+                    className={classnames({active: this.state.activeTab === "3"})}
                     onClick={() => {
-                      this.toggle('3');
+                      this.toggle("3");
                     }}
                   >
-                   <img src={ require('../images/Classifications images/BBFC_12.png') } ></img><img src={ require('../images/Classifications images/BBFC_12A.png') } ></img>
+                   <img src={ require("../images/Classifications images/BBFC_12.png") } ></img><img src={ require("../images/Classifications images/BBFC_12A.png") } ></img>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === '4'})}
+                    className={classnames({active: this.state.activeTab === "4"})}
                     onClick={() => {
-                      this.toggle('4');
+                      this.toggle("4");
                     }}
                   >
-                    <img src={ require('../images/Classifications images/BBFC_15.png') } ></img>
+                    <img src={ require("../images/Classifications images/BBFC_15.png") } ></img>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === '5'})}
+                    className={classnames({active: this.state.activeTab === "5"})}
                     onClick={() => {
-                      this.toggle('5');
+                      this.toggle("5");
                     }}
                   >
-                    <img src={ require('../images/Classifications images/BBFC_18.png') } ></img>
+                    <img src={ require("../images/Classifications images/BBFC_18.png") } ></img>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === '6'})}
+                    className={classnames({active: this.state.activeTab === "6"})}
                     onClick={() => {
-                      this.toggle('6');
+                      this.toggle("6");
                     }}
                   >
-                    <img src={ require('../images/Classifications images/BBFC_R18.png') } ></img>
+                    <img src={ require("../images/Classifications images/BBFC_R18.png") } ></img>
                   </NavLink>
                 </NavItem>
               </Nav>

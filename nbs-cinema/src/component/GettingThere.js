@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-// import HomeService from '../service/HomeService';
+import React, { Component } from "react";
 import LunaMap from "./LunaMap";
-import Media from 'react-bootstrap/Media';
+import Media from "react-bootstrap/Media";
 
 class GettingThere extends Component {
 
@@ -33,7 +32,7 @@ class GettingThere extends Component {
                 </div>
   <Media.Body style={divStyle}>
   
-  <img src={ require('../images/luna_building.jpg') } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ require("../images/luna_building.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
     <br/>
     <br/>
     <h4>Address:</h4>
@@ -42,11 +41,8 @@ class GettingThere extends Component {
     <h4>Directions from bus/train stations</h4>
     <br/>
     <h4>Parking</h4>
-
-    
   </Media.Body>
 </Media>
-    
                 <br/>
                 <br/>
                 <br/>

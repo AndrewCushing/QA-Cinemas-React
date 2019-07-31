@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Button from 'react-bootstrap/Button'
-import Media from 'react-bootstrap/Media'
+import React, { Component } from "react";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Button from "react-bootstrap/Button";
+import Media from "react-bootstrap/Media";
 
 class Screens extends Component {
 
@@ -12,11 +12,11 @@ class Screens extends Component {
     };
     handleStandard = event => {
 
-        this.props.history.push('/standardscreen');
+        this.props.history.push("/standardscreen");
     };
     handleDuluxe = event => {
 
-        this.props.history.push('/deluxescreen');
+        this.props.history.push("/deluxescreen");
     };
     render() {
         var divStyle = {
@@ -36,7 +36,7 @@ class Screens extends Component {
 </Jumbotron>
 <br/>
 <Media>
-  <img src={ require('../images/standardscreenimage.jpg') } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ require("../images/standardscreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
       <br/>
     <h5>Standard Screens</h5>
@@ -51,7 +51,7 @@ class Screens extends Component {
 </Media>
 <br/>
 <Media>
-  <img src={ require('../images/deluxescreenimage.jpg') } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ require("../images/deluxescreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
   <br/>
     <h5>Deluxe Screens</h5>

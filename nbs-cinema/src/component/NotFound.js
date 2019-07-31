@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Button from 'react-bootstrap/Button';
-import Alert from 'react-bootstrap/Alert';
-import show from 'react-bootstrap/Alert';
-import setShow from 'react-bootstrap/Alert';
-import useState from 'react-bootstrap/Alert';
+import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import Alert from "react-bootstrap/Alert";
+import show from "react-bootstrap/Alert";
+import setShow from "react-bootstrap/Alert";
+import useState from "react-bootstrap/Alert";
 
 function AlertDismissible() {
   const [show, setShow] = useState(true);
@@ -14,12 +14,12 @@ class notfound extends Component {
     constructor(props) {
         super(props);
         this.state = {
-        }
-    };
+        };
+    }
     
     handleHome = event => {
 
-        this.props.history.push('/home');
+        this.props.history.push("/home");
     };
 
     render() {
@@ -45,14 +45,14 @@ class notfound extends Component {
         </div>
         
       </Alert>
-            <img src={ require('../images/compass-3_2.gif') } style={divStyle} Transformation height="330" width="450" crop="fill" />
+            <img src={ require("../images/compass-3_2.gif") } style={divStyle} Transformation height="330" width="450" crop="fill" />
       
 
 
       {!show && <Button onClick={() => setShow(true)}>Show Alert</Button>}
 </div>
             </>
-        )
+        );
     }
 }
 export default notfound;

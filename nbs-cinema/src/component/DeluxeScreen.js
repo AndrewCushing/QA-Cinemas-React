@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Button from 'react-bootstrap/Button';
-import Media from 'react-bootstrap/Media';
-import style from './style.css';
+import React, { Component } from "react";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Button from "react-bootstrap/Button";
+import Media from "react-bootstrap/Media";
+
 
 class DeluxeScreen extends Component {
 
@@ -14,12 +14,12 @@ class DeluxeScreen extends Component {
 
     handleStandard = event => {
 
-        this.props.history.push('/standardscreen');
+        this.props.history.push("/standardscreen");
     };
 
     handleHome = event => {
 
-        this.props.history.push('/home');
+        this.props.history.push("/home");
     };
 
     handleClose = event => {
@@ -49,13 +49,13 @@ class DeluxeScreen extends Component {
 </Jumbotron>
 <br/>
 <Media>
-  <img src={ require('../images/deluxescreen.png') } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ require("../images/deluxescreen.png") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
   <br/>
     <h5>This is cinema like you’ve never experienced before</h5>
     
     <p id="myP">
-    Every seat on every row in our Luna cinemas has been expertly designed so you can relax and recline during your film. With less seats and more personal space, you'll have a more immersive experience with every visit.  
+    Every seat on every row in our Luna cinemas has been expertly designed so you can relax and recline during your film. With less seats and more personal space, you"ll have a more immersive experience with every visit.  
 
 Now every seat is the best in the house, it’s time to experience films the way they were meant to be seen. With pitch-perfect Dolby Atmos sound and flawless 4K projection, the film becomes breathtakingly real.
     </p>
@@ -64,7 +64,7 @@ Now every seat is the best in the house, it’s time to experience films the way
 </Media>
 <br/>
 <Media>
-  <img src={ require('../images/deluxescreenimage.jpg') } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ require("../images/deluxescreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
   <br/>
     <h5>Premium Comfort</h5>

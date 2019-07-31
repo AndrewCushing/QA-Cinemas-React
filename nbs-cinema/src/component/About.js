@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import CardGroup from 'react-bootstrap/CardGroup';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
-import style from './style.css';
+import React, { Component } from "react";
+import CardGroup from "react-bootstrap/CardGroup";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+
 
 class About extends Component {
    
@@ -16,12 +16,12 @@ class About extends Component {
 
     handleContact = event => {
 
-        this.props.history.push('/Contact');
+        this.props.history.push("/Contact");
     };
 
     handleHome = event => {
 
-        this.props.history.push('/home');
+        this.props.history.push("/home");
     };
 
     handleClose = event => {
@@ -36,7 +36,7 @@ class About extends Component {
                 <h1 style={{margin: 50}}> About Luna Cinemas </h1>
 <CardGroup style={{margin: 25}}> 
   <Card>
-    
+  <Card.Img variant="top" src="https://www.w3schools.com/howto/img_avatar.png" />
     <Card.Body>
       <Card.Title>Andy</Card.Title>
       <Card.Text>
@@ -49,12 +49,12 @@ site and is an area to provide credits and a way for the team to sign its work.
     </Card.Footer>
   </Card>
   <Card>
-    
+  <Card.Img variant="top" src="https://www.w3schools.com/howto/img_avatar.png" />
     <Card.Body>
       <Card.Title>Arun</Card.Title>
       <Card.Text>
         This page is about the team that created the
-site and is an area to provide credits and a way for the team to sign its work.{' '}
+site and is an area to provide credits and a way for the team to sign its work.{" "}
       </Card.Text>
     </Card.Body>
     <Card.Footer>
@@ -62,7 +62,7 @@ site and is an area to provide credits and a way for the team to sign its work.{
     </Card.Footer>
   </Card>
   <Card>
-    
+  <Card.Img variant="top" src="https://www.w3schools.com/howto/img_avatar.png" />
     <Card.Body>
       <Card.Title>Ben</Card.Title>
       <Card.Text>
@@ -80,7 +80,7 @@ site and is an area to provide credits and a way for the team to sign its work.
 
   <CardGroup style={{margin: 25}}> 
   <Card>
-    
+  <Card.Img variant="top" src="https://www.w3schools.com/howto/img_avatar.png" />
     <Card.Body>
       <Card.Title>Carl</Card.Title>
       <Card.Text>
@@ -93,7 +93,7 @@ site and is an area to provide credits and a way for the team to sign its work.
     </Card.Footer>
   </Card>
   <Card>
-    
+  <Card.Img variant="top" src="https://www.w3schools.com/howto/img_avatar.png" />
     <Card.Body>
       <Card.Title>Dale</Card.Title>
       <Card.Text>
@@ -106,7 +106,7 @@ site and is an area to provide credits and a way for the team to sign its work.
     </Card.Footer>
   </Card>
   <Card>
-    
+  <Card.Img variant="top" src="https://www.w3schools.com/howto/img_avatar.png" />
     <Card.Body>
       <Card.Title>Ian</Card.Title>
       <Card.Text>
@@ -138,4 +138,4 @@ site and is an area to provide credits and a way for the team to sign its work.
     }
 }
 
-export default About
+export default About;
