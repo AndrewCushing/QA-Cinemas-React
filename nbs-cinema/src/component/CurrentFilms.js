@@ -49,17 +49,16 @@ class CurrentFilms extends Component {
 
     render() {
         return (
-            <div>
+                <div>
 
-                <Router>
-                    {this.state.rows}
+                {this.state.rows}
 
-                    <div>
-                        <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                        <button type="close" onClick={this.handleClose}>Close</button>
-                    </div>
-                </Router>
+                <div>
+                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
+                    <button type="close" onClick={this.handleClose}>Close</button>
+                </div>
             </div>
+
         )
     }
 }
