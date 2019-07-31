@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import Carousel from 'react-bootstrap/Carousel'
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
-        "mdbreact";
-// import HomeService from '../service/HomeService';
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import './HomeComponent.css';
+
 
 class CurrentFilms extends React.Component {
     constructor(props) {
@@ -26,7 +24,7 @@ class CurrentFilms extends React.Component {
 }
 
 
-class HomeComponent extends Component {
+class HomeComponent extends React.Component {
     state = {
     };
     componentDidMount() {
@@ -59,16 +57,17 @@ class HomeComponent extends Component {
                     className={"carousel"}
                     controls = {true}
                     fade = {true}
-                    interval = {4000}
+                    interval = {3000}
                     wrap = {true}
                     indicators = {false}
+
 
                 >
                     <Carousel.Item>
                         <img
                             className="CaroImg"
                             src="/images/ConAir.jpg"
-                            alt="First slide"
+                            alt="Slide Coming Soon"
                         />
 
                     </Carousel.Item>
@@ -76,7 +75,7 @@ class HomeComponent extends Component {
                         <img
                             className="CaroImg"
                             src="/images/GrandBH.jpg"
-                            alt="Third slide"
+                            alt="Slide Coming Soon"
                         />
                     </Carousel.Item>
 
@@ -85,7 +84,7 @@ class HomeComponent extends Component {
                         <img
                             className="CaroImg"
                             src="/images/babydriver.jpg"
-                            alt="Third slide"
+                            alt="Slide Coming Soon"
                         />
                     </Carousel.Item>
 

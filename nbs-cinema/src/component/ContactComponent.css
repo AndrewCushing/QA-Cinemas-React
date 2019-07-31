@@ -1,0 +1,40 @@
+.ContactAdd {
+    text-align: left;
+    color: dimgrey;
+    border-style: solid;
+    padding: 3px;
+}
+
+
+.EmailAdd {
+    text-align: left;
+    color: dimgrey;
+    border-style: solid;
+    padding: 3px;
+}
+
+h4{
+    text-decoration: underline;
+
+}
+
+h2.solid {border-style: solid;}
+
+
+
+.emailButton{
+    background-color: lightskyblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.8s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.emailButton:hover {opacity: 1}

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './ContactComponent.css';
 
 class Contact extends Component {
 
@@ -21,15 +23,39 @@ class Contact extends Component {
         }
     };
 
+    /*handleEmail = event => {
+        this.props.history.push('/email');
+    }
+*/
     render() {
-        return (<>
-                <h1>Contact</h1>
+        return (<div>
 
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
+                <h1>Contact</h1>
+                    <div className="ContactAdd">
+                        <h4> Address </h4>
+                        <h6> Alexandra House </h6>
+                        <h6> Whittingham Dr </h6>
+                        <h6> Wroughton</h6>
+                        <h6> Swindon </h6>
+                        <h6> SN4 0QJ </h6>
+                    </div>
+                <br/>
+                <div className="EmailAdd">
+
+                    <h4>Email </h4>
+                    <Link to={"/email"}>
+                    <button className={'emailButton'}>Email Luna Cinemas</button>
+                    </Link>
+
+
                 </div>
-            </>
+                <div>
+                    <br/>
+                    <div/>
+                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
+                    <button className="btn btn-add" type="close" onClick={this.handleClose}>Close</button>
+                </div>
+            </div>
         )
     }
 }

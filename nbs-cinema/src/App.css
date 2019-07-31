@@ -97,18 +97,21 @@ h5 {
 }
 
 .CaroImg{
-   height: 100%;
-   widght: 100%;
- }
+  align-content: center;
+  position: relative;
+
+
+}
 
 .carousel {
   /* any dimensions are fine, it can be responsive with max-width */
+  max-height: 60%;
+  width: 80%;
   position: center;
   margin-left: 100px;
   margin-right: 100px;
-  width: 80%;
-  height: 300px;
-  background-image: linear-gradient(to right,black,dimgrey, dimgrey,black );
+
+  background-image: linear-gradient(to right, black, dimgrey, dimgrey, black);
   border: lightcoral;
   border: 100px;
 }
@@ -118,9 +121,9 @@ h5 {
   height: 80%;
 }
 
-.item {
-  background-size: cover;
-  background-position: 70% 70%;
+.Carousel.Item{
+  background-size: contain;
+  background-position: 50% 50%;
   width: 100%;
   height: 100%;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './ContactComponent.css';
 
 class EMail extends Component {
 
@@ -11,7 +12,7 @@ class EMail extends Component {
 
     handleHome = event => {
 
-        this.props.history.push('/home');
+        this.props.history.push('/Contact');
     };
 
     handleClose = event => {
@@ -26,8 +27,8 @@ class EMail extends Component {
                 <h1>Email</h1>
 
                 <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
+                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Return</button>
+
                 </div>
             </>
         )
