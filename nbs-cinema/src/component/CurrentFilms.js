@@ -1,20 +1,46 @@
 import React, { Component } from 'react';
+import MovieRow from './MovieRow.js'
+
+import { BrowserRouter as Router} from 'react-router-dom'
+
 
 class CurrentFilms extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-        }
+        this.state = {rows:[]}
     };
 
+    componentDidMount(){
+        let movieRows = [];
+        const classifications = {
+            'U':"U",
+            'PG':"PG",
+            "12A":"./ClassificationImages/12A.png",
+            "12":"12",
+            "15":"./ClassificationImages/15.png",
+            "18":"18"
+        };
+        fetch('http://localhost:8080/getfilms')
+            .then(res => res.json() ).catch(console.log).then(results => {
+            const movies = results.contentList;
+            movies.forEach(movie => {
+                movie.classification = classifications[movie.classification];
+                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
+                movieRows.push(movieRow)
+            });
+            this.setState({
+                rows:movieRows
+            });
+        });
+    };
 
-    handleHome = event => {
+    handleHome = () => {
 
         this.props.history.push('/home');
     };
 
-    handleClose = event => {
+    handleClose = () => {
 
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
@@ -22,14 +48,18 @@ class CurrentFilms extends Component {
     };
 
     render() {
-        return (<>
-                <h1>Current Releases</h1>
+        return (
+            <div>
 
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-            </>
+                <Router>
+                    {this.state.rows}
+
+                    <div>
+                        <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
+                        <button type="close" onClick={this.handleClose}>Close</button>
+                    </div>
+                </Router>
+            </div>
         )
     }
 }

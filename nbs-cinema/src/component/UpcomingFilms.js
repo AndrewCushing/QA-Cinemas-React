@@ -7,12 +7,12 @@ import { BrowserRouter as Router} from 'react-router-dom'
 class UpcomingFilms extends Component {
 
     constructor(props) {
-        super(props);
-        this.state = {rows:[]}
+            super(props);
+            this.state = {rows:[]}
     };
 
     componentDidMount(){
-        var movieRows = []
+        let movieRows = [];
         const classifications = {
             'U':"U",
             'PG':"PG",
@@ -26,26 +26,26 @@ class UpcomingFilms extends Component {
             const movies = results.contentList;
             movies.forEach(movie => {
                 movie.classification = classifications[movie.classification];
-                const movieRow = <MovieRow key={movie.id} movie={movie}/>
+                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
                 movieRows.push(movieRow)
-            })
+            });
             this.setState({
                 rows:movieRows
             });
         });
     };
 
-    handleHome = event => {
+    handleHome = () => {
 
         this.props.history.push('/home');
     };
 
-    handleClose = event => {
+    handleClose = () => {
 
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
         }
-    }
+    };
 
     render() {
         return (
