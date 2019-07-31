@@ -6,8 +6,18 @@
 
 .App {
   text-align: center;
+  background-color: #1A181D;
 
 }
+
+#body {
+  background-color: #1A181D;
+}
+
+.mapTable {
+  width: 50px;
+} 
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

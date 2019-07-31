@@ -27,7 +27,7 @@ class LunaCinemaApp extends Component {
     render() {
         return (
             <>
-            <head><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link></head>
+           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 <Router>
                     <>
                         <HeaderComponent />

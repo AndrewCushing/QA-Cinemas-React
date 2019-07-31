@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router} from 'react-router-dom'
-
-
+import { Link } from 'react-router-dom';
 
 class FilmDetails extends Component {
 
@@ -34,12 +32,12 @@ class FilmDetails extends Component {
     }
 
     
-    handleHome = event => {
+    handleHome = () => {
 
         this.props.history.push('/home');
     };
 
-    handleClose = event => {
+    handleClose = () => {
 
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
@@ -51,7 +49,7 @@ class FilmDetails extends Component {
 return <table className = "filmTable" key={this.state.movie.id}>
         <tbody>
           <tr>
-            <td className = "table2">
+            <td>
               <img alt="poster" width="200" src={this.state.movie.poster_src}/>
               
             </td>
@@ -61,9 +59,10 @@ return <table className = "filmTable" key={this.state.movie.id}>
               <p>Cast: {this.state.movie.cast}</p>
               <p>Director: {this.state.movie.director}</p>
               <p>Running Time: {this.state.movie.running_time}</p>
-              <a href ={"/Booking/" + this.state.movie.id}>
-              <button className="bookButton"><i class="fas fa-ticket-alt"></i>Book</button>
-              </a>
+              <Link to={"/Booking/" + this.state.movie.id}>
+              <button className="bookButton"><i className="fas fa-ticket-alt"></i>Book</button>
+              </Link>
+
              
             </td>
           </tr>

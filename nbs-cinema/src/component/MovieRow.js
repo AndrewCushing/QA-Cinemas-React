@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class MovieRow extends React.Component {
 
@@ -8,24 +8,24 @@ class MovieRow extends React.Component {
         return <table className = "filmTable" key={this.props.movie.id}>
         <tbody>
           <tr>
-            <td className = "table2">
+            <td>
               
-              <a href ={"/FilmDetails/" + this.props.movie.id}>
+              <Link to ={"/FilmDetails/" + this.props.movie.id}>
               <img alt="poster" width="200" src={this.props.movie.poster_src}/>
-              </a>
+              </Link>
   
             </td>
             <td>
-              <a href ={"/FilmDetails/" + this.props.movie.id}>
+              <Link to={"/FilmDetails/" + this.props.movie.id}>
               <h2>{this.props.movie.title}<img alt="poster" className="cPoster" width="50" src={this.props.movie.classification_src}/></h2>
-              </a> 
+              </Link> 
               <p>{this.props.movie.shortoverview}</p>
-              <a href ={"/Booking/" + this.props.movie.id}>
-              <button className="bookButton"><i class="fas fa-ticket-alt"></i>Book</button>
-              </a>
-              <a href ={"/FilmDetails/" + this.props.movie.id}>
-              <button className="infoButton"><i class="fas fa-info-circle"></i>More Info</button>
-              </a>
+              <Link to={"/Booking/" + this.props.movie.id}>
+              <button className="bookButton"><i className="fas fa-ticket-alt"></i>Book</button>
+              </Link>
+              <Link to={"/FilmDetails/" + this.props.movie.id}>
+              <button className="infoButton"><i className="fas fa-info-circle"></i>More Info</button>
+              </Link>
              
               
             </td>
@@ -35,4 +35,4 @@ class MovieRow extends React.Component {
     }
 }
 
-export default withRouter (MovieRow);
+export default MovieRow;

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import MovieRow from './MovieRow.js'
-import { BrowserRouter as Router} from 'react-router-dom'
-
 
 class CurrentFilms extends Component {
 
@@ -21,18 +19,18 @@ class CurrentFilms extends Component {
 
      movies.forEach((movie) =>{
          console.log(movie.title)
-         const movieRow = <MovieRow movie={movie}/>
+         const movieRow = <MovieRow key={movie.id} movie={movie}/>
          movieRows.push(movieRow)
          })
      this.state = {rows: movieRows}
     };
 
-    handleHome = event => {
+    handleHome = () => {
 
         this.props.history.push('/home');
     };
 
-    handleClose = event => {
+    handleClose = () => {
 
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
@@ -45,14 +43,12 @@ class CurrentFilms extends Component {
         return (
                 <div>
             
-            <Router>
                 {this.state.rows}
                    
                 <div>
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                     <button type="close" onClick={this.handleClose}>Close</button>
                 </div>
-                </Router>
             </div>
             
         )

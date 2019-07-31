@@ -13,6 +13,8 @@ it('renders without crashing', () => {
 
   console.log(instance);
 
+  component.root.findByType("button");
+
 
 
 

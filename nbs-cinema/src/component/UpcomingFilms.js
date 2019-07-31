@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import MovieRow from './MovieRow.js'
 
-import { BrowserRouter as Router} from 'react-router-dom'
-
-
 class UpcomingFilms extends Component {
 
     constructor(props) {
         super(props);
         this.state = {}
-        console.log("This is my intializer")
 
      const movies = [
        {id: 4, poster_src: "./UpcomingFilmsImages/Goodboys.jpg", classification_src:"./ClassificationImages/15.png",  title: "Good Boys", shortoverview: "Three sixth-graders try to impress girls and upperclassmen by skipping school and attending parties.", overview:"Invited to his first kissing party, 12-year-old Max asks his best friends Lucas and Thor for some much-needed help on how to pucker up. When they hit a dead end, Max decides to use his father's drone to spy on the teenage girls next door. When the boys lose the drone, they skip school and hatch a plan to retrieve it before Max's dad can figure out what happened.", cast:"Jacob Tremblay, Brady Noon, Keith L. Williams, Will Forte, Molly Gordon, Midori Francis", director:"Lee Eisenberg"},
@@ -22,18 +18,18 @@ class UpcomingFilms extends Component {
 
      movies.forEach((movie) =>{
          console.log(movie.title)
-         const movieRow = <MovieRow movie={movie}/>
+         const movieRow = <MovieRow key={movie.id} movie={movie}/>
          movieRows.push(movieRow)
          })
      this.state = {rows: movieRows}
     };
 
-    handleHome = event => {
+    handleHome = () => {
 
         this.props.history.push('/home');
     };
 
-    handleClose = event => {
+    handleClose = () => {
 
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
@@ -42,16 +38,8 @@ class UpcomingFilms extends Component {
 
     render() {
         return (
-                <div>
-            
-                <Router>
+            <div>
                 {this.state.rows}
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-                </Router>
             </div>
         )
     }
