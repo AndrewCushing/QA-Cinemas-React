@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Carousel from 'react-bootstrap/Carousel'
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
         "mdbreact";
@@ -26,17 +26,10 @@ class CurrentFilms extends React.Component {
 }
 
 
-
-
-
-
 class HomeComponent extends Component {
     state = {
-       
     };
-
     componentDidMount() {
-
         // HomeService.executeGetService()
         //     .then(response => {
         //         this.setState({
@@ -44,7 +37,6 @@ class HomeComponent extends Component {
         //         })
         //     })
     };
-
     // gotoBeanComponent = () => {
     //     this.props.history.push('/add-home')
     // }
@@ -61,43 +53,44 @@ class HomeComponent extends Component {
     render() {
         return (
             <div>
-                <h1>Home Component</h1>
-                <MDBContainer>
-                    <MDBCarousel
-                        activeItem={1}
-                        length={2}
-                        showControls={true}
-                        showIndicators={false}
-                        className="z-depth-1"
-                        carousel-fade
+                <h1> Welcome to Luna Cinemas </h1>
+                <h5> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h5>
+                <Carousel
+                    className={"carousel"}
+                    controls = {true}
+                    fade = {true}
+                    interval = {4000}
+                    wrap = {true}
+                    indicators = {false}
 
-                    >
-                        <MDBCarouselInner activeIndex={0}>
-                            <MDBCarouselItem itemId="1">
-                                <MDBView>
-                                    <div className="position-relative" style={{height: "500px"}}>
-                                        <img
-                                            className="d-block w-100 h-100" style={{objectFit: "cover"}}
-                                            src="/images/ConAir.jpg"
-                                            alt="First slide"
-                                        />
-                                    </div>
-                                </MDBView>
-                            </MDBCarouselItem>
-                            <MDBCarouselItem itemId="2">
-                                <MDBView>
-                                    <div className="position-relative" style={{height: "500px"}}>
-                                        <img
-                                            className="d-block w-100 h-100" style={{objectFit: "cover"}}
-                                            src="/images/GrandBH.jpg"
-                                            alt="Second slide"
-                                        />
-                                    </div>
-                                </MDBView>
-                            </MDBCarouselItem>
-                        </MDBCarouselInner>
-                    </MDBCarousel>
-                </MDBContainer>
+                >
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/images/ConAir.jpg"
+                            alt="First slide"
+                        />
+
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/images/GrandBH.jpg"
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+
+
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/images/babydriver.jpg"
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+
+
+                </Carousel>
                 {/*<div>*/}
 
                 {/*    <ul className = "list-group">*/}
