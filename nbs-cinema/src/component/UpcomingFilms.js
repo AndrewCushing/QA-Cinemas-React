@@ -50,15 +50,13 @@ class UpcomingFilms extends Component {
     render() {
         return (
             <div>
-
-                <Router>
                     {this.state.rows}
 
                     <div>
                         <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                         <button type="close" onClick={this.handleClose}>Close</button>
                     </div>
-                </Router>
+
             </div>
         )
     }
