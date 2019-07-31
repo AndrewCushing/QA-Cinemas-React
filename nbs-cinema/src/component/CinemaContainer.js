@@ -22,29 +22,26 @@ import Scrum from './ScrumDescription'
 import Standard from './StandardScreen'
 import NewReleases from './UpcomingFilms'
 
-
 class LunaCinemaApp extends Component {
     render() {
         return (
             <>
-           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
                 <Router>
                     <>
                         <HeaderComponent />
-                       
                         <div className="container">
                             <Switch>
                                 <Route path="/" exact component={HomeComponent} />
                                 <Route path="/home" component={HomeComponent} />
                                 <Route path="/about" exact component={About} />
-                                <Route path="/Booking/:id" component={Booking} />
+                                <Route path="/Booking" component={Booking} />
                                 <Route path="/classifications" component={Classification} />
                                 <Route path="/contact" component={Contact} />
                                 <Route path="/CurrentFilms" component={CurrentFilms} />
                                 <Route path="/DeluxeScreen" component={Deluxe} />
                                 <Route path="/DiscussionBoard" component={Discussion} />
                                 <Route path="/email" component={EMail} />
-                                <Route path="/FilmDetails/:id" component={FilmDetails} />
+                                <Route path="/FilmDetails" component={FilmDetails} />
                                 <Route path="/travel" component={GettingThere} />
                                 <Route path="/OpeningTimes" component={Opening} />
                                 <Route path="/payment" component={Payment} />
