@@ -12,21 +12,9 @@ class DeluxeScreen extends Component {
         }
     };
 
-    handleStandard = event => {
+    handleStandard = (event) => {
 
         this.props.history.push("/standardscreen");
-    };
-
-    handleHome = event => {
-
-        this.props.history.push("/home");
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
     };
 
     render() {

@@ -15,12 +15,12 @@ class StandardScreen extends Component {
     //     window.scrollTo(0,document.body.scrollHeight);
     //   }
 
-    handleDuluxe = event => {
+    handleDuluxe = (event) => {
 
         this.props.history.push("/deluxescreen");
     };
 
-    handleHome = event => {
+    handleHome = (event) => {
 
         this.props.history.push("/home");
     };

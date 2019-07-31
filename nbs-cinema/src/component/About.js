@@ -5,30 +5,16 @@ import Button from "react-bootstrap/Button";
 
 
 class About extends Component {
-   
- 
-
+  
     constructor(props) {
         super(props);
         this.state = {
         }
     };
 
-    handleContact = event => {
+    handleContact = (event) => {
 
         this.props.history.push("/Contact");
-    };
-
-    handleHome = event => {
-
-        this.props.history.push("/home");
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
     };
 
     render() {

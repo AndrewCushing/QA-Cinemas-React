@@ -10,11 +10,11 @@ class Screens extends Component {
         this.state = {
         }
     };
-    handleStandard = event => {
+    handleStandard = (event) => {
 
         this.props.history.push("/standardscreen");
     };
-    handleDuluxe = event => {
+    handleDuluxe = (event) => {
 
         this.props.history.push("/deluxescreen");
     };

@@ -17,14 +17,14 @@ class notfound extends Component {
         };
     }
     
-    handleHome = event => {
+    handleHome = (event) => {
 
         this.props.history.push("/home");
     };
 
     render() {
         var divStyle = {
-            padding: "20px",
+            padding: "0px",
             margin: "0px"
           };
         return (<>

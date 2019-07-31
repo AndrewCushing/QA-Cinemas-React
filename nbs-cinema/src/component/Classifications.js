@@ -24,7 +24,7 @@ export default class Classifications extends React.Component {
   
   handleClick = (e) => {
     e.preventDefault();
-    console.log("The link was clicked.");
+    // console.log("The link was clicked.");
   };
       render() { 
         return (  
