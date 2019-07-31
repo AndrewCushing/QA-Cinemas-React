@@ -11,7 +11,7 @@ class MovieRow extends React.Component {
                     </a>
                 </td>
                 <td>
-                    <a href ={"/FilmDetails/" + this.props.movie.id}>
+                    <a href ={"/FilmDetails/" + this.props.movies.id}>
                         <h2>{this.props.movie.title}<img alt="poster" className="cPoster" width="50" src={this.props.movie.classification_src}/></h2>
                     </a>
                     <p>{this.props.movie.briefDescription}</p>
