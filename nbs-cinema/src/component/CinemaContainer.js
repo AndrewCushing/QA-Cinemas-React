@@ -52,6 +52,7 @@ class LunaCinemaApp extends Component {
                                 <Route path="/Scrum" component={Scrum} />
                                 <Route path="/StandardScreen" component={Standard} />
                                 <Route path="/new" component={NewReleases} />
+                                <Route exactly pattern="/bbfc" component={() => window.location = 'https://bbfc.co.uk/'} />
                                 <Route component={NoMatch} />
                             </Switch>
                         </div>
