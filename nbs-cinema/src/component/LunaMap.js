@@ -2,7 +2,7 @@ import React from "react";
 import { withScriptjs, withGoogleMap, GoogleMap } from "react-google-maps";
 // import LunaMarker from "./LunaMarker";
 
-const LunaMap = withScriptjs(withGoogleMap((props) =>{
+const LunaMap = withScriptjs(withGoogleMap((props) => {
                   
   return (
       <GoogleMap
@@ -11,8 +11,8 @@ const LunaMap = withScriptjs(withGoogleMap((props) =>{
         >
         {/* {markers} */}
       </GoogleMap>
-    );
+    )
   }
-))
+));
 
 export default LunaMap;

@@ -23,16 +23,16 @@ class GettingThere extends Component {
                 <Media>
                 <div>
                 <LunaMap
-				doctors={this.props.doctors} 
-				googleMapURL={"https://maps.googleapis.com/maps/api/js?key=AIzaSyAabpOtTthNBBAvmMH1U6fl7jmdCEkdRp8&v=3.exp&libraries=geometry,drawing,places"}
+				
+				googleMapURL={"https://maps.googleapis.com/maps/api/js?key=&v=3.exp&libraries=geometry,drawing,places"}
 				loadingElement={<div style={{ height: "100%" }} />}
-				containerElement={<div style={{ height: "400px", width: "600px" }} />}
+				containerElement={<div style={{ height: "400px", width: "550px" }} />}
 				mapElement={<div style={{ height: "100%" }} />}
 			/>
                 </div>
   <Media.Body style={divStyle}>
   
-  <img src={ require("../images/luna_building.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ require("../images/luna_building.jpg") } style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
     <br/>
     <br/>
     <h4>Address:</h4>
