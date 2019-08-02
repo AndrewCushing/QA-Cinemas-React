@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
-        "mdbreact";
-// import HomeService from '../service/HomeService';
 
 class CurrentFilms extends React.Component {
     constructor(props) {

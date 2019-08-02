@@ -31,11 +31,11 @@ class GettingThere extends Component {
         <br/>
                 <h1>Getting Here</h1>
                 <br/>
-      
+
                 <Media>
                 <div>
                 <LunaMap
-				
+
 				googleMapURL={"https://maps.googleapis.com/maps/api/js?key=&v=3.exp&libraries=geometry,drawing,places"}
 				loadingElement={<div style={{ height: "100%" }} />}
 				containerElement={<div style={{ height: "400px", width: "550px" }} />}
@@ -43,7 +43,7 @@ class GettingThere extends Component {
 			/>
                 </div>
   <Media.Body style={divStyle}>
-  
+
   <img src={ require("../images/luna_building.jpg") } style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
     <br/>
     <br/>
