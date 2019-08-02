@@ -5,27 +5,34 @@ class UpcomingFilms extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {rows:[]}
+    };
 
-     const movies = [
-       {id: 4, poster_src: "./UpcomingFilmsImages/Goodboys.jpg", classification_src:"./ClassificationImages/15.png",  title: "Good Boys", shortoverview: "Three sixth-graders try to impress girls and upperclassmen by skipping school and attending parties.", overview:"Invited to his first kissing party, 12-year-old Max asks his best friends Lucas and Thor for some much-needed help on how to pucker up. When they hit a dead end, Max decides to use his father's drone to spy on the teenage girls next door. When the boys lose the drone, they skip school and hatch a plan to retrieve it before Max's dad can figure out what happened.", cast:"Jacob Tremblay, Brady Noon, Keith L. Williams, Will Forte, Molly Gordon, Midori Francis", director:"Lee Eisenberg"},
-       {id: 5, poster_src:"./UpcomingFilmsImages/Zombieland2.png", classification_src:"./ClassificationImages/15.png", title: "Zombieland: Double Tap", shortoverview:"Zombie slayers Tallahassee, Columbus, Wichita and Little Rock square off against the newly evolved undead."},
-       {id: 6, poster_src:"./UpcomingFilmsImages/GeminiMan.png", classification_src:"./ClassificationImages/15.png",title: "Gemini Man", shortoverview:"Gemini Man is an innovative action-thriller starring Will Smith as Henry Brogan, an elite assassin, who is suddenly targeted and pursued by a mysterious young operative that seemingly can predict his every move."},
-       {id: 7, poster_src:"./UpcomingFilmsImages/Jumanji.jpg", classification_src:"./ClassificationImages/12A.png", title: "Jumanji: The Next Level", shortoverview:"Everything you know about Jumanji is about to change as the gang set off for another adventure. Get ready for a crazy ride!"},
-     ]
-
-     var movieRows = []
-
-     movies.forEach((movie) =>{
-         console.log(movie.title)
-         const movieRow = <MovieRow key={movie.id} movie={movie}/>
-         movieRows.push(movieRow)
-         })
-     this.state = {rows: movieRows}
+    componentDidMount(){
+        let movieRows = [];
+        const classifications = {
+            ClassU:"/ClassificationImages/U.png",
+            ClassPG:"/ClassificationImages/PG.png",
+            Class12A:"/ClassificationImages/12A.png",
+            Class12:"/ClassificationImages/12.png",
+            Class15:"/ClassificationImages/15.png",
+            Class18:"/ClassificationImages/18.png"
+        };
+        fetch('http://localhost:8080/getupcomingfilms')
+            .then(res => res.json() ).catch(console.log).then(results => {
+            const movies = results.contentList;
+            movies.forEach(movie => {
+                movie.classification = classifications[movie.classification];
+                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
+                movieRows.push(movieRow)
+            });
+            this.setState({
+                rows:movieRows
+            });
+        });
     };
 
     handleHome = () => {
-
         this.props.history.push('/home');
     };
 
@@ -34,12 +41,18 @@ class UpcomingFilms extends Component {
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
         }
-    }
+    };
 
     render() {
         return (
             <div>
                 {this.state.rows}
+
+                <div>
+                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
+                    <button type="close" onClick={this.handleClose}>Close</button>
+                </div>
+
             </div>
         )
     }
