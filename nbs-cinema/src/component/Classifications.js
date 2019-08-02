@@ -1,6 +1,6 @@
 import React from "react";
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
-import classnames from "classnames";
+import ClassNames from "classnames";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
 
@@ -40,7 +40,7 @@ export default class Classifications extends React.Component {
               <Nav tabs vertical pills>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === "1"})}
+                    className={ClassNames({active: this.state.activeTab === "1"})}
                     onClick={() => {
                       this.toggle("1");
                     }}
@@ -50,7 +50,7 @@ export default class Classifications extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === "2"})}
+                    className={ClassNames({active: this.state.activeTab === "2"})}
                     onClick={() => {
                       this.toggle("2");
                     }}
@@ -61,7 +61,7 @@ export default class Classifications extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === "3"})}
+                    className={ClassNames({active: this.state.activeTab === "3"})}
                     onClick={() => {
                       this.toggle("3");
                     }}
@@ -71,7 +71,7 @@ export default class Classifications extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === "4"})}
+                    className={ClassNames({active: this.state.activeTab === "4"})}
                     onClick={() => {
                       this.toggle("4");
                     }}
@@ -81,7 +81,7 @@ export default class Classifications extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === "5"})}
+                    className={ClassNames({active: this.state.activeTab === "5"})}
                     onClick={() => {
                       this.toggle("5");
                     }}
@@ -91,7 +91,7 @@ export default class Classifications extends React.Component {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={classnames({active: this.state.activeTab === "6"})}
+                    className={ClassNames({active: this.state.activeTab === "6"})}
                     onClick={() => {
                       this.toggle("6");
                     }}

@@ -1,27 +1,29 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import HeaderComponent from './HeaderComponent'
-import FooterComponent from './FooterComponent'
-import About from './About'
-import Booking from './Booking'
-import Classification from './Classifications'
-import Contact from './Contact'
-import CurrentFilms from './CurrentFilms'
-import Deluxe from './DeluxeScreen'
-import Discussion from './DiscussionBoard'
-import EMail from './EMail'
-import FilmDetails from './FilmDetails'
-import GettingThere from './GettingThere'
-import HomeComponent from './HomeComponent'
-import Opening from './OpeningTimes'
-import Payment from './Payment'
-import PlacesToGo from './PlacesToGo'
-import Screens from './Screens'
-import Scrum from './ScrumDescription'
-import Standard from './StandardScreen'
-import NewReleases from './UpcomingFilms'
-import SearchResults from './SearchResults'
+import HeaderComponent from './HeaderComponent';
+import FooterComponent from './FooterComponent';
+import About from './About';
+import Booking from './Booking';
+import Classification from './Classifications';
+import Contact from './Contact';
+import CurrentFilms from './CurrentFilms';
+import Deluxe from './DeluxeScreen';
+import Discussion from './DiscussionBoard';
+import EMail from './EMail';
+import FilmDetails from './FilmDetails';
+import GettingThere from './GettingThere';
+import HomeComponent from './HomeComponent';
+import Opening from './OpeningTimes';
+import Payment from './Payment';
+import PlacesToGo from './PlacesToGo';
+import Screens from './Screens';
+import Scrum from './ScrumDescription';
+import Standard from './StandardScreen';
+import NewReleases from './UpcomingFilms';
+import SearchResults from './SearchResults';
+import Reviews from './Reviews';
+import NoMatch from './NotFound';
 
 
 class LunaCinemaApp extends Component {

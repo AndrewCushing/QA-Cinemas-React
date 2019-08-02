@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
+import Review from './Review';
 
 class FilmDetails extends Component {
 
@@ -23,26 +24,40 @@ class FilmDetails extends Component {
         };
         fetch('http://localhost:8080/getfilm/'+this.props.match.params.filmId)
             .then(res => res.json() ).catch(console.log).then(results => {
-            const movies = results.contentList;
-            movies[0].classification = classifications[movies[0].classification];
-            this.setState({
-                movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>]
+                const movies = results.contentList;
+                movies[0].classification = classifications[movies[0].classification];
+            fetch('http://localhost:8080/getreviews/'+this.props.match.params.filmId)
+                .then(res => res.json() ).catch(console.log).then(results => {
+                    console.log(results);
+                    let reviews = results.contentList;
+                    let reviewArr = [];
+                    for (let i = 0 ; i < reviews.length ; i++){
+                        reviewArr.push(
+                            <Review username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].review}></Review>
+                        )
+                    }
+                    this.setState({
+                        movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
+                        reviews:reviewArr
+                    });
             });
-        });
-        fetch('http://localhost:8080/getreviews/'+this.props.match.params.filmId)
-            .then(res => res.json() ).catch(console.log).then(results => {
-                console.log(results);
-                this.setState({
-                    reviews:results.contentList
-                });
         });
     };
 
     render() {
         return (
             <div>
-                {this.state.movieHeader}
-                {this.state.reviews}
+                <table className="filmTable">
+                    <tbody>
+                        <tr>
+                            <td>
+                                {this.state.movieHeader}
+                            </td>
+                        </tr>
+                            {this.state.reviews}
+                    </tbody>
+                </table>
+
                 <div>
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                     <button type="close" onClick={this.handleClose}>Close</button>

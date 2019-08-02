@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/DiscussionHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CurrentFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CurrentFilms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/GettingThere.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/GettingThere.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Classifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Classifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/LunaMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/LunaMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Reviews.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564409337329</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added component to display individual reviews. Still needs work">
+      <created>1564757312130</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564757312130</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -157,6 +164,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Carl's First Commit" />
     <MESSAGE value="Carl's Second Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carl's Second Commit" />
+    <MESSAGE value="Added component to display individual reviews. Still needs work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added component to display individual reviews. Still needs work" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/nbs-cinema/src/component/DiscussionHeader.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
