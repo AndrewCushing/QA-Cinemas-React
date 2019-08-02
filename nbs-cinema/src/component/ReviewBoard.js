@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import Review from './Review';
 
-class FilmDetails extends Component {
+export default class ReviewBoard extends Component {
 
     constructor(props) {
         super(props);
@@ -33,7 +33,7 @@ class FilmDetails extends Component {
                     let reviewArr = [];
                     for (let i = 0 ; i < reviews.length ; i++){
                         reviewArr.push(
-                            <Review username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].review}></Review>
+                            <Review reviewId={reviews[i].id} username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].review}></Review>
                         )
                     }
                     this.setState({
@@ -56,9 +56,7 @@ class FilmDetails extends Component {
                         </tr>
                     </tbody>
                 </table>
-
                 {this.state.reviews}
-
                 <div>
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                     <button type="close" onClick={this.handleClose}>Close</button>
@@ -68,5 +66,3 @@ class FilmDetails extends Component {
         )
     }
 }
-
-export default FilmDetails
