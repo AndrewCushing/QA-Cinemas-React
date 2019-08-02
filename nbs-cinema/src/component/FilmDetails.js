@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import MovieRow from "./MovieRow";
-
+import MovieRow from './MovieRow.js'
 
 class FilmDetails extends Component {
 
@@ -12,12 +11,12 @@ class FilmDetails extends Component {
     componentDidMount(){
         let movieRows = [];
         const classifications = {
-            ClassU:"./ClassificationImages/U.png",
-            ClassPG:"./ClassificationImages/PG.png",
-            Class12A:"./ClassificationImages/12A.png",
-            Class12:"./ClassificationImages/12.png",
-            Class15:"./ClassificationImages/15.png",
-            Class18:"./ClassificationImages/18.png"
+            ClassU:"/ClassificationImages/U.png",
+            ClassPG:"/ClassificationImages/PG.png",
+            Class12A:"/ClassificationImages/12A.png",
+            Class12:"/ClassificationImages/12.png",
+            Class15:"/ClassificationImages/15.png",
+            Class18:"/ClassificationImages/18.png"
         };
         fetch('http://localhost:8080/getfilm/'+this.props.match.params.id)
             .then(res => res.json() ).catch(console.log).then(results => {

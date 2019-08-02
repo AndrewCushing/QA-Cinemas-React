@@ -14,7 +14,7 @@ class UpcomingFilms extends Component {
             ClassU:"/ClassificationImages/U.png",
             ClassPG:"/ClassificationImages/PG.png",
             Class12A:"/ClassificationImages/12A.png",
-            Class12:"./ClassificationImages/12.png",
+            Class12:"/ClassificationImages/12.png",
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
@@ -23,7 +23,6 @@ class UpcomingFilms extends Component {
             const movies = results.contentList;
             movies.forEach(movie => {
                 movie.classification = classifications[movie.classification];
-                console.log(movie.classification);
                 const movieRow = <MovieRow key={movie.id} movie={movie}/>;
                 movieRows.push(movieRow)
             });
