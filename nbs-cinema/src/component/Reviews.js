@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import MovieRow from './MovieRow.js';
+import DiscussionHeader from './DiscussionHeader.js';
 
 class FilmDetails extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {rows:[]}
+        this.state = {
+            movieHeader:"",
+            reviews:[]
+        };
     };
 
     componentDidMount(){
@@ -18,19 +21,36 @@ class FilmDetails extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getfilm/'+this.props.match.params.id)
+        fetch('http://localhost:8080/getfilm/'+this.props.match.params.filmId)
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
-            movies.forEach(movie => {
-                movie.classification = classifications[movie.classification];
-                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
-                movieRows.push(movieRow)
-            });
+            movies[0].classification = classifications[movies[0].classification];
             this.setState({
-                rows:movieRows
+                movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>]
             });
         });
+        fetch('http://localhost:8080/getreviews/'+this.props.match.params.filmId)
+            .then(res => res.json() ).catch(console.log).then(results => {
+                console.log(results);
+                this.setState({
+                    reviews:results.contentList
+                });
+        });
     };
+
+    render() {
+        return (
+            <div>
+                {this.state.movieHeader}
+                {this.state.reviews}
+                <div>
+                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
+                    <button type="close" onClick={this.handleClose}>Close</button>
+                </div>
+            </div>
+
+        )
+    }
 
     handleHome = () => {
         this.props.history.push('/home');
@@ -41,21 +61,6 @@ class FilmDetails extends Component {
             window.close();
         }
     };
-
-    render() {
-        return (
-            <div>
-
-                {this.state.rows}
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-            </div>
-
-        )
-    }
 }
 
 export default FilmDetails

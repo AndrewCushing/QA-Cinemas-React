@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/DiscussionHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CurrentFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CurrentFilms.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/GettingThere.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/GettingThere.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/HeaderComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/UpcomingFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/UpcomingFilms.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
