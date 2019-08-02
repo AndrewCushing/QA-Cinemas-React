@@ -54,9 +54,10 @@ class FilmDetails extends Component {
                                 {this.state.movieHeader}
                             </td>
                         </tr>
-                            {this.state.reviews}
                     </tbody>
                 </table>
+
+                {this.state.reviews}
 
                 <div>
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
@@ -66,16 +67,6 @@ class FilmDetails extends Component {
 
         )
     }
-
-    handleHome = () => {
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
 }
 
 export default FilmDetails
