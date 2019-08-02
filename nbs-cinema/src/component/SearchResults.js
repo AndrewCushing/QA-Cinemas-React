@@ -14,12 +14,12 @@ class SearchResults extends Component {
     componentDidMount(){
         let movieRows = [];
         const classifications = {
-            ClassU:"U",
-            ClassPG:"PG",
-            Class12A:"./ClassificationImages/12A.png",
-            Class12:"12",
-            Class15:"./ClassificationImages/15.png",
-            Class18:"18"
+            ClassU:"/ClassificationImages/U.png",
+            ClassPG:"/ClassificationImages/PG.png",
+            Class12A:"/ClassificationImages/12A.png",
+            Class12:"/ClassificationImages/12.png",
+            Class15:"/ClassificationImages/15.png",
+            Class18:"/ClassificationImages/18.png"
         };
         fetch('http://localhost:8080/getfilms')
             .then(res => res.json() ).catch(console.log).then(results => {
