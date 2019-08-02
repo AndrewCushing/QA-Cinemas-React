@@ -25,16 +25,58 @@ h2.solid {border-style: solid;}
 .emailButton{
     background-color: lightskyblue;
     border: none;
+    border-radius: 6px;
     color: white;
-    padding: 16px 32px;
+    padding: 10px 18px;
     text-align: center;
     font-size: 16px;
+    color: black;
     margin: 4px 2px;
     opacity: 0.6;
     transition: 0.8s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+
 }
 
 .emailButton:hover {opacity: 1}
+
+
+form{
+    width: 50%;
+    display: inline-block;
+    border-radius: 6px;
+    border-width: thick;
+    background-color: #c6d8f5;
+    background-image: linear-gradient(grey, whitesmoke,grey);
+    padding-top: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 5px;
+}
+
+
+textarea {
+    resize: none;
+    rows:"4" ;
+    cols:"50";
+    border-radius: 6px;
+}
+
+input[type=submit] {
+    width: 40%;
+    background-color: lightblue;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: lightskyblue;
+
+}
+

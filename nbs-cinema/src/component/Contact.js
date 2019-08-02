@@ -50,10 +50,7 @@ class Contact extends Component {
 
                 </div>
                 <div>
-                    <br/>
-                    <div/>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button className="btn btn-add" type="close" onClick={this.handleClose}>Close</button>
+
                 </div>
             </div>
         )
