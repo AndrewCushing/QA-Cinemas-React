@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
 import MovieRow from './MovieRow.js'
 
-import { BrowserRouter as Router} from 'react-router-dom'
-
-
 class UpcomingFilms extends Component {
 
     constructor(props) {
-            super(props);
-            this.state = {rows:[]}
+        super(props);
+        this.state = {rows:[]}
     };
 
     componentDidMount(){
         let movieRows = [];
         const classifications = {
-            ClassU:"./ClassificationImages/U.png",
-            ClassPG:"./ClassificationImages/PG.png",
-            Class12A:"./ClassificationImages/12A.png",
+            ClassU:"/ClassificationImages/U.png",
+            ClassPG:"/ClassificationImages/PG.png",
+            Class12A:"/ClassificationImages/12A.png",
             Class12:"./ClassificationImages/12.png",
-            Class15:"./ClassificationImages/15.png",
-            Class18:"./ClassificationImages/18.png"
+            Class15:"/ClassificationImages/15.png",
+            Class18:"/ClassificationImages/18.png"
         };
         fetch('http://localhost:8080/getupcomingfilms')
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies.forEach(movie => {
                 movie.classification = classifications[movie.classification];
-                console.log(movie.classification)
+                console.log(movie.classification);
                 const movieRow = <MovieRow key={movie.id} movie={movie}/>;
                 movieRows.push(movieRow)
             });
@@ -37,7 +34,6 @@ class UpcomingFilms extends Component {
     };
 
     handleHome = () => {
-
         this.props.history.push('/home');
     };
 
@@ -51,12 +47,12 @@ class UpcomingFilms extends Component {
     render() {
         return (
             <div>
-                    {this.state.rows}
+                {this.state.rows}
 
-                    <div>
-                        <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                        <button type="close" onClick={this.handleClose}>Close</button>
-                    </div>
+                <div>
+                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
+                    <button type="close" onClick={this.handleClose}>Close</button>
+                </div>
 
             </div>
         )

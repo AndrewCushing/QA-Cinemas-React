@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import MapContainer from './MapContainer'
 
 
@@ -11,9 +10,7 @@ class GettingThere extends Component {
         }
     };
 
-
     handleHome = event => {
-
         this.props.history.push('/home');
     };
 

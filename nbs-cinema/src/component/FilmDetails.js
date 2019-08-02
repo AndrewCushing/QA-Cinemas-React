@@ -34,12 +34,10 @@ class FilmDetails extends Component {
     };
 
     handleHome = () => {
-
         this.props.history.push('/home');
     };
 
     handleClose = () => {
-
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
         }
