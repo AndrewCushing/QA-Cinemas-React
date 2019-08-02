@@ -22,8 +22,9 @@ import Scrum from './ScrumDescription';
 import Standard from './StandardScreen';
 import NewReleases from './UpcomingFilms';
 import SearchResults from './SearchResults';
-import Reviews from './Reviews';
+import Reviews from './ReviewBoard';
 import NoMatch from './NotFound';
+import CommentBoard from './CommentBoard';
 
 
 class LunaCinemaApp extends Component {
@@ -56,6 +57,7 @@ class LunaCinemaApp extends Component {
                             <Route path="/new" component={NewReleases} />
                             <Route path="/search/:searchText" component={SearchResults} />
                             <Route path="/Reviews/:filmId" component={Reviews} />
+                            <Route path="/CommentBoard/:filmId/:reviewId" component={CommentBoard} />
                             <Route path="/bbfc" component={() => window.location = "https://bbfc.co.uk/"} />
                             <Route component={NoMatch} />
                         </Switch>

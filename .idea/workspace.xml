@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="344b9c40-876a-4f5a-8ac8-8390031eb5c7" name="Default Changelist" comment="Put in a MapContainer so that the code will compile">
+    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CommentBoard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Sprint1-Carl" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,7 +39,7 @@
     <option name="width" value="1890" />
     <option name="height" value="960" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
@@ -119,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564578835718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Reviews now appear in separate little tables">
+      <created>1564773606665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564773606665</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -165,6 +176,7 @@
     <MESSAGE value="Carl's First Commit" />
     <MESSAGE value="Carl's Second Commit" />
     <MESSAGE value="Put in a MapContainer so that the code will compile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Put in a MapContainer so that the code will compile" />
+    <MESSAGE value="Reviews now appear in separate little tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reviews now appear in separate little tables" />
   </component>
 </project>
