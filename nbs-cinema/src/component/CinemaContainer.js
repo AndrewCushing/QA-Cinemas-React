@@ -22,7 +22,7 @@ import Scrum from './ScrumDescription'
 import Standard from './StandardScreen'
 import NewReleases from './UpcomingFilms'
 import SearchResults from './SearchResults'
-
+import NoMatch from "./NotFound";
 
 class LunaCinemaApp extends Component {
     render() {
@@ -53,6 +53,8 @@ class LunaCinemaApp extends Component {
                             <Route path="/StandardScreen" component={Standard} />
                             <Route path="/new" component={NewReleases} />
                             <Route path="/search/:searchText" component={SearchResults} />
+                            <Route path="/bbfc" component={() => window.location = "https://bbfc.co.uk/"} />
+                            <Route component={NoMatch} />
                         </Switch>
                     </div>
                     <FooterComponent />
