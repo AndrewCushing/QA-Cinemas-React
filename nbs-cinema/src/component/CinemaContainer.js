@@ -21,6 +21,7 @@ import Screens from './Screens'
 import Scrum from './ScrumDescription'
 import Standard from './StandardScreen'
 import NewReleases from './UpcomingFilms'
+import SearchResults from './SearchResults'
 
 
 class LunaCinemaApp extends Component {
@@ -53,6 +54,7 @@ class LunaCinemaApp extends Component {
                                 <Route path="/Scrum" component={Scrum} />
                                 <Route path="/StandardScreen" component={Standard} />
                                 <Route path="/new" component={NewReleases} />
+                                <Route path="/search" component={SearchResults} />
                             </Switch>
                         </div>
                         <FooterComponent />

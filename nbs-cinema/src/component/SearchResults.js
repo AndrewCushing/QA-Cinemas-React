@@ -4,29 +4,28 @@ import MovieRow from './MovieRow.js'
 import { BrowserRouter as Router} from 'react-router-dom'
 
 
-class UpcomingFilms extends Component {
+class SearchResults extends Component {
 
     constructor(props) {
-            super(props);
-            this.state = {rows:[]}
+        super(props);
+        this.state = {rows:[]}
     };
 
     componentDidMount(){
         let movieRows = [];
         const classifications = {
-            ClassU:"./ClassificationImages/U.png",
-            ClassPG:"./ClassificationImages/PG.png",
+            ClassU:"U",
+            ClassPG:"PG",
             Class12A:"./ClassificationImages/12A.png",
-            Class12:"./ClassificationImages/12.png",
+            Class12:"12",
             Class15:"./ClassificationImages/15.png",
-            Class18:"./ClassificationImages/18.png"
+            Class18:"18"
         };
-        fetch('http://localhost:8080/getupcomingfilms')
+        fetch('http://localhost:8080/getfilms')
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies.forEach(movie => {
                 movie.classification = classifications[movie.classification];
-                console.log(movie.classification)
                 const movieRow = <MovieRow key={movie.id} movie={movie}/>;
                 movieRows.push(movieRow)
             });
@@ -51,16 +50,18 @@ class UpcomingFilms extends Component {
     render() {
         return (
             <div>
+
+                <Router>
                     {this.state.rows}
 
                     <div>
                         <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                         <button type="close" onClick={this.handleClose}>Close</button>
                     </div>
-
+                </Router>
             </div>
         )
     }
 }
 
-export default UpcomingFilms
+export default SearchResults

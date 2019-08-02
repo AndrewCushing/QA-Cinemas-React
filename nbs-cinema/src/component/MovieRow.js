@@ -7,12 +7,12 @@ class MovieRow extends React.Component {
             <tr>
                 <td className = "table2">
                     <a href ={"/FilmDetails/" + this.props.movie.id}>
-                        <img alt="poster" width="200" src={this.props.movie.poster_src}/>
+                        <img alt="poster" width="200" src={this.props.movie.imagePath}/>
                     </a>
                 </td>
                 <td>
-                    <a href ={"/FilmDetails/" + this.props.movies.id}>
-                        <h2>{this.props.movie.title}<img alt="poster" className="cPoster" width="50" src={this.props.movie.classification_src}/></h2>
+                    <a href ={"/FilmDetails/" + this.props.movie.id}>
+                        <h2>{this.props.movie.title}<img alt="poster" className="cPoster" width="50" src={this.props.movie.classification}/></h2>
                     </a>
                     <p>{this.props.movie.briefDescription}</p>
                     <a href ={"/Booking/" + this.props.movie.id}>
