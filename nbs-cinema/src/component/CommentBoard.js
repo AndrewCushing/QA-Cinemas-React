@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
-import Review from './Review';
+import Comment from './Comment';
+import ReviewHeader from "./ReviewHeader";
 
 export default class CommentBoard extends Component {
 
@@ -8,12 +9,12 @@ export default class CommentBoard extends Component {
         super(props);
         this.state = {
             movieHeader:"",
-            reviews:[]
+            review:"",
+            comments:[]
         };
     };
 
     componentDidMount(){
-        let movieRows = [];
         const classifications = {
             ClassU:"/ClassificationImages/U.png",
             ClassPG:"/ClassificationImages/PG.png",
@@ -26,19 +27,23 @@ export default class CommentBoard extends Component {
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies[0].classification = classifications[movies[0].classification];
-            fetch('http://localhost:8080/getreviews/'+this.props.match.params.filmId)
+            fetch('http://localhost:8080/getreview/'+this.props.match.params.reviewId)
                 .then(res => res.json() ).catch(console.log).then(results => {
-                console.log(results);
-                let reviews = results.contentList;
-                let reviewArr = [];
-                for (let i = 0 ; i < reviews.length ; i++){
-                    reviewArr.push(
-                        <Review reviewId={reviews[i].id} username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].review}></Review>
-                    )
-                }
-                this.setState({
-                    movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
-                    reviews:reviewArr
+                let reviewObject = results.contentList[0];
+                fetch('http://localhost:8080/getcomments/'+this.props.match.params.reviewId)
+                    .then(res => res.json() ).catch(console.log).then(results => {
+                    let commentArr = [];
+                    let comments = results.contentList;
+                    for (let i = 0 ; i < comments.length ; i++){
+                        commentArr.push(
+                            <Comment key={comments[i].id} username={comments[i].username} body={comments[i].body}></Comment>
+                        )
+                    }
+                    this.setState({
+                        movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
+                        review:reviewObject,
+                        comments:commentArr
+                    });
                 });
             });
         });
@@ -57,8 +62,16 @@ export default class CommentBoard extends Component {
                     </tbody>
                 </table>
 
-                {this.state.reviews}
-
+                <table className="filmTable">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                {this.state.comments}
                 <div>
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                     <button type="close" onClick={this.handleClose}>Close</button>
