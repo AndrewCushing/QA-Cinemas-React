@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-// import HomeService from '../service/HomeService';
+import React, { Component } from "react";
+import LunaMap from "./LunaMap";
+import Media from "react-bootstrap/Media";
 
 class GettingThere extends Component {
 
@@ -9,35 +10,46 @@ class GettingThere extends Component {
         }
     };
 
-
-    handleHome = event => {
-
-        this.props.history.push('/home');
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
+        var divStyle = {
+            padding: "10px",
+            margin: "0px"
+          };
         return (<>
-                <h1>Getting there</h1>
-                {/*<div>*/}
-                {/*    <ul className = "list-group">*/}
-                {/*        {this.state.home.map(home => <li className = "list-group-item" key={home.id}>home: {home.homeName} <button className="btn btn-danger float-right"onClick={() => {*/}
-                {/*            this.deletehome(home.id)}}>x</button></li>)}*/}
-                {/*    </ul>*/}
-                {/*</div>*/}
+        <br/>
+                <h1>Getting Here</h1>
+                <br/>
+      
+                <Media>
                 <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
+                <LunaMap
+				
+				googleMapURL={"https://maps.googleapis.com/maps/api/js?key=&v=3.exp&libraries=geometry,drawing,places"}
+				loadingElement={<div style={{ height: "100%" }} />}
+				containerElement={<div style={{ height: "400px", width: "550px" }} />}
+				mapElement={<div style={{ height: "100%" }} />}
+			/>
                 </div>
+  <Media.Body style={divStyle}>
+  
+  <img src={ require("../images/luna_building.jpg") } style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
+    <br/>
+    <br/>
+    <h4>Address:</h4>
+    <h5>Whittingham Dr, Wroughton, Swindon SN4 0QJ</h5>
+    <br/>
+    <h4>Directions from bus/train stations</h4>
+    <br/>
+    <h4>Parking</h4>
+  </Media.Body>
+</Media>
+                <br/>
+                <br/>
+                <br/>
             </>
         )
     }
 }
 
-export default GettingThere
+
+export default GettingThere;
