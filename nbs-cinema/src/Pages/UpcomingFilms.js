@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import MovieRow from './MovieRow.js';
+import MovieRow from  '../component/MovieRow';
 
-import { BrowserRouter as Router} from 'react-router-dom'
-
-
-class CurrentFilms extends Component {
+class UpcomingFilms extends Component {
 
     constructor(props) {
         super(props);
@@ -21,7 +18,7 @@ class CurrentFilms extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getnewfilms')
+        fetch('http://localhost:8080/getupcomingfilms')
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies.forEach(movie => {
@@ -36,7 +33,6 @@ class CurrentFilms extends Component {
     };
 
     handleHome = () => {
-
         this.props.history.push('/home');
     };
 
@@ -49,18 +45,17 @@ class CurrentFilms extends Component {
 
     render() {
         return (
-                <div>
-
+            <div>
                 {this.state.rows}
 
                 <div>
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                     <button type="close" onClick={this.handleClose}>Close</button>
                 </div>
-            </div>
 
+            </div>
         )
     }
 }
 
-export default CurrentFilms
+export default UpcomingFilms

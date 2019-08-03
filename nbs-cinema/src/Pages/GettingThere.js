@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import MapContainer from './MapContainer'
-import LunaMap from "./LunaMap";
+import MapContainer from '../component/MapContainer';
+import LunaMap from '../component/LunaMap';
 import Media from "react-bootstrap/Media";
 
 class GettingThere extends Component {
