@@ -56,7 +56,7 @@ export default class Classifications extends React.Component {
                     }}
                   >
                   
-     <img src={ require("../images/Classifications images/BBFC_U.png") } ></img>
+     <img src={ ("/ClassificationsImages/U.png") } ></img>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -66,7 +66,8 @@ export default class Classifications extends React.Component {
                       this.toggle("3");
                     }}
                   >
-                   <img src={ require("../images/Classifications images/BBFC_12.png") } ></img><img src={ require("../images/Classifications images/BBFC_12A.png") } ></img>
+                   <img src="/ClassificationsImages/12.png" />
+                      <img src="/ClassificationsImages/12A.png" />
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -76,7 +77,7 @@ export default class Classifications extends React.Component {
                       this.toggle("4");
                     }}
                   >
-                    <img src={ require("../images/Classifications images/BBFC_15.png") } ></img>
+                    <img src="/ClassificationsImages/15.png"/>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -86,7 +87,7 @@ export default class Classifications extends React.Component {
                       this.toggle("5");
                     }}
                   >
-                    <img src={ require("../images/Classifications images/BBFC_18.png") } ></img>
+                    <img src="/ClassificationsImages/18.png"/>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -96,7 +97,7 @@ export default class Classifications extends React.Component {
                       this.toggle("6");
                     }}
                   >
-                    <img src={ require("../images/Classifications images/BBFC_R18.png") } ></img>
+                    <img src="/ClassificationsImages/R18.png"/>
                   </NavLink>
                 </NavItem>
               </Nav>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 // import '../App.css';
-import logo from '../images/lunacinemalogo.jpg';
+import logo from '../../public/lunacinemalogo.jpg';
 
 
 class HeaderComponent extends Component {

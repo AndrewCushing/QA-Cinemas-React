@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
-
-import Logo from '../images/luna_building.jpg';
-
 import './MapContainer.css';
 
+const logo = '/luna_building.jpg';
 
 export class MapContainer extends Component {
 
@@ -44,7 +42,7 @@ export class MapContainer extends Component {
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
                             name={'Luna Cinemas'}
-                            pic={Logo}
+                            pic={logo}
 
                         />
                         <Marker

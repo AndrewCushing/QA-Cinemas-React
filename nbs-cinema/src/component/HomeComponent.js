@@ -63,16 +63,16 @@ class HomeComponent extends Component {
                     <Carousel.Item>
                         <img
                             className="CaroImg"
-                            src="/images/ConAir.jpg"
-                            alt="First slide"
+                            src="/luna_building.jpg"
+                            alt="External image of our cinema"
                         />
 
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="CaroImg"
-                            src="/images/GrandBH.jpg"
-                            alt="Third slide"
+                            src="/Spider.jpg"
+                            alt="Spiderman: Far from home poster"
                         />
                     </Carousel.Item>
 
@@ -80,7 +80,7 @@ class HomeComponent extends Component {
                     <Carousel.Item>
                         <img
                             className="CaroImg"
-                            src="/images/babydriver.jpg"
+                            src="/UpcomingFilmsImages/Goodboys.jpg"
                             alt="Third slide"
                         />
                     </Carousel.Item>

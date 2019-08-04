@@ -1,10 +1,9 @@
 import React from 'react';
 import { Nav, Navbar, Button, Form, FormControl } from 'react-bootstrap'; 
 import styled from 'styled-components';
-import Logo from '../images/qacinemalogo.png'
 import { MDBCol, MDBIcon } from "mdbreact";
 
-
+const Logo = '/qacinemalogo.png'
 
 const Styles = styled.div`
 .navbar {

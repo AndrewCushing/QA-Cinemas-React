@@ -36,7 +36,7 @@ class Screens extends Component {
 </Jumbotron>
 <br/>
 <Media>
-  <img src={ require("../images/standardscreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ ("/standardscreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
       <br/>
     <h5>Standard Screens</h5>
@@ -51,7 +51,7 @@ class Screens extends Component {
 </Media>
 <br/>
 <Media>
-  <img src={ require("../images/deluxescreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ ("/deluxescreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
   <br/>
     <h5>Deluxe Screens</h5>

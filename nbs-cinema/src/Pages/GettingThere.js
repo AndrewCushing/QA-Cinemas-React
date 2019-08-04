@@ -44,7 +44,7 @@ class GettingThere extends Component {
                 </div>
   <Media.Body style={divStyle}>
 
-  <img src={ require("../images/luna_building.jpg") } style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
+  <img src={ ("/luna_building.jpg") } style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
     <br/>
     <br/>
     <h4>Address:</h4>
