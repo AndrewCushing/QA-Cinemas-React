@@ -2,6 +2,12 @@ import React from 'react';
 import MapContainer from '../component/MapContainer';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
+import FB from '../images/F&B.jpg';
+import Chiquto from '../images/Chiquto.jpg';
+import HW from '../images/Hall&Woodhouse.jpg';
+import PizzaHut from '../images/PizzaHut.jpg';
+import Nandos from '../images/Nandos.jpg';
+import Fratellos from '../images/Fratellos.jpg';
 
 
 
@@ -14,7 +20,7 @@ export const PlacesToGo = () =>(
 
         <CardGroup style={{margin: 25}}>
             <Card>
-                <Card.Img variant="top" src="https://www.foodanddrinkguides.co.uk/sites/default/files/Frankies%20IMG_1100.JPG" />
+                <Card.Img variant="top" src={FB}/>
                 <Card.Body>
                     <Card.Title><a name="Frankie & Benny's">Frankie & Benny's</a></Card.Title>
                     <Card.Text>
@@ -40,7 +46,7 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src="https://lh5.googleusercontent.com/p/AF1QipNxNoeortnxZOUQq0MU0nTwNChA0aT5dpud09Mx=w408-h272-k-no" />
+                <Card.Img variant="top" src={HW} />
                 <Card.Body>
                     <Card.Title><a name="Hall & Woodhouse">Hall & Woodhouse</a></Card.Title>
                     <Card.Text>
@@ -66,7 +72,7 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src="https://lh5.googleusercontent.com/p/AF1QipPjvGdDioDve4180bjY_JtO1PX-1H1nGLY7Wi2R=w426-h240-k-no" />
+                <Card.Img variant="top" src={Chiquto} />
                 <Card.Body>
                     <Card.Title><a name="Chiquto">Chiquto</a></Card.Title>
                     <Card.Text>
@@ -95,7 +101,7 @@ export const PlacesToGo = () =>(
         </CardGroup>
         <CardGroup style={{margin: 25}}>
             <Card>
-                <Card.Img variant="top" src="https://www.insidermedia.com/uploads/news/Pizza_Hut_Swindon.jpg" />
+                <Card.Img variant="top" src={PizzaHut} />
                 <Card.Body>
                     <Card.Title><a name="Pizza Hut">Pizza Hut</a></Card.Title>
                     <Card.Text>
@@ -122,7 +128,7 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src="https://lh5.googleusercontent.com/p/AF1QipOgpvFkPSfO7cgfJEAwoN987_wSvK_OQUkHSsjf=w408-h306-k-no" />
+                <Card.Img variant="top" src={Nandos} />
                 <Card.Body>
                     <Card.Title><a name="Nando's">Nando's</a></Card.Title>
                     <Card.Text>
@@ -149,28 +155,28 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src="https://media-cdn.tripadvisor.com/media/photo-s/02/fb/62/6e/rios-brazil.jpg" />
+                <Card.Img variant="top" src={Fratellos} />
                 <Card.Body>
-                    <Card.Title><a name="Rios Brazil">Rios Brazil</a></Card.Title>
+                    <Card.Title><a name="Fratello's">Fratello's</a></Card.Title>
                     <Card.Text>
-                        All-you-can-eat churrascaria dining, with Brazilian-style buffet and grilled meats served at table.
+                    Family-friendly Italian restaurant with a wood-burning pizza oven and a specials chalkboard.
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer>
                     <small className="text-muted"><ul>
-                        <p>16 Bridge St, Swindon SN1 1BU</p>
+                        <p>Address: 12 Victoria Rd, Swindon SN1 3AJ</p>
                         <p>Hours:
-                            <li>Friday	5:30pm–11pm</li>
-                            <li>Saturday	5pm–11pm</li>
-                            <li>Sunday	1pm–9pm</li>
-                            <li>Monday	Closed</li>
-                            <li>Tuesday	5:30pm–10:30pm</li>
-                            <li>Wednesday	5:30pm–10:30pm</li>
-                            <li>Thursday	5:30pm–10:30pm</li>
+                            <li>Friday	12pm-2pm,6pm-11pm</li>
+                            <li>Saturday	12pm-11pm</li>
+                            <li>Sunday	12pm-11pm</li>
+                            <li>Monday	12pm-2pm,6pm-11pm</li>
+                            <li>Tuesday	12pm-2pm,6pm-11pm</li>
+                            <li>Wednesday	12pm-2pm,6pm-11pm</li>
+                            <li>Thursday	12pm-2pm,6pm-11pm</li>
 
                         </p>
-                        <p>Menu: <a href = "http://www.riosbrazil.co.uk/swindon/">riosbrazil.co.uk</a></p>
-                        <p>Phone: 01793 514527</p>
+                        <p>Menu: <a href = "http://www.fratellosswindon.co.uk/swindon/menu.html">fratellosswindon.co.uk</a></p>
+                        <p>Phone: 01793 574444</p>
                     </ul></small>
                 </Card.Footer>
             </Card>

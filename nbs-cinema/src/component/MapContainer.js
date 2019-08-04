@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
 import Logo from '../images/luna_building.jpg';
+import FB from '../images/F&B.jpg';
+import Chiquto from '../images/Chiquto.jpg';
+import HW from '../images/Hall&Woodhouse.jpg';
+import PizzaHut from '../images/PizzaHut.jpg';
+import Nandos from '../images/Nandos.jpg';
+import Fratellos from '../images/Fratellos.jpg';
 
 import './MapContainer.css';
 
@@ -50,44 +56,33 @@ export class MapContainer extends Component {
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
                             name={<a href="#Frankie & Benny's">Frankie & Benny's</a>}
-                            pic={'https://www.foodanddrinkguides.co.uk/sites/default/files/Frankies%20IMG_1100.JPG'}
+                            pic={FB}
                             position={{ lat: 51.571289, lng: -1.757105 }} />
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
                             name={<a href="#Hall & Woodhouse">Hall & Woodhouse</a>}
-                            address={""}
-                            pic={'https://lh5.googleusercontent.com/p/AF1QipNxNoeortnxZOUQq0MU0nTwNChA0aT5dpud09Mx=w408-h272-k-no'}
+                            pic={HW}
                             position={{ lat: 51.562495, lng: -1.798083}} />
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
                             name={<a href="#Chiquto">Chiquto</a>}
-                            address={""}
-                            pic={'https://lh5.googleusercontent.com/p/AF1QipPjvGdDioDve4180bjY_JtO1PX-1H1nGLY7Wi2R=w426-h240-k-no'}
+                            pic={Chiquto}
                             position={{ lat: 51.571112, lng: -1.757373 }} />
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
-                            name={<a href="#Los Gatos">Los Gatos</a>}
-                            address={""}
-                            pic={'https://lh5.googleusercontent.com/p/AF1QipOYCwyovSzFyChM7v1rf5MGSo8LHFGjpZCKuP5Z=w408-h306-k-no'}
-                            position={{ lat: 51.552257, lng: -1.776920}} />
+                            name={<a href="#Fratello's">Fratello's</a>}
+                            pic={Fratellos}
+                            position={{ lat: 51.558364, lng: -1.779836}} />
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
                             name={<a href="#Pizza Hut">Pizza Hut</a>}
-                            address={""}
-                            pic={'https://www.insidermedia.com/uploads/news/Pizza_Hut_Swindon.jpg'}
+                            pic={PizzaHut}
                             position={{ lat: 51.570463, lng: -1.755474}} />
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
                             name={<a href="#Nando's">Nando's</a>}
-                            address={""}
-                            pic={'https://lh5.googleusercontent.com/p/AF1QipOgpvFkPSfO7cgfJEAwoN987_wSvK_OQUkHSsjf=w408-h306-k-no'}
+                            pic={Nandos}
                             position={{ lat: 51.557893, lng: -1.780524}} />
-                        <Marker
-                            onClick={this.onMarkerClick.bind(this)}
-                            name={<a href="#Rios Brazil">Rios Brazil</a>}
-                            address={""}
-                            pic={'https://media-cdn.tripadvisor.com/media/photo-s/02/fb/62/6e/rios-brazil.jpg'}
-                            position={{ lat: 51.562868, lng: -1.787196}} />
 
 
                         <InfoWindow
@@ -114,6 +109,6 @@ export class MapContainer extends Component {
 export default GoogleApiWrapper(
     () => ({
 
-            apiKey: ('API KEY')
+            apiKey: ('AIzaSyD2O-ECIRCr_CaI8JxPqBK-qVjf6PHnYlg')
         }
     ))(MapContainer)
