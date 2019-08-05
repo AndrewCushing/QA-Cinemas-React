@@ -54,10 +54,10 @@ export default class AppFooter extends Component {
                   <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>Cinema Information</h5>
                   <ul className="list-unstyled">
                     <p>
-                      <a className="FooterText" href="/Classifications">Classification</a>
+                      <a className="FooterText" href="/Classifications">Classifications</a>
                     </p>
                     <p>
-                      <a className="FooterText" href="/Directions">Directions</a>
+                      <a className="FooterText" href="/Travel">Directions</a>
                     </p>
                     <p>
                       <a className="FooterText" href="/PlacesToGo">Places To Go</a>

@@ -29,8 +29,8 @@ export const Jumbotron = () => (
     <Jumbo fluid className="jumbo">
       <div className="overlay"></div>
       <Container>
-        <h1>Luna Cinema's</h1>
-        <p>We're top of the pecking order</p>
+          <h1> Welcome to Luna Cinemas </h1>
+          <h5> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h5>
       </Container>
     </Jumbo>
   </Styles>

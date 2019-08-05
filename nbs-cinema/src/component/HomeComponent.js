@@ -51,8 +51,6 @@ class HomeComponent extends Component {
         return (
             <div>
                 <Jumbotron/>
-                <h1> Welcome to Luna Cinemas </h1>
-                <h5> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h5>
                 <Carousel
                     className={"carousel"}
                     controls = {true}

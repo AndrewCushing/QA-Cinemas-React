@@ -23,7 +23,7 @@ class Scrum extends Component {
 
     render() {
         return (<>
-                <h1>Scrum Discription</h1>
+                <h1>Scrum Description</h1>
 
                 <div>
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
