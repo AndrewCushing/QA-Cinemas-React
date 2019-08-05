@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/HeaderComponent.js" afterDir="false" />
-    </list>
+    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564920477198</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed path of deluxe screen image">
+      <created>1564984315642</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1564984315642</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +173,7 @@
     <MESSAGE value="Carl's Second Commit" />
     <MESSAGE value="Put in a MapContainer so that the code will compile" />
     <MESSAGE value="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working." />
-    <option name="LAST_COMMIT_MESSAGE" value="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working." />
+    <MESSAGE value="Fixed path of deluxe screen image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed path of deluxe screen image" />
   </component>
 </project>
