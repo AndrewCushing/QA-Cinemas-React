@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MapContainer from '../component/MapContainer';
 import LunaMap from '../component/LunaMap';
 import Media from "react-bootstrap/Media";
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import MovieRow from  '../component/MovieRow';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class UpcomingFilms extends Component {
 
@@ -20,14 +22,12 @@ class UpcomingFilms extends Component {
         };
         fetch('http://localhost:8080/getupcomingfilms')
             .then(res => res.json() ).catch(console.log).then(results => {
-            const movies = results.contentList;
-            movies.forEach(movie => {
-                movie.classification = classifications[movie.classification];
-                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
-                movieRows.push(movieRow)
-            });
+                const movies = results.contentList.map(movie => ({
+                        ...movie,
+                        classification: classifications[movie.classification]
+                    }));
             this.setState({
-                rows:movieRows
+                rows: movies
             });
         });
     };
@@ -45,17 +45,15 @@ class UpcomingFilms extends Component {
 
     render() {
         return (
-            <div>
-                {this.state.rows}
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-
-            </div>
+            <Row>
+                { this.state.rows.map(movie => (
+                    <Col xs="10">
+                        <MovieRow key={movie.id} movie={movie}/>
+                    </Col>
+                    )) }
+            </Row>
         )
     }
 }
 
-export default UpcomingFilms
+export default UpcomingFilms;

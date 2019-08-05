@@ -1,14 +1,13 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router-dom';
 import Card from "react-bootstrap/Card";
+
 class MovieRow extends React.Component {
     render () {
-        return (<>
-
-
-            <Card style={{width:275}} key={this.props.movie.id}>
+        return (
+            <Card bg="dark" text="white" style={{ width: '30vh', maxHeight: '100rem' }} key={this.props.movie.id}>
                 <Link to ={"/FilmDetails/" + this.props.movie.id}>
-                    <Card.Img variant="top" style = {{width:275}} src={this.props.movie.imagePath}/>
+                    <Card.Img variant="top"  src={this.props.movie.imagePath}/>
                 </Link>
                 <Card.Body>
                     <Link to ={"/FilmDetails/" + this.props.movie.id}>
@@ -31,7 +30,6 @@ class MovieRow extends React.Component {
                     </small>
                 </Card.Footer>
             </Card>
-        </>
         )
     }
 }

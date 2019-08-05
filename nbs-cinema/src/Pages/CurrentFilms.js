@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import MovieRow from '../component/MovieRow'
 
-import { BrowserRouter as Router} from 'react-router-dom'
-
-
 class CurrentFilms extends Component {
 
     constructor(props) {
@@ -53,10 +50,7 @@ class CurrentFilms extends Component {
 
                 {this.state.rows}
 
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
+
             </div>
 
         )

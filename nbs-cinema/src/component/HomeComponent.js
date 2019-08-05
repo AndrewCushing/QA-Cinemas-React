@@ -2,25 +2,6 @@ import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import {Jumbotron} from "./Jumbotron";
 
-class CurrentFilms extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-        console.log("This is my initializer")
-        const movies = [
-            {id: 0, film_src: "ConAir.jpg",  title: "Con Air"},
-            {id: 1, film_src: "GrandBH.jpg",  title: "Grand Budapest Hotel"}
-        ]
-        const films =  movies.map((F) =>
-            ( <film_src key={F.id} title={F.title} />
-            ));
-        return(
-            <div>
-                {films}
-            </div>
-        )
-    };
-}
 
 
 class HomeComponent extends Component {
