@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
-// import '../App.css';
 import logo from '../../public/lunacinemalogo.jpg';
 
 
@@ -17,6 +16,7 @@ class HeaderComponent extends Component {
 
     performSearch(event){
         event.preventDefault();
+        console.log("hi");
         window.location=('http://localhost:3000/search/'+document.getElementById("searchBar").value);
     };
 
@@ -44,11 +44,11 @@ class HeaderComponent extends Component {
                             <li><Link className="nav-link" to="/new">New Releases</Link></li>
                         </ul>
                     </div>
-                    <div style={{marginLeft:400,paddingTop:11}}className="input-group mb-4 fixed-right">
+                    <div style={{marginLeft:400,paddingTop:11}} className="input-group mb-4 fixed-right">
                         <form onSubmit={this.performSearch}>
                             <input type="text" className="form-control" placeholder="Search me" aria-label="Search" aria-describedby="basic-addon2" id="searchBar"/>
                             <div className="input-group-append">
-                                <button  className="btn btn-outline-secondary" type="submit"><i className="fa fa-search"></i></button>
+                                <button  className="btn btn-outline-secondary"><i className="fa fa-search"></i></button>
                             </div>
                         </form>
                     </div>

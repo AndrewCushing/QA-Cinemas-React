@@ -52,7 +52,7 @@ Now every seat is the best in the house, it’s time to experience films the way
 </Media>
 <br/>
 <Media>
-  <img src={ ("/public/deluxescreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ ("/deluxescreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
   <br/>
     <h5>Premium Comfort</h5>

@@ -3,40 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/public/ClassificationImages/Cine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/HeaderComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MapContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MapContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Classifications images/BBFC_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Classifications images/BBFC_12A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Classifications images/BBFC_15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Classifications images/BBFC_18.png" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/ClassificationImages/18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Classifications images/BBFC_PG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Classifications images/BBFC_R18.png" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/ClassificationImages/R18.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Classifications images/BBFC_U.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Mountain.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/Mountain.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/Spider.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/Spider.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/cinema.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/cinema.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/compass-3_2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/compass-3_2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/deluxescreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/deluxescreen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/deluxescreenimage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/deluxescreenimage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/luna_building.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/luna_building.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/lunacinemalogo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/lunacinemalogo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/lunacinemalogoSmall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/lunacinemalogoSmall.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/qacinemalogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/qacinemalogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/standardscreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/standardscreen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/images/standardscreenimage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/public/standardscreenimage.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564578835718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working.">
+      <created>1564920477198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564920477198</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +169,7 @@
     <MESSAGE value="Carl's First Commit" />
     <MESSAGE value="Carl's Second Commit" />
     <MESSAGE value="Put in a MapContainer so that the code will compile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Put in a MapContainer so that the code will compile" />
+    <MESSAGE value="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working." />
   </component>
 </project>
