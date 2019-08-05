@@ -5,7 +5,7 @@ import Card from "react-bootstrap/Card";
 class MovieRow extends React.Component {
     render () {
         return (
-            <Card bg="dark" text="white" style={{ width: '30vh', maxHeight: '100rem' }} key={this.props.movie.id}>
+            <Card style={{width:300}} key={this.props.movie.id}>
                 <Link to ={"/FilmDetails/" + this.props.movie.id}>
                     <Card.Img variant="top"  src={this.props.movie.imagePath}/>
                 </Link>

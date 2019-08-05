@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import MovieDetails from '../component/MovieDetails'
+import Col from "react-bootstrap/Col";
+import MovieRow from "../component/MovieRow";
+import Row from "react-bootstrap/Row";
 
 class FilmDetails extends Component {
 
@@ -20,29 +23,28 @@ class FilmDetails extends Component {
         };
         fetch('http://localhost:8080/getfilm/'+this.props.match.params.id)
             .then(res => res.json() ).catch(console.log).then(results => {
-            const movies = results.contentList;
-            movies.forEach(movie => {
-                movie.classification = classifications[movie.classification];
-                const movieRow = <MovieDetails key={movie.id} movie={movie}/>;
-                movieRows.push(movieRow)
+                const movies = results.contentList;
+                movies.forEach(movie => {
+                    movie.classification = classifications[movie.classification];
+                    const movieRow = <MovieDetails key={movie.id} movie={movie}/>;
+                    movieRows.push(movieRow)
+                });
+        this.setState({
+            rows:movieRows
+
+
+
+                //     .map(movie => ({
+            //                 //     ...movie,
+            //                 //     classification: classifications[movie.classification]
+            //                 // }));
+            //                 // this.setState({
+            //                 //     rows: movies
+                });
             });
-            this.setState({
-                rows:movieRows
-            });
-        });
-    };
+        };
 
-    handleHome = () => {
 
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
 
     render() {
         return (
@@ -50,14 +52,16 @@ class FilmDetails extends Component {
 
                 {this.state.rows}
 
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
+            {/*<Row>*/}
+            {/*    { this.state.rows.map(movie => (*/}
+            {/*        <Col md="4">*/}
+            {/*            <MovieRow key={movie.id} movie={movie}/>*/}
+            {/*        </Col>*/}
+            {/*    )) }*/}
+            {/*</Row>*/}
             </div>
-
         )
+        }
     }
-}
 
 export default FilmDetails

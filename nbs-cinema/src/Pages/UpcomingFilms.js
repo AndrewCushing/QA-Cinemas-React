@@ -47,7 +47,7 @@ class UpcomingFilms extends Component {
         return (
             <Row>
                 { this.state.rows.map(movie => (
-                    <Col xs="2">
+                    <Col md="4">
                         <MovieRow key={movie.id} movie={movie}/>
                     </Col>
                     )) }
