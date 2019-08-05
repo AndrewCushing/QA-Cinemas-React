@@ -3,7 +3,6 @@ import MovieRow from './MovieRow.js';
 
 import { BrowserRouter as Router} from 'react-router-dom'
 
-
 class SearchResults extends Component {
 
     constructor(props) {
@@ -38,25 +37,11 @@ class SearchResults extends Component {
         });
     };
 
-    handleHome = () => {
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
         return (
             <div>
                 <Router>
                     {this.state.rows}
-                    <div>
-                        <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                        <button type="close" onClick={this.handleClose}>Close</button>
-                    </div>
                 </Router>
             </div>
         )

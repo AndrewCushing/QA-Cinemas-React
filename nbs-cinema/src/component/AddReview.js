@@ -8,22 +8,26 @@ export default class AddReview extends React.Component {
         this.submitReview = this.submitReview.bind(this);
     }
 
-    submitReview(){
-        const username = document.getElementById("username");
-        const rating = document.getElementById("rating");
-        const review = document.getElementById("comment");
+    submitReview(event){
+        event.preventDefault();
+        const username = document.getElementById("username").value;
+        const rating = document.getElementById("rating").value;
+        const review = document.getElementById("review").value;
         fetch('http://localhost:8080/insertreview/'+this.props.filmId+"/"+rating+"/"+review+"/"+username)
-            .then(res => res.json() ).catch(console.log).then(results => {
-            this.setState({
-                submitted:results.successful
-            });
+            .then(res => res.json() ).catch(window.alert("Unable to submit review. Unlucky!")).then(results => {
+            console.log(results.successful);
+            if (results.successful){
+                window.location = 'http://localhost:3000/Reviews/'+this.props.filmId;
+            } else {
+                window.alert("Unable to submit review. Unlucky!");
+            }
         });
     }
 
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.submitReview}>
                     <div>
                         <input type="text" placeholder="username" id="username"/>
                     </div>
@@ -37,7 +41,10 @@ export default class AddReview extends React.Component {
                         </select>
                     </div>
                     <div>
-                        <textarea rows={3} placeholder={"Enter your comment here"} id="comment"/>
+                        <textarea rows={3} placeholder={"Enter your review here"} id="review"/>
+                    </div>
+                    <div>
+                        <button>Submit</button>
                     </div>
                 </form>
             </div>
