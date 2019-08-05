@@ -45,7 +45,7 @@ class notfound extends Component {
         </div>
         
       </Alert>
-            <img src={ ("/compass-3_2.gif") } style={divStyle} Transformation height="330" width="450" crop="fill" />
+            <img src={ ("/compass-3_2.gif") } alt="compass" style={divStyle} Transformation height="330" width="450" crop="fill" />
       
 
 

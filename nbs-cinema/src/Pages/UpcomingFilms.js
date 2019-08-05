@@ -11,7 +11,7 @@ class UpcomingFilms extends Component {
     };
 
     componentDidMount(){
-        let movieRows = [];
+
         const classifications = {
             ClassU:"/ClassificationImages/U.png",
             ClassPG:"/ClassificationImages/PG.png",
@@ -47,7 +47,7 @@ class UpcomingFilms extends Component {
         return (
             <Row>
                 { this.state.rows.map(movie => (
-                    <Col xs="10">
+                    <Col xs="2">
                         <MovieRow key={movie.id} movie={movie}/>
                     </Col>
                     )) }

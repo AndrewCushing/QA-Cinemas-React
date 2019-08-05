@@ -45,7 +45,7 @@ class HomeComponent extends Component {
                         <img
                             className="CaroImg"
                             src="/luna_building.jpg"
-                            alt="External image of our cinema"
+                            alt="cinema"
                         />
 
                     </Carousel.Item>
