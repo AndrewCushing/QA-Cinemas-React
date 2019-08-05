@@ -43,11 +43,12 @@ class LunaCinemaApp extends Component {
                             <Route path="/" exact component={HomeComponent} />
                             <Route path="/Home" component={HomeComponent} />
                             <Route path="/About" exact component={About} />
+                            <Route path="/bbfc" component={() => window.location = "https://bbfc.co.uk/"} />
                             <Route path="/Booking/:id" component={Booking} />
-                            <Route path="/classifications" component={Classification} />
+                            <Route path="/Classification" component={Classification} />
+                            <Route path="/CommentBoard/:filmId/:reviewId" component={CommentBoard} />
                             <Route path="/contact" component={Contact} />
                             <Route path="/CurrentFilms" component={CurrentFilms} />
-                            <Route path="/TestFilms" component={TestFilms} />
                             <Route path="/DeluxeScreen" component={Deluxe} />
                             <Route path="/DiscussionBoard" component={Discussion} />
                             <Route path="/Email" component={Email} />
@@ -56,14 +57,13 @@ class LunaCinemaApp extends Component {
                             <Route path="/OpeningTimes" component={Opening} />
                             <Route path="/Payment" component={Payment} />
                             <Route path="/PlacesToGo" component={PlacesToGo} />
+                            <Route path="/Reviews/:filmId" component={Reviews} />
                             <Route path="/Screens" component={Screens} />
                             <Route path="/Scrum" component={Scrum} />
                             <Route path="/StandardScreen" component={Standard} />
-                            <Route path="/UpcomingFilms" component={UpcomingFilms} />
                             <Route path="/search/:searchText" component={SearchResults} />
-                            <Route path="/Reviews/:filmId" component={Reviews} />
-                            <Route path="/CommentBoard/:filmId/:reviewId" component={CommentBoard} />
-                            <Route path="/bbfc" component={() => window.location = "https://bbfc.co.uk/"} />
+                            <Route path="/TestFilms" component={TestFilms} />
+                            <Route path="/UpcomingFilms" component={UpcomingFilms} />
                             <Route component={NoMatch} />
                         </Switch>
                         </Router>
