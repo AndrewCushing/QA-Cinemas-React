@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/NoReviewsFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +178,28 @@
       <option name="project" value="LOCAL" />
       <updated>1565016461141</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Put username above review in review">
+      <created>1565017510377</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565017510377</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added a fetch to insertreview">
+      <created>1565021879633</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565021879633</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finished ability to submit reviews from front end">
+      <created>1565024354480</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565024354480</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +243,9 @@
     <MESSAGE value="Pulled all changes from Master." />
     <MESSAGE value="File path update." />
     <MESSAGE value="Put username above review in review header" />
-    <option name="LAST_COMMIT_MESSAGE" value="Put username above review in review header" />
+    <MESSAGE value="Put username above review in review" />
+    <MESSAGE value="Added a fetch to insertreview" />
+    <MESSAGE value="Finished ability to submit reviews from front end" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished ability to submit reviews from front end" />
   </component>
 </project>

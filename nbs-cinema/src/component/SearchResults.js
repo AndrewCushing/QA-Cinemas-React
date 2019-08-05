@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MovieRow from './MovieRow.js';
 
 import { BrowserRouter as Router} from 'react-router-dom'
+import NotFound from "../Pages/NotFound";
 
 class SearchResults extends Component {
 
@@ -34,6 +35,8 @@ class SearchResults extends Component {
             this.setState({
                 rows:movieRows
             });
+        }).catch(()=>{
+            this.setState({rows:<NotFound/>})
         });
     };
 
