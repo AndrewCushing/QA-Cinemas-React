@@ -19,7 +19,7 @@ const Styles = styled.div`
 
   `;
 
-export class NavigationBar extends Component {
+export default class NavigationBar extends Component {
     constructor(){
         super();
         this.state={
