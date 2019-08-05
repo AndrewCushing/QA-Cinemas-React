@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import Review from './Review';
+import AddReview from "./AddReview";
 
 export default class ReviewBoard extends Component {
 
@@ -36,7 +37,8 @@ export default class ReviewBoard extends Component {
                     }
                     this.setState({
                         movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
-                        reviews:reviewArr
+                        reviews:reviewArr,
+                        filmId:movies[0].id
                     });
             });
         });
@@ -55,10 +57,7 @@ export default class ReviewBoard extends Component {
                     </tbody>
                 </table>
                 {this.state.reviews}
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
+                <AddReview filmId={this.state.filmId}/>
             </div>
 
         )
