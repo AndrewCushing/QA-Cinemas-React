@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(/Mountain.jpg) no-repeat fixed bottom;
+    background: url(/Moon.jpg) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
     height: 200px;

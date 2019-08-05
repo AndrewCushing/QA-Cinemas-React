@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="2f82623e-3227-4d73-b882-d8325287eadc" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetailsArray.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -216,6 +217,7 @@
             <path>
               <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />

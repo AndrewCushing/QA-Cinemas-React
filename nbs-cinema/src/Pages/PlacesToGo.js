@@ -2,6 +2,7 @@ import React from 'react';
 import MapContainer from '../component/MapContainer';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
+import {Jumbotron} from "../component/Jumbotron";
 const FB = '/F&B.jpg';
 const Chiquto = '/Chiquto.jpg';
 const HW = '/Hall&Woodhouse.jpg';
