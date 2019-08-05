@@ -16,7 +16,7 @@ class MovieDetails extends React.Component {
                     <Card.Title>{this.props.movie.title}<Card.Img variant="top" style = {{width:50, paddingLeft:10, marginBottom:10}} src={this.props.movie.classification}/></Card.Title>
                 </Link>
 
-                <Card.Text><label>Synopsis:</label> {this.props.movie.detailedDescription}
+                <Card.Text><label>Synopsis:</label> {this.props.movie.detailedDescription}<br/>
                     <label>Director:</label> <ExtraDetails content={this.props.movie.directors}/><br/>
                     <label>Starring:</label> <ExtraDetails content={this.props.movie.actors}/><br/>
                     <label>Genre:</label> <ExtraDetails content={this.props.movie.genres}/><br/>

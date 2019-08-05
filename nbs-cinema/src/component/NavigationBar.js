@@ -16,6 +16,12 @@ const Styles = styled.div`
     background: black; 
 }
 
+.navbar-nav .nav-link {
+    color: #36A1CF;
+    font-size: x-large;
+ 
+}
+
   `;
 
 export default class NavigationBar extends Component {
