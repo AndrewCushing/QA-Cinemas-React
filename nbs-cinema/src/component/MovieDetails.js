@@ -4,10 +4,11 @@ import ExtraDetails from './MovieDetailsArray.js'
 import Card from "react-bootstrap/Card";
 
 
+
 class MovieDetails extends React.Component {
     render () {
         return (
-        <Card style={{width:300}} key={this.props.movie.id}>
+        <Card className="card" style={{width:270}} key={this.props.movie.id}>
             <Link to ={"/FilmDetails/" + this.props.movie.id}>
                 <Card.Img variant="top"  src={this.props.movie.imagePath}/>
             </Link>

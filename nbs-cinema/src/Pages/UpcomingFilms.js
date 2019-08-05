@@ -32,22 +32,11 @@ class UpcomingFilms extends Component {
         });
     };
 
-    handleHome = () => {
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
         return (
             <Row>
                 { this.state.rows.map(movie => (
-                    <Col md="4">
+                    <Col md="6">
                         <MovieRow key={movie.id} movie={movie}/>
                     </Col>
                     )) }

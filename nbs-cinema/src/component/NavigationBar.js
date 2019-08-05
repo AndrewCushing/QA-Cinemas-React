@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {
     MDBNavbar, MDBNavbarBrand,MDBIcon, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
+    MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 } from "mdbreact";
 import styled from 'styled-components';
 const Logo = '/qacinemalogo.png'
@@ -8,18 +9,29 @@ const Logo = '/qacinemalogo.png'
 const Styles = styled.div`
 .navbar {
     background: black; 
-    padding: 25px;
-    margin-bottom:0px;
+    
+    
+ .navbar-brand>img {
+    padding:20px;
+    margin-top:20px;
+    margin-bottom: 15px;
+} 
     
 }
 .navbar-collapse {
     background: black; 
+   
 }
 
 .navbar-nav .nav-link {
     color: #36A1CF;
     font-size: x-large;
  
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    margin-left:auto;
+    margin-right:40px;
 }
 
   `;
@@ -39,12 +51,12 @@ export default class NavigationBar extends Component {
         window.location=('http://localhost:3000/search/'+document.getElementById("searchBar").value);
     };
 
-     state = {
+    state = {
         isOpen: false
     };
     toggleCollapse = () => {
-       this.setState({ isOpen: !this.state.isOpen });
-     }
+        this.setState({ isOpen: !this.state.isOpen });
+    }
 
     render() {
         return (
