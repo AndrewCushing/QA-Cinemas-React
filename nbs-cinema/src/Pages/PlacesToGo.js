@@ -2,12 +2,12 @@ import React from 'react';
 import MapContainer from '../component/MapContainer';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
-import FB from '../images/F&B.jpg';
-import Chiquto from '../images/Chiquto.jpg';
-import HW from '../images/Hall&Woodhouse.jpg';
-import PizzaHut from '../images/PizzaHut.jpg';
-import Nandos from '../images/Nandos.jpg';
-import Fratellos from '../images/Fratellos.jpg';
+const FB = '/F&B.jpg';
+const Chiquto = '/Chiquto.jpg';
+const HW = '/Hall&Woodhouse.jpg';
+const PizzaHut = '/PizzaHut.jpg';
+const Nandos = '/Nandos.jpg';
+const Fratellos = '/Fratellos.jpg';
 
 
 

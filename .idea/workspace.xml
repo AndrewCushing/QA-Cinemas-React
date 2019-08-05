@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="" />
+    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564984315642</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merged changes from origin">
+      <created>1564984575425</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1564984575425</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +183,7 @@
     <MESSAGE value="Put in a MapContainer so that the code will compile" />
     <MESSAGE value="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working." />
     <MESSAGE value="Fixed path of deluxe screen image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed path of deluxe screen image" />
+    <MESSAGE value="Merged changes from origin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged changes from origin" />
   </component>
 </project>
