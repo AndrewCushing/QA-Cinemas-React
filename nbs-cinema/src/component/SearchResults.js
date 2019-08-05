@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MovieRow from './MovieRow.js'
+import MovieRow from './MovieRow.js';
 
 import { BrowserRouter as Router} from 'react-router-dom'
 
@@ -8,7 +8,10 @@ class SearchResults extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {rows:[]}
+        this.state = {
+            searchText:this.props.match.params.searchText,
+            rows:[]
+        };
     };
 
     componentDidMount(){
@@ -21,7 +24,7 @@ class SearchResults extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getfilms')
+        fetch('http://localhost:8080/searchfilms/'+this.props.match.params.searchText)
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies.forEach(movie => {
@@ -36,12 +39,10 @@ class SearchResults extends Component {
     };
 
     handleHome = () => {
-
         this.props.history.push('/home');
     };
 
     handleClose = () => {
-
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
         }
@@ -50,10 +51,8 @@ class SearchResults extends Component {
     render() {
         return (
             <div>
-
                 <Router>
                     {this.state.rows}
-
                     <div>
                         <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                         <button type="close" onClick={this.handleClose}>Close</button>

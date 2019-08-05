@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
-// import HomeService from '../service/HomeService';
+import Carousel from 'react-bootstrap/Carousel'
+
+class CurrentFilms extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {}
+        console.log("This is my initializer")
+        const movies = [
+            {id: 0, film_src: "ConAir.jpg",  title: "Con Air"},
+            {id: 1, film_src: "GrandBH.jpg",  title: "Grand Budapest Hotel"}
+        ]
+        const films =  movies.map((F) =>
+            ( <film_src key={F.id} title={F.title} />
+            ));
+        return(
+            <div>
+                {films}
+            </div>
+        )
+    };
+}
+
 
 class HomeComponent extends Component {
     state = {
-       
     };
-
     componentDidMount() {
-
         // HomeService.executeGetService()
         //     .then(response => {
         //         this.setState({
@@ -15,7 +33,6 @@ class HomeComponent extends Component {
         //         })
         //     })
     };
-
     // gotoBeanComponent = () => {
     //     this.props.history.push('/add-home')
     // }
@@ -32,7 +49,44 @@ class HomeComponent extends Component {
     render() {
         return (
             <div>
-                <h1>Home Component</h1>
+                <h1> Welcome to Luna Cinemas </h1>
+                <h5> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h5>
+                <Carousel
+                    className={"carousel"}
+                    controls = {true}
+                    fade = {true}
+                    interval = {4000}
+                    wrap = {true}
+                    indicators = {false}
+
+                >
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/luna_building.jpg"
+                            alt="External image of our cinema"
+                        />
+
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/Spider.jpg"
+                            alt="Spiderman: Far from home poster"
+                        />
+                    </Carousel.Item>
+
+
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/UpcomingFilmsImages/Goodboys.jpg"
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+
+
+                </Carousel>
                 {/*<div>*/}
 
                 {/*    <ul className = "list-group">*/}
