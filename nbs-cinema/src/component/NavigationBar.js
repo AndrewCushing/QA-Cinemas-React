@@ -8,7 +8,8 @@ const Logo = '/qacinemalogo.png'
 
 const Styles = styled.div`
 .navbar {
-    background: black; 
+    background: black;
+    margin-bottom: 0px;
     
     
  .navbar-brand>img {

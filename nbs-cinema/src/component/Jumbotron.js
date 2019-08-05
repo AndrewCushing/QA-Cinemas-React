@@ -10,6 +10,7 @@ const Styles = styled.div`
     height: 200px;
     position: relative;
     z-index: -2;
+   
   }
 
   .overlay {
@@ -26,7 +27,7 @@ const Styles = styled.div`
 
 export const Jumbotron = () => (
   <Styles>
-    <Jumbo fluid className="jumbo">
+    <Jumbo fluid style = {{width:"100%"}} className="jumbo">
       <div className="overlay"></div>
       <Container>
           <h1> Welcome to Luna Cinemas </h1>
