@@ -48,18 +48,11 @@ class FilmDetails extends Component {
 
     render() {
         return (
-            <div>
-
-                {this.state.rows}
-
-            {/*<Row>*/}
-            {/*    { this.state.rows.map(movie => (*/}
-            {/*        <Col md="4">*/}
-            {/*            <MovieRow key={movie.id} movie={movie}/>*/}
-            {/*        </Col>*/}
-            {/*    )) }*/}
-            {/*</Row>*/}
-            </div>
+            <Row>
+                    <Col md="4">
+                        {this.state.rows}
+                    </Col>
+            </Row>
         )
         }
     }
