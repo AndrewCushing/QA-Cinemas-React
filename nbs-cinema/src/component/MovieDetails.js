@@ -23,9 +23,6 @@ class MovieDetails extends React.Component {
                     <a href ={"/Booking/" + this.props.movie.id}>
                         <button className="bookButton"><i class="fas fa-ticket-alt"></i>Book</button>
                     </a>
-                    <a href ={"/FilmDetails/" + this.props.movie.id}>
-                        <button className="infoButton"><i class="fas fa-info-circle"></i>More Info</button>
-                    </a>
                 </td>
             </tr>
             </tbody>
