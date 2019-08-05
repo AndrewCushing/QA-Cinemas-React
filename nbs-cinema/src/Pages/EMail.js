@@ -34,7 +34,7 @@ class EMail extends Component {
         return (<>
                 <div >
                     <label>{EmailResponse}</label>
-                    <form onSubmit={this.handleSubmit} >
+                    <form id={"emailForm"} onSubmit={this.handleSubmit} >
                         <h1>Email</h1>
                         <input required type="text" className="form-control" name ="Forename" id={"Forename"} maxLength="30"  placeholder="Forename" value={Forename} onChange={this.handleOnChange} />
                         <input required type="text" className="form-control"  name ="Surname" id={"Surname"} maxLength="30" placeholder="Surname" value={Surname} onChange={this.handleOnChange}/>

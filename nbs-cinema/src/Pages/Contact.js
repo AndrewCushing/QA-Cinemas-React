@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../styles/ContactComponent.css';
 class Contact extends Component {
 
     constructor(props) {
@@ -15,18 +15,18 @@ class Contact extends Component {
 
     render() {
         return (<>
-            <h1>Contact</h1>
-            <div className="ContactAdd">
-                <h4> Address </h4>
-                <h6> Alexandra House </h6>
-                <h6> Whittingham Dr </h6>
-                <h6> Wroughton</h6>
-                <h6> Swindon </h6>
-                <h6> SN4 0QJ </h6>
+            <h1>Contact Us</h1>
+            <div className="EmailAdd">
+                <h3> Address </h3>
+                <h5> Alexandra House </h5>
+                <h5> Whittingham Dr </h5>
+                <h5> Wroughton</h5>
+                <h5> Swindon </h5>
+                <h5> SN4 0QJ </h5>
             </div>
             <br/>
             <div className="EmailAdd">
-                <h4>Email </h4>
+                <h3>Email </h3>
                  <button className="emailButton" id="emailButton" type="submit"
                         onClick={this.handleEmailSubmit}>Email Luna Cinemas</button>
             </div>

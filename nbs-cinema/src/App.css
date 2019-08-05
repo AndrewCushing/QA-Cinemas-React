@@ -109,28 +109,6 @@ h5 {
   font-size: 100%;
 }
 
-.CaroImg{
-   height: 100%;
-   widght: 100%;
- }
-
-.carousel {
-  /* any dimensions are fine, it can be responsive with max-width */
-  position: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  width: 80%;
-  height: 300px;
-  background-image: linear-gradient(to right,black,dimgrey, dimgrey,black );
-  border: lightcoral;
-  border: 100px;
-}
-
-.carousel-inner {
-  /* make sure your .items will get correct height */
-  height: 80%;
-}
-
 .item {
   background-size: cover;
   background-position: 70% 70%;

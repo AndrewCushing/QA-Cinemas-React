@@ -2,59 +2,74 @@ ContactComponent.css
 
 .ContactAdd {
     text-align: left;
-    color: dimgrey;
+    color: black;
     border-style: solid;
+    background-color: lightsalmon;
     padding: 3px;
 }
 
 
 .EmailAdd {
     text-align: left;
-    color: dimgrey;
+    color: black;
     border-style: solid;
+    background-color: #e6fbff;
     padding: 3px;
 }
 
-h4{
-    text-decoration: underline;
-
+h2.solid {
+    border-style: solid;
 }
 
-h2.solid {border-style: solid;}
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+    color: black;
+    font: 15px arial, sans-serif;
+}
+
 
 
 
 .emailButton{
-    background-color: lightskyblue;
+    background-color: #42ff87;
     border: none;
     border-radius: 6px;
-    color: white;
     padding: 10px 18px;
     text-align: center;
+    font: 12px arial, sans-serif;
     font-size: 16px;
-    color: black;
+    color: white;
     margin: 4px 2px;
     opacity: 0.6;
-    transition: 0.8s;
+    transition: 0.6s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 460px;
+    margin-right: 450px;
 
 }
 
 .emailButton:hover {opacity: 1}
 
 
-form{
+#emailForm{
     width: 50%;
+    font: 12px arial, sans-serif;
     display: inline-block;
     border-radius: 6px;
     border-width: thick;
     background-color: #c6d8f5;
-    background-image: linear-gradient(grey, whitesmoke,grey);
-    padding-top: 0px;
-    padding-left: 60px;
-    padding-right: 60px;
+    background-image: linear-gradient(to bottom right, #c2ecff);
+
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 5px;
 }
 
@@ -68,7 +83,9 @@ textarea {
 
 input[type=submit] {
     width: 40%;
-    background-color: lightblue;
+    background-color: #335170;
+    transition: 0.6s;
+    font: 16px arial, sans-serif;
     color: white;
     padding: 7px 10px;
     margin: 4px 0;
@@ -78,6 +95,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: lightskyblue;
+    font: 18px arial, sans-serif;
+    transition: 0.6s;
+    background-color: #2E9FD1;
 
 }
