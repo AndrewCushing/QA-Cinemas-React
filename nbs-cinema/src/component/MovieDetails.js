@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import ExtraDetails from './MovieDetailsArray.js'
 
 
 class MovieDetails extends React.Component {
@@ -31,13 +32,3 @@ class MovieDetails extends React.Component {
 }
 export default withRouter (MovieDetails);
 
-class ExtraDetails extends React.Component{
-    render(){
-        let arr =[];
-        arr.push(this.props.content[0])
-        for(let i=1;i<this.props.content.length;i++){
-            arr.push(", "+this.props.content[i]);
-        }
-        return arr;
-    }
-}
