@@ -27,7 +27,7 @@ class MovieDetails extends React.Component {
             </tr>
             </tbody>
         </table>
-    }
+    };
 }
 export default withRouter (MovieDetails);
 
@@ -36,8 +36,8 @@ class ExtraDetails extends React.Component{
         let arr =[];
         arr.push(this.props.content[0])
         for(let i=1;i<this.props.content.length;i++){
-            arr.push(", "+this.props.content[i])
+            arr.push(", "+this.props.content[i]);
         }
-        return arr
+        return arr;
     }
 }
