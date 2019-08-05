@@ -1,62 +1,75 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import HeaderComponent from './HeaderComponent'
-import FooterComponent from './FooterComponent'
-import About from './About'
-import Booking from './Booking'
-import Classification from './Classifications'
-import Contact from './Contact'
-import CurrentFilms from './CurrentFilms'
-import Deluxe from './DeluxeScreen'
-import Discussion from './DiscussionBoard'
-import EMail from './EMail'
-import FilmDetails from './FilmDetails'
-import GettingThere from './GettingThere'
-import HomeComponent from './HomeComponent'
-import Opening from './OpeningTimes'
-import Payment from './Payment'
-import PlacesToGo from './PlacesToGo'
-import Screens from './Screens'
-import Scrum from './ScrumDescription'
-import Standard from './StandardScreen'
-import NewReleases from './UpcomingFilms'
+import About from '../Pages/About';
+import Booking from '../Pages/Booking';
+import Classification from '../Pages/Classifications';
+import Contact from '../Pages/Contact';
+import CurrentFilms from '../Pages/CurrentFilms';
+import TestFilms from '../Pages/TestFilms'
+import Deluxe from '../Pages/DeluxeScreen';
+import Discussion from './DiscussionBoard';
+import Email from '../Pages/EMail';
+import FilmDetails from '../Pages/FilmDetails';
+import GettingThere from '../Pages/GettingThere';
+import HomeComponent from './HomeComponent';
+import Opening from '../Pages/OpeningTimes';
+import Payment from '../Pages/Payment';
+import { PlacesToGo } from '../Pages/PlacesToGo';
+import Screens from '../Pages/Screens';
+import Scrum from '../Pages/ScrumDescription';
+import Standard from '../Pages/StandardScreen';
+import UpcomingFilms from '../Pages/UpcomingFilms';
+import SearchResults from './SearchResults';
+import Reviews from './ReviewBoard';
+import NoMatch from '../Pages/NotFound';
+import CommentBoard from './CommentBoard';
+import { Layout } from './Layout';
+import NavigationBar  from './NavigationBar';
+import { Jumbotron } from './Jumbotron';
+import  Footer  from  './Footer';
+
 
 class LunaCinemaApp extends Component {
     render() {
         return (
-            <>
-                <Router>
-                    <>
-                        <HeaderComponent />
-                        <div className="container">
-                            <Switch>
-                                <Route path="/" exact component={HomeComponent} />
-                                <Route path="/home" component={HomeComponent} />
-                                <Route path="/about" exact component={About} />
-                                <Route path="/Booking" component={Booking} />
-                                <Route path="/classifications" component={Classification} />
-                                <Route path="/contact" component={Contact} />
-                                <Route path="/CurrentFilms" component={CurrentFilms} />
-                                <Route path="/DeluxeScreen" component={Deluxe} />
-                                <Route path="/DiscussionBoard" component={Discussion} />
-                                <Route path="/email" component={EMail} />
-                                <Route path="/FilmDetails" component={FilmDetails} />
-                                <Route path="/travel" component={GettingThere} />
-                                <Route path="/OpeningTimes" component={Opening} />
-                                <Route path="/payment" component={Payment} />
-                                <Route path="/nearby" component={PlacesToGo} />
-                                <Route path="/screens" component={Screens} />
-                                <Route path="/Scrum" component={Scrum} />
-                                <Route path="/StandardScreen" component={Standard} />
-                                <Route path="/new" component={NewReleases} />
-                            </Switch>
-                        </div>
-                        <FooterComponent />
-                    </>
-                </Router>
-            </>
-        )
+                <React.Fragment>
+                <NavigationBar/>
+                <Jumbotron/>
+                <Layout>
+                    <Router>
+                        <Switch>
+                            <Route path="/" exact component={HomeComponent} />
+                            <Route path="/Home" component={HomeComponent} />
+                            <Route path="/About" exact component={About} />
+                            <Route path="/bbfc" component={() => window.location = "https://bbfc.co.uk/"} />
+                            <Route path="/Booking/:id" component={Booking} />
+                            <Route path="/Classification" component={Classification} />
+                            <Route path="/CommentBoard/:filmId/:reviewId" component={CommentBoard} />
+                            <Route path="/contact" component={Contact} />
+                            <Route path="/CurrentFilms" component={CurrentFilms} />
+                            <Route path="/DeluxeScreen" component={Deluxe} />
+                            <Route path="/DiscussionBoard" component={Discussion} />
+                            <Route path="/Email" component={Email} />
+                            <Route path="/FilmDetails/:id" component={FilmDetails} />
+                            <Route path="/Travel" component={GettingThere} />
+                            <Route path="/OpeningTimes" component={Opening} />
+                            <Route path="/Payment" component={Payment} />
+                            <Route path="/PlacesToGo" component={PlacesToGo} />
+                            <Route path="/Reviews/:filmId" component={Reviews} />
+                            <Route path="/Screens" component={Screens} />
+                            <Route path="/Scrum" component={Scrum} />
+                            <Route path="/StandardScreen" component={Standard} />
+                            <Route path="/search/:searchText" component={SearchResults} />
+                            <Route path="/TestFilms" component={TestFilms} />
+                            <Route path="/UpcomingFilms" component={UpcomingFilms} />
+                            <Route component={NoMatch} />
+                        </Switch>
+                        </Router>
+                </Layout>
+                <Footer/>
+            </React.Fragment>
+        );
     }
 }
 
