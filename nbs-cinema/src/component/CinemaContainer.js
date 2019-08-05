@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-
 import About from '../Pages/About';
 import Booking from '../Pages/Booking';
 import Classification from '../Pages/Classifications';
@@ -26,7 +25,7 @@ import Reviews from './ReviewBoard';
 import NoMatch from '../Pages/NotFound';
 import CommentBoard from './CommentBoard';
 import { Layout } from './Layout';
-import { NavigationBar }  from './NavigationBar';
+import NavigationBar  from './NavigationBar';
 import { Jumbotron } from './Jumbotron';
 import  Footer  from  './Footer';
 
