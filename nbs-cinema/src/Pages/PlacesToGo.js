@@ -1,4 +1,5 @@
 import React from 'react';
+import { PlacesJumbotron } from "../component/PlacesJumbotron";
 import MapContainer from '../component/MapContainer';
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
@@ -12,21 +13,24 @@ const Fratellos = '/Fratellos.jpg';
 
 
 
+
+
 export const PlacesToGo = () =>(
     <div>
+        <PlacesJumbotron/>
         <div>
             <MapContainer/>
         </div>
 
         <CardGroup style={{margin: 25}}>
             <Card>
-                <Card.Img variant="top" src={FB}/>
                 <Card.Body>
                     <Card.Title><a href="Frankie & Benny's" name="Frankie & Benny's">Frankie & Benny's</a></Card.Title>
                     <Card.Text>
                         Frankie & Benny's is a chain restaurant serving Italian and American comfort-food classics in a family-friendly atmosphere.
                     </Card.Text>
                 </Card.Body>
+                <Card.Img variant="top" src={FB}/>
                 <Card.Footer>
                     <small className="text-muted">
                         <ul>
@@ -46,13 +50,13 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src={HW} />
                 <Card.Body>
                     <Card.Title><a href="Hall & Woodhouse" name="Hall & Woodhouse">Hall & Woodhouse</a></Card.Title>
                     <Card.Text>
                         Hall & Woodhouse in Wichelstowe is a brand new pub from Dorset Brewers of the same name. No matter what the occasion Hall & Woodhouse is perfect, whether you’re looking for a quick lunch, celebration dinner, business meeting or just a few drinks.
                     </Card.Text>
                 </Card.Body>
+                <Card.Img variant="top" src={HW} />
                 <Card.Footer>
                     <small className="text-muted">
                         <ul>
@@ -72,13 +76,13 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src={Chiquto} />
                 <Card.Body>
                     <Card.Title><a href="Chiquto" name="Chiquto">Chiquto</a></Card.Title>
                     <Card.Text>
                         Colourful chain restaurant dishing up a menu of Tex-Mex favourites, beer and cocktails.
                     </Card.Text>
                 </Card.Body>
+                <Card.Img variant="top" src={Chiquto} />
                 <Card.Footer>
                     <small className="text-muted">
                         <ul>
@@ -101,13 +105,13 @@ export const PlacesToGo = () =>(
         </CardGroup>
         <CardGroup style={{margin: 25}}>
             <Card>
-                <Card.Img variant="top" src={PizzaHut} />
                 <Card.Body>
                     <Card.Title><a href="Pizza Hut" name="Pizza Hut">Pizza Hut</a></Card.Title>
                     <Card.Text>
                         Family-friendly chain known for its made-to-order pizzas.
                     </Card.Text>
                 </Card.Body>
+                <Card.Img variant="top" src={PizzaHut} />
                 <Card.Footer>
                     <small className="text-muted">
                         <ul>
@@ -128,13 +132,13 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src={Nandos} />
                 <Card.Body>
                     <Card.Title><a href="Nando's" name="Nando's">Nando's</a></Card.Title>
                     <Card.Text>
                         Afro-Portuguese chain restaurant serving flame-grilled chicken in spicy chilli sauce.
                     </Card.Text>
                 </Card.Body>
+                <Card.Img variant="top" src={Nandos} />
                 <Card.Footer>
                     <small className="text-muted">
                         <ul>
@@ -155,13 +159,13 @@ export const PlacesToGo = () =>(
                 </Card.Footer>
             </Card>
             <Card>
-                <Card.Img variant="top" src={Fratellos} />
                 <Card.Body>
                     <Card.Title><a href="Fratello's" name="Fratello's">Fratello's</a></Card.Title>
                     <Card.Text>
-                    Family-friendly Italian restaurant with a wood-burning pizza oven and a specials chalkboard.
+                        Family-friendly Italian restaurant with a wood-burning pizza oven and a specials chalkboard.
                     </Card.Text>
                 </Card.Body>
+                <Card.Img variant="top" src={Fratellos} />
                 <Card.Footer>
                     <small className="text-muted"><ul>
                         <p>Address: 12 Victoria Rd, Swindon SN1 3AJ</p>

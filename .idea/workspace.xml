@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="Got a basic booking system up and running">
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Angel.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Crawl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/IT.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Joker.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Maleficent.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Zombieland2.jpg" afterDir="false" />
+    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/OpeningTimes.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/OpeningTimes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/DiscussionBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/DiscussionBoard.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,22 +38,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="187">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -69,10 +50,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/AboutJumbotron.js">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="27" selection-end-column="2" />
+            <state relative-caret-position="255">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/PlacesJumbotron.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3035">
+              <caret selection-end-line="191" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -81,19 +86,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DirectionsJumbotron.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+            <state>
+              <caret selection-end-line="38" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -131,7 +127,24 @@
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/UpcomingJumbotron.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/ScreenJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/ContactJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/ScrumJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/ScrumDescription.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/OpeningJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/OpeningTimes.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/DiscussionJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/DiscussionBoard.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/ClassificationsJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/DirectionsJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/PlacesJumbotron.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" />
       </list>
     </option>
   </component>
@@ -444,11 +457,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565082039184</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Created Jumbotrons for additional pages and corrected NavBar">
+      <created>1565102099084</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1565102099084</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Created Jumbotrons for additional pages and corrected NavBar">
+      <created>1565103838916</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1565103838916</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9702000" />
+    <option name="totallyTimeSpent" value="12896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -546,7 +573,8 @@
     <MESSAGE value="Added message to display when no showings are available" />
     <MESSAGE value="Showing table now prints the showing id that the user selects to the console" />
     <MESSAGE value="Got a basic booking system up and running" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got a basic booking system up and running" />
+    <MESSAGE value="Created Jumbotrons for additional pages and corrected NavBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Jumbotrons for additional pages and corrected NavBar" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Footer.js">
@@ -668,9 +696,19 @@
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/AboutJumbotron.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="27" selection-end-column="2" />
+          <caret selection-end-line="38" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -678,7 +716,7 @@
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <caret line="35" column="111" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="111" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -687,17 +725,173 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="38" />
+        <state relative-caret-position="187">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ContactJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ScreenJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ScrumJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/ScrumDescription.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DescriptionJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/OpeningJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/OpeningTimes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DiscussionJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DiscussionBoard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ClassificationsJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/PlacesJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DirectionsJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3035">
+          <caret selection-end-line="191" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
