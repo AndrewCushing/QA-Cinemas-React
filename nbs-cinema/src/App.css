@@ -4,11 +4,20 @@
 
 .App {
   text-align: center;
-  background-color: #031E31;
-
-
-
+  background-color: #031E31
 }
+
+.card {
+    width:100px;
+}
+
+.card-footer{
+  background-color: #22465E;
+}
+  .card-body{
+    background-color: whitesmoke;
+  }
+
 
 #body {
   background-color: #1A181D;
