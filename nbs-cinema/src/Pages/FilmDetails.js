@@ -32,28 +32,10 @@ class FilmDetails extends Component {
         });
     };
 
-    handleHome = () => {
-
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
         return (
             <div>
-
                 {this.state.rows}
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
             </div>
 
         )
