@@ -11,19 +11,17 @@ class OpeningTimes extends Component {
 
     render() {
         return (<>
-<br/>
-               
-  <h1>Opening Hours</h1>
- <hr />
-<br/>
-            <br/>
+
+ <br/>
+ <br/>
+ 
                 <Table striped bordered hover variant="light">
   <thead>
     <tr>
       
-      <th>Opening Hours</th>
-      <th>Open 🚪 </th>
-      <th>Closed 😴 </th>
+      <th>Opening Times</th>
+      <th>Open </th>
+      <th>Closed </th>
     </tr>
   </thead>
   <tbody>

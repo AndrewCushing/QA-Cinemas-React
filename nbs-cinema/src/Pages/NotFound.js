@@ -3,11 +3,11 @@ import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 import show from "react-bootstrap/Alert";
 import setShow from "react-bootstrap/Alert";
-import useState from "react-bootstrap/Alert";
+// import useState from "react-bootstrap/Alert";
 
-function AlertDismissible() {
-  const [show, setShow] = useState(true);
-}
+// function AlertDismissible() {
+//   const [show, setShow] = useState(true);
+// }
 
 class notfound extends Component {
 
@@ -45,7 +45,7 @@ class notfound extends Component {
         </div>
         
       </Alert>
-            <img src={ ("/compass-3_2.gif") } style={divStyle} Transformation height="330" width="450" crop="fill" />
+            <img src={ ("/compass-3_2.gif") } alt="compass" style={divStyle} Transformation height="330" width="450" crop="fill" />
       
 
 

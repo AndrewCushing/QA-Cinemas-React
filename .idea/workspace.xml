@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f82623e-3227-4d73-b882-d8325287eadc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetailsArray.js" afterDir="false" />
+    <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/NoReviewsFound.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" afterDir="false" />
+
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,16 +24,57 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Footer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="72" selection-end-column="1" />
+              <folding>
+                <element signature="e#1#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -32,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-301">
-              <caret selection-end-column="26" />
+            <state relative-caret-position="374">
+              <caret line="22" column="96" selection-start-line="22" selection-start-column="96" selection-end-line="22" selection-end-column="96" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -53,44 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="50" column="60" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -99,13 +113,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="226">
+              <caret line="193" column="2" selection-start-line="193" selection-start-column="2" selection-end-line="193" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -119,43 +130,32 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>imagePath</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="API-caller" />
+        <entry key="$PROJECT_DIR$" value="SearchBarAgain" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails2.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/UpcomingFilms.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/CurrentFilms.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow2.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/App.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetailsArray.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="39" />
-    <option name="y" value="18" />
-    <option name="width" value="1890" />
+    <option name="x" value="825" />
+    <option name="y" value="148" />
+    <option name="width" value="1145" />
     <option name="height" value="960" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -163,59 +163,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="NewLuna-Cinema-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewLuna-Cinema-App" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="NewLuna-Cinema-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewLuna-Cinema-App" type="462c0819:PsiDirectoryNode" />
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
-              <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="NewLuna-Cinema-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewLuna-Cinema-App" type="462c0819:PsiDirectoryNode" />
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
-              <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="UpcomingFilmsImages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="NewLuna-Cinema-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewLuna-Cinema-App" type="462c0819:PsiDirectoryNode" />
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="NewLuna-Cinema-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewLuna-Cinema-App" type="462c0819:PsiDirectoryNode" />
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="NewLuna-Cinema-App" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewLuna-Cinema-App" type="462c0819:PsiDirectoryNode" />
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Pages" type="462c0819:PsiDirectoryNode" />
@@ -224,7 +205,54 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="NewLuna-Cinema-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="QA-Cinemas-React" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="NewLuna-Cinema-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="QA-Cinemas-React" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="NewLuna-Cinema-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="QA-Cinemas-React" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="nbs-cinema" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="NewLuna-Cinema-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="QA-Cinemas-React" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="nbs-cinema" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="NewLuna-Cinema-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="QA-Cinemas-React" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="nbs-cinema" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="NewLuna-Cinema-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="QA-Cinemas-React" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="nbs-cinema" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="NewLuna-Cinema-App" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="QA-Cinemas-React" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="nbs-cinema" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -355,44 +383,97 @@
       <option name="project" value="LOCAL" />
       <updated>1564996634529</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Put username above review in review header">
+      <created>1565016461141</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565016461141</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Put username above review in review">
+      <created>1565017510377</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565017510377</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added a fetch to insertreview">
+      <created>1565021879633</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565021879633</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finished ability to submit reviews from front end">
+      <created>1565024354480</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565024354480</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added runtime to film details page">
+      <created>1565071233820</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1565071233820</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Showing times are now displayed on front end for each film">
+      <created>1565073393520</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1565073393520</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added message to display when no showings are available">
+      <created>1565075036297</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1565075036297</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Showing table now prints the showing id that the user selects to the console">
+      <created>1565075910508</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565075910508</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Got a basic booking system up and running">
+      <created>1565082039184</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1565082039184</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32586000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="4057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2736842" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3285968" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.94671404" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49716598" visible="true" weight="0.42273533" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.502834" side_tool="true" weight="0.42273533" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3321492" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -401,40 +482,8 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Module Dependencies" order="9" weight="0.32955465" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.024291499" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639676" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32874015" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32874015" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49916667" visible="true" weight="0.3428064" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50083333" side_tool="true" weight="0.44094488" />
-      <window_info anchor="right" id="Module Dependencies" order="0" weight="0.32955465" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Database" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -489,113 +538,89 @@
     <MESSAGE value="Syntax updated (semi colon's)." />
     <MESSAGE value="Pulled all changes from Master." />
     <MESSAGE value="File path update." />
-    <option name="LAST_COMMIT_MESSAGE" value="File path update." />
+    <MESSAGE value="Put username above review in review header" />
+    <MESSAGE value="Put username above review in review" />
+    <MESSAGE value="Added a fetch to insertreview" />
+    <MESSAGE value="Finished ability to submit reviews from front end" />
+    <MESSAGE value="Added runtime to film details page" />
+    <MESSAGE value="Showing times are now displayed on front end for each film" />
+    <MESSAGE value="Added message to display when no showings are available" />
+    <MESSAGE value="Showing table now prints the showing id that the user selects to the console" />
+    <MESSAGE value="Got a basic booking system up and running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got a basic booking system up and running" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/EMail.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/App.js">
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="296">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/index.js">
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/public/ClassificationImages/Cine.png" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/public/ClassificationImages/12A.jpg" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/serviceWorker.js">
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/public/ClassificationImages/12A.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Screens.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/About.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails2.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Booking.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/StandardScreen.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Classifications.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/build/index.html" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/build/static/js/2.546d9aa2.chunk.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/build/static/js/main.d39a3349.chunk.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/build/static/js/runtime~main.a8a9905a.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/MovieRow2.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="50" column="60" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+        <state relative-caret-position="233">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js">
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/UpcomingFilms.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        <state relative-caret-position="102">
+          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="72" selection-end-column="1" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#1#42#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/CurrentFilms.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/UpcomingFilms.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/FilmDetails.js" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="44" />
+        <state relative-caret-position="260">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="193" column="2" selection-start-line="193" selection-start-column="2" selection-end-line="193" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret selection-end-column="26" />
+        <state relative-caret-position="374">
+          <caret line="22" column="96" selection-start-line="22" selection-start-column="96" selection-end-line="22" selection-end-column="96" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

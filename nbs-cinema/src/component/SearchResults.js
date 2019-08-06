@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MovieRow from './MovieRow.js';
 
 import { BrowserRouter as Router} from 'react-router-dom'
-
+import NotFound from "../Pages/NotFound";
 
 class SearchResults extends Component {
 
@@ -35,17 +35,9 @@ class SearchResults extends Component {
             this.setState({
                 rows:movieRows
             });
+        }).catch(()=>{
+            this.setState({rows:<NotFound/>})
         });
-    };
-
-    handleHome = () => {
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
     };
 
     render() {
@@ -53,10 +45,6 @@ class SearchResults extends Component {
             <div>
                 <Router>
                     {this.state.rows}
-                    <div>
-                        <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                        <button type="close" onClick={this.handleClose}>Close</button>
-                    </div>
                 </Router>
             </div>
         )

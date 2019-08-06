@@ -22,7 +22,7 @@ export const PlacesToGo = () =>(
             <Card>
                 <Card.Img variant="top" src={FB}/>
                 <Card.Body>
-                    <Card.Title><a name="Frankie & Benny's">Frankie & Benny's</a></Card.Title>
+                    <Card.Title><a href="Frankie & Benny's" name="Frankie & Benny's">Frankie & Benny's</a></Card.Title>
                     <Card.Text>
                         Frankie & Benny's is a chain restaurant serving Italian and American comfort-food classics in a family-friendly atmosphere.
                     </Card.Text>
@@ -48,7 +48,7 @@ export const PlacesToGo = () =>(
             <Card>
                 <Card.Img variant="top" src={HW} />
                 <Card.Body>
-                    <Card.Title><a name="Hall & Woodhouse">Hall & Woodhouse</a></Card.Title>
+                    <Card.Title><a href="Hall & Woodhouse" name="Hall & Woodhouse">Hall & Woodhouse</a></Card.Title>
                     <Card.Text>
                         Hall & Woodhouse in Wichelstowe is a brand new pub from Dorset Brewers of the same name. No matter what the occasion Hall & Woodhouse is perfect, whether you’re looking for a quick lunch, celebration dinner, business meeting or just a few drinks.
                     </Card.Text>
@@ -74,7 +74,7 @@ export const PlacesToGo = () =>(
             <Card>
                 <Card.Img variant="top" src={Chiquto} />
                 <Card.Body>
-                    <Card.Title><a name="Chiquto">Chiquto</a></Card.Title>
+                    <Card.Title><a href="Chiquto" name="Chiquto">Chiquto</a></Card.Title>
                     <Card.Text>
                         Colourful chain restaurant dishing up a menu of Tex-Mex favourites, beer and cocktails.
                     </Card.Text>
@@ -103,7 +103,7 @@ export const PlacesToGo = () =>(
             <Card>
                 <Card.Img variant="top" src={PizzaHut} />
                 <Card.Body>
-                    <Card.Title><a name="Pizza Hut">Pizza Hut</a></Card.Title>
+                    <Card.Title><a href="Pizza Hut" name="Pizza Hut">Pizza Hut</a></Card.Title>
                     <Card.Text>
                         Family-friendly chain known for its made-to-order pizzas.
                     </Card.Text>
@@ -130,7 +130,7 @@ export const PlacesToGo = () =>(
             <Card>
                 <Card.Img variant="top" src={Nandos} />
                 <Card.Body>
-                    <Card.Title><a name="Nando's">Nando's</a></Card.Title>
+                    <Card.Title><a href="Nando's" name="Nando's">Nando's</a></Card.Title>
                     <Card.Text>
                         Afro-Portuguese chain restaurant serving flame-grilled chicken in spicy chilli sauce.
                     </Card.Text>
@@ -157,7 +157,7 @@ export const PlacesToGo = () =>(
             <Card>
                 <Card.Img variant="top" src={Fratellos} />
                 <Card.Body>
-                    <Card.Title><a name="Fratello's">Fratello's</a></Card.Title>
+                    <Card.Title><a href="Fratello's" name="Fratello's">Fratello's</a></Card.Title>
                     <Card.Text>
                     Family-friendly Italian restaurant with a wood-burning pizza oven and a specials chalkboard.
                     </Card.Text>

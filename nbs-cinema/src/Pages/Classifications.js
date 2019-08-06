@@ -258,4 +258,3 @@ Please check the Ratings info for the film or video you are thinking of watching
         )
       }
 }
-

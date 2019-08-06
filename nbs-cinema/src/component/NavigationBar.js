@@ -1,32 +1,43 @@
-import React from 'react';
-import { Nav, Navbar, Button, Form, FormControl } from 'react-bootstrap';
+import React, { Component } from "react";
+import {
+    MDBNavbar, MDBNavbarBrand,MDBIcon, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
+    MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+} from "mdbreact";
 import styled from 'styled-components';
-import { MDBCol, MDBIcon } from "mdbreact";
-
 const Logo = '/qacinemalogo.png'
 
 const Styles = styled.div`
 .navbar {
-    background: white; 
-    background-colour: #222;
+    background: black;
+    margin-bottom: 0px;
+    
+    
+ .navbar-brand>img {
+    padding:20px;
+    margin-top:20px;
+    margin-bottom: 15px;
+} 
     
 }
+.navbar-collapse {
+    background: black; 
+   
+}
 
-.navbar-collaspe:
-    background: red;
+.navbar-nav .nav-link {
+    color: #36A1CF;
+    font-size: x-large;
+ 
+}
 
-.navbar-brand, navbar-nav .nav-link {
-    color:#bbb;
+.navbar-toggler:not(:disabled):not(.disabled) {
+    margin-left:auto;
+    margin-right:40px;
+}
 
-    &:hoover{
-        color: #fff;
-     }
-   }
   `;
 
-
-
-export default class NavigationBar extends React.Component {
+export default class NavigationBar extends Component {
     constructor(){
         super();
         this.state={
@@ -40,41 +51,51 @@ export default class NavigationBar extends React.Component {
         console.log("hi");
         window.location=('http://localhost:3000/search/'+document.getElementById("searchBar").value);
     };
-    render(){
-        return(
-            <Styles>
-                <Navbar expand="md">
-                    <Navbar.Brand href = "/" ><img style={{}} src={Logo}  height="100"alt="Luna Cinema's" /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ml-auto">
-                            <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                            <Nav.Item><Nav.Link href="/Screens">Screens</Nav.Link></Nav.Item>
-                            <Nav.Item><Nav.Link href="/CurrentFilms">Current Films</Nav.Link></Nav.Item>
-                            <Nav.Item><Nav.Link href="/UpcomingFilms">Upcoming Films</Nav.Link></Nav.Item>
-                            <Nav.Item><Nav.Link href="/OpeningTimes">Opening Times</Nav.Link></Nav.Item>
-                        </Nav>
-                        <MDBCol md="6">
-                            <div className="input-group md-form form-sm form-1 pl-0">
-                                <div className="input-group-prepend">
-                                     <span className="input-group-text purple lighten-3" id="basic-text1">
-                                         <MDBIcon className="text-white" icon="search" />
-                                    </span>
-                                </div>
-                                <form onSubmit={this.performSearch}>
-                                    <input type="text" className="form-control" placeholder="Search me" aria-label="Search" aria-describedby="basic-addon2" id="searchBar"/>
-                                    <div className="input-group-append">
-                                        <button  className="btn btn-outline-secondary"><i className="fa fa-search"></i></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </MDBCol>
-                    </Navbar.Collapse>
 
-                </Navbar>
-
-            </Styles>
-        )
+    state = {
+        isOpen: false
+    };
+    toggleCollapse = () => {
+        this.setState({ isOpen: !this.state.isOpen });
     }
 
+    render() {
+        return (
+            <Styles>
+                <MDBNavbar color="indigo" dark expand="md">
+                    <MDBNavbarBrand href = "/" ><img style={{ }} src={Logo}  height="100"alt="Luna Cinema's" />
+                    </MDBNavbarBrand>
+                    <MDBNavbarToggler onClick={this.toggleCollapse} />
+                    <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+                        <MDBNavbarNav left>
+
+                            <MDBNavItem>
+                                <MDBNavLink to="/Screens"><b>Screens</b></MDBNavLink>
+                            </MDBNavItem>
+                            <MDBNavItem>
+                                <MDBNavLink to="/CurrentFilms"><b>Current Films</b></MDBNavLink>
+                            </MDBNavItem>
+                            <MDBNavItem>
+                                <MDBNavLink to="/UpcomingFilms"><b>Upcoming Films</b></MDBNavLink>
+                            </MDBNavItem>
+                            <MDBNavItem>
+                                <MDBNavLink to="/OpeningTimes"><b>Opening Times</b></MDBNavLink>
+                            </MDBNavItem>
+                        </MDBNavbarNav>
+                        <MDBNavbarNav right>
+                            <MDBNavItem>
+                                <MDBFormInline waves onSubmit={this.performSearch}>
+                                    <div className="md-form my-0">
+                                        <input id="searchBar" className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                                    </div>
+                                    <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="search" />
+
+                                </MDBFormInline>
+                            </MDBNavItem>
+                        </MDBNavbarNav>
+                    </MDBCollapse>
+                </MDBNavbar>
+            </Styles>
+        );
+    }
 }

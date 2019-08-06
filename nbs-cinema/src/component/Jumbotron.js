@@ -4,12 +4,13 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .jumbo {
-    background: url(/Mountain.jpg) no-repeat fixed bottom;
+    background: url(/Moon.jpg) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
     height: 200px;
     position: relative;
     z-index: -2;
+   
   }
 
   .overlay {
@@ -26,11 +27,11 @@ const Styles = styled.div`
 
 export const Jumbotron = () => (
   <Styles>
-    <Jumbo fluid className="jumbo">
+    <Jumbo fluid style = {{width:"100%"}} className="jumbo">
       <div className="overlay"></div>
       <Container>
-        <h1>Luna Cinema's</h1>
-        <p>We're top of the pecking order</p>
+          <h1> Welcome to Luna Cinemas </h1>
+          <h5> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h5>
       </Container>
     </Jumbo>
   </Styles>
