@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import ExtraDetails from './MovieDetailsArray.js'
 import Card from "react-bootstrap/Card";
 
-
-
 class MovieDetails extends React.Component {
     render () {
         return (
@@ -21,6 +19,7 @@ class MovieDetails extends React.Component {
                     <label>Director:</label> <ExtraDetails content={this.props.movie.directors}/><br/>
                     <label>Starring:</label> <ExtraDetails content={this.props.movie.actors}/><br/>
                     <label>Genre:</label> <ExtraDetails content={this.props.movie.genres}/><br/>
+                    <label>Runtime:</label> <span>{this.props.movie.length}</span><br/>
                 </Card.Text>
             </Card.Body>
             <Card.Footer>
