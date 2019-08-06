@@ -52,16 +52,16 @@ export default class NavigationBar extends Component {
                         <MDBNavbarNav left>
 
                             <MDBNavItem>
-                                <MDBNavLink to="/Screens"><b>Screens</b></MDBNavLink>
+                                <MDBNavLink to="/Screens" id={"Screens_Link"}><b>Screens</b></MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink to="/CurrentFilms"><b>Current Films</b></MDBNavLink>
+                                <MDBNavLink to="/CurrentFilms" id={"CurrentFilms_Link"}><b>Current Films</b></MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink to="/UpcomingFilms"><b>Upcoming Films</b></MDBNavLink>
+                                <MDBNavLink to="/UpcomingFilms" id={"UpcomingFilms_Link"}><b>Upcoming Films</b></MDBNavLink>
                             </MDBNavItem>
                             <MDBNavItem>
-                                <MDBNavLink to="/OpeningTimes"><b>Opening Times</b></MDBNavLink>
+                                <MDBNavLink to="/OpeningTimes" id={"OpeningTimes_Link"}><b>Opening Times</b></MDBNavLink>
                             </MDBNavItem>
                         </MDBNavbarNav>
                         <MDBNavbarNav right>

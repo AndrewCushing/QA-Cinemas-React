@@ -11,7 +11,7 @@ class MovieDetails extends React.Component {
         if (!this.props.isBooking){
             buttonToShow.push(
                 <a href={"/Booking/" + this.props.movie.id}>
-                    <button className="bookButton"><i className="fas fa-ticket-alt"></i>Book</button>
+                    <button className="bookButton" id={"Book_btn"}><i className="fas fa-ticket-alt"></i>Book</button>
                 </a>
             );
         }

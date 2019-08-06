@@ -19,7 +19,7 @@ class MovieRow extends React.Component {
                         <button className="bookButton"><i class="fas fa-ticket-alt"></i>Book</button>
                     </a>
                     <a href ={"/FilmDetails/" + this.props.movie.id}>
-                        <button className="infoButton"><i class="fas fa-info-circle"></i>More Info</button>
+                        <button className="infoButton" id={"More_Info"}><i class="fas fa-info-circle"></i>More Info</button>
                     </a>
                     <a href={"/Reviews/" + this.props.movie.id}>
                         <button className="infoButton"><i class="fas fa-comment"></i> Reviews</button>
