@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import MovieRow from  '../component/MovieRow';
+import NotFound from './NotFound';
 
-class UpcomingFilms extends Component {
+export default class UpcomingFilms extends Component {
 
     constructor(props) {
         super(props);
@@ -29,33 +30,18 @@ class UpcomingFilms extends Component {
             this.setState({
                 rows:movieRows
             });
+        }).catch(()=>{
+            this.setState({
+                rows:<NotFound/>
+            });
         });
-    };
-
-    handleHome = () => {
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
     };
 
     render() {
         return (
             <div>
                 {this.state.rows}
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-
             </div>
         )
     }
 }
-
-export default UpcomingFilms

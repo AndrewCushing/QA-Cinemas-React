@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
+import {Jumbotron} from "./Jumbotron";
 
 class CurrentFilms extends React.Component {
     constructor(props) {
@@ -49,8 +50,7 @@ class HomeComponent extends Component {
     render() {
         return (
             <div>
-                <h1> Welcome to Luna Cinemas </h1>
-                <h5> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h5>
+                <Jumbotron/>
                 <Carousel
                     className={"carousel"}
                     controls = {true}

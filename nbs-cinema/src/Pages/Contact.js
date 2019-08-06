@@ -8,27 +8,28 @@ class Contact extends Component {
         }
     };
 
+    handleEmailSubmit = event => {
 
-    handleHome = event => {
-
-        this.props.history.push('/home');
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
+        this.props.history.push('/email');
     };
 
     render() {
         return (<>
-                <h1>Contact</h1>
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
+            <h1>Contact</h1>
+            <div className="ContactAdd">
+                <h4> Address </h4>
+                <h6> Alexandra House </h6>
+                <h6> Whittingham Dr </h6>
+                <h6> Wroughton</h6>
+                <h6> Swindon </h6>
+                <h6> SN4 0QJ </h6>
+            </div>
+            <br/>
+            <div className="EmailAdd">
+                <h4>Email </h4>
+                 <button className="emailButton" id="emailButton" type="submit"
+                        onClick={this.handleEmailSubmit}>Email Luna Cinemas</button>
+            </div>
             </>
         )
     }

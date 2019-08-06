@@ -1,9 +1,22 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import ExtraDetails from './MovieDetailsArray.js'
+import ExtraDetails from './MovieDetailsArray'
 
 
 class MovieDetails extends React.Component {
+    constructor(props){
+        super(props);
+        const buttonToShow = [];
+        console.log(this.props.isBooking)
+        if (!this.props.isBooking){
+            buttonToShow.push(
+                <a href={"/Booking/" + this.props.movie.id}>
+                    <button className="bookButton"><i className="fas fa-ticket-alt"></i>Book</button>
+                </a>
+            );
+        }
+        this.state = {bookingButton:buttonToShow};
+    }
     render () {
         return <table className = "filmTable" key={this.props.movie.id}>
             <tbody>
@@ -21,8 +34,10 @@ class MovieDetails extends React.Component {
                     <label>Director:</label> <ExtraDetails content={this.props.movie.directors}/><br/>
                     <label>Starring:</label> <ExtraDetails content={this.props.movie.actors}/><br/>
                     <label>Genre:</label> <ExtraDetails content={this.props.movie.genres}/><br/>
-                    <a href ={"/Booking/" + this.props.movie.id}>
-                        <button className="bookButton"><i class="fas fa-ticket-alt"></i>Book</button>
+                    <label>Runtime:</label> <span>{this.props.movie.length}</span><br/>
+                    {this.state.bookingButton}
+                    <a href={"/Reviews/" + this.props.movie.id}>
+                        <button className="infoButton"><i className="fas fa-comment"></i> Reviews</button>
                     </a>
                 </td>
             </tr>
