@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import Table from "react-bootstrap/Table";
-// import styled, { keyframes } from "styled-components";
-// import BounceIn from "@bit/formidablelabs.react-animations.bounce-in";
-// const BounceInAnimation = keyframes`${BounceIn}`;
-// const BounceInDiv = styled.div`
-//   animation: infinite 5s ${BounceInAnimation};
-// `;
+
 class OpeningTimes extends Component {
 
     constructor(props) {
@@ -16,15 +11,17 @@ class OpeningTimes extends Component {
 
     render() {
         return (<>
-
- <br/>
- <br/>
- 
-                <Table striped bordered hover variant="dark">
+<br/>
+               
+  <h1>Opening Hours</h1>
+ <hr />
+<br/>
+            <br/>
+                <Table striped bordered hover variant="light">
   <thead>
     <tr>
       
-      <th>Opening Times</th>
+      <th>Opening Hours</th>
       <th>Open 🚪 </th>
       <th>Closed 😴 </th>
     </tr>
