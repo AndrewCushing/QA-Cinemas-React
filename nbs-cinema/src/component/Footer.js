@@ -65,16 +65,6 @@ export default class AppFooter extends Component {
                   </ul>
                 </MDBCol>
                 <hr className="clearfix w-100 d-md-none" />
-                <MDBCol md="5" lg="3">
-                  <h5  className="mb-4 font-weight-bold" style={{ textDecoration: "underline"}}>Address</h5>
-                  <p className="FooterText">
-                    <i className="fa fa-home mr-3" />Alexandra House, Wroughton, Swindon SN4 0QJ
-                  </p>
-                  <p className="FooterText">
-                    <i className="fa fa-phone mr-3" /> +44 1234 567890
-                  </p>
-                </MDBCol>
-                <hr className="clearfix w-100 d-md-none" />
                 <MDBCol md="2" lg="2" className="text-center">
                   <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>
                     Follow us
@@ -83,7 +73,7 @@ export default class AppFooter extends Component {
                     <a className="btn btn-link" href="#!">
                       <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="facebook" />
                     </a>
-                    <a className="btn btn-link" href="">
+                    <a className="btn btn-link" href="!#">
                       <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="twitter" />
                     </a>
                   </div>
