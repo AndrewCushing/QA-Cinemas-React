@@ -6,23 +6,7 @@ import receipt_url from "./Checkout";
 import InputGroup from "react-bootstrap/InputGroup";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
-import style from "./paymentsstyle.css";
-
-
-// let total = 0;
-// var cos = document.createElement("cost");
-// var number=document.getElementById("cost").value;  
-
-// function myFunction(total) {
-//   return <Greetings total = "10000"/>;
-// }
-
-// let cost = "1000";
-
-
-
-
-
+import style from "../styles/paymentsstyle.css";
 
 
 class Payment extends React.Component{
@@ -31,8 +15,6 @@ class Payment extends React.Component{
     name: ""
 
   };
-
-
 
 componentDidMount() {
     document.getElementById("check").style.display = 'none';
@@ -45,7 +27,6 @@ componentDidMount() {
       document.getElementById("check").style.display = 'none';
     }
   };
-
 
     handleHome = event => {
 
@@ -60,8 +41,6 @@ componentDidMount() {
     };
     
     render() {
-
-       
         return (<>
         
         <div>
@@ -72,7 +51,7 @@ componentDidMount() {
   <p>
     To book your tickets please enter your <b><em>full name </em></b>below:
   </p>
-  <p id = "cost">1000</p>
+  <p>Total: £{localStorage.getItem('cost')/100}</p>
   <p>{this.props.test}</p>
   <p>
   <h2>
@@ -80,7 +59,7 @@ componentDidMount() {
   </h2>
   <div>
 <br/>
-  <Form.Control id = "inputt" type="text" placeholder="Enter full name" value={this.props.name} required minlength="6" maxlength="50" onChange={this.handlenameChange}
+  <Form.Control id="inputt" type="text" placeholder="Enter full name" value={this.props.name} required minlength="6" maxlength="50" onChange={this.handlenameChange}
         aria-label="Default"
       aria-describedby="inputGroup-sizing-default"
       />
@@ -101,7 +80,7 @@ componentDidMount() {
 
     <div id="namee">
     
-    {/* <h2> Name: {this.state.name } </h2> */}
+
     <br/>
     
         
@@ -110,8 +89,13 @@ componentDidMount() {
             </>
         )
     }
-}
+// componentDidMount(){
+//     let inputName=document.getElementById(name).innerHTML;
+//   console.log(inputName);
+// }
 
+    
+}
 
   // function create(props) {
   //       const total = document.getElementById('cost').innerHTML;
@@ -120,16 +104,7 @@ componentDidMount() {
       
   //   }
 
-
-
-
-
-
       let key = 'cost';
-      localStorage.setItem(key, 2000);
+      localStorage.setItem(key, 2350);
 
-
-
-
-  
-export default Payment
+export default Payment;
