@@ -7,17 +7,17 @@ export default class ShowingsTable extends React.Component{
         this.bookTime = this.bookTime.bind(this);
     }
 
-    bookTime(event){
+    bookTime = (showingId) => (event) => {
         event.preventDefault();
-    }
+        console.log(showingId);
+    };
 
     render() {
         const showings = this.props.showingsArr;
-        const stuffToDisplay = showings.map( showing => {
-            return (
-                <button onClick={this.bookTime}>{showing.showingTime}</button>
-            )
-        });
+        let stuffToDisplay = [];
+        for (let i = 0 ; i < showings.length ; i++){
+            stuffToDisplay.push(<button onClick={this.bookTime(showings[i].id)}>{showings[i].showingTime}</button>);
+        }
         return (
             <div>
                 {stuffToDisplay}
