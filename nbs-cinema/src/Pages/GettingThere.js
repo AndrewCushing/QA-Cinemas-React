@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MapContainer from '../component/MapContainer';
 import LunaMap from '../component/LunaMap';
 import Media from "react-bootstrap/Media";
 
@@ -44,7 +43,7 @@ class GettingThere extends Component {
                 </div>
   <Media.Body style={divStyle}>
 
-  <img src={ ("/luna_building.jpg") } style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
+  <img src={ ("/luna_building.jpg") } alt="luna_building" style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
     <br/>
     <br/>
     <h4>Address:</h4>
