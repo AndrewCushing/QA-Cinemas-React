@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import MovieRow from  '../component/MovieRow';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {UpcomingJumbotron} from "../component/UpcomingJumbotron";
 
 
 
@@ -50,21 +51,23 @@ class UpcomingFilms extends Component {
 
     render() {
 
-        return (
+        return (<div>
+                <UpcomingJumbotron/>
 
-            <Row>
+                <Row>
 
-                { this.state.rows.map(movie => (
+                    { this.state.rows.map(movie => (
 
-                    <Col md="6">
+                        <Col md="6">
 
-                        <MovieRow key={movie.id} movie={movie}/>
+                            <MovieRow key={movie.id} movie={movie}/>
 
-                    </Col>
+                        </Col>
 
-                )) }
+                    )) }
 
-            </Row>
+                </Row>
+            </div>
 
         )
 

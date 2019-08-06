@@ -7,21 +7,23 @@ const Styles = styled.div`
     background: url(/Moon.jpg) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
-    height: 200px;
+    height: 150px;
     position: relative;
-    z-index: -2;
-   
-  }
+    z-index: 0;
+    
+    
+    }
 
   .overlay {
-    background-color: #000;
-    opacity: 0.6;
+    background-color: #00000099;
+    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -1;
+    box-shadow: inset 0px 0px 9px 11px #031E31;
   }
 `;
 
@@ -31,7 +33,7 @@ export const Jumbotron = () => (
       <div className="overlay"></div>
       <Container>
           <h1> Welcome to Luna Cinemas </h1>
-          <h5> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h5>
+          <h3> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h3>
       </Container>
     </Jumbo>
   </Styles>

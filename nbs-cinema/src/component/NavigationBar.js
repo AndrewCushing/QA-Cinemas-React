@@ -10,10 +10,10 @@ const Styles = styled.div`
 .navbar {
     background: black;
     margin-bottom: 0px;
+    padding:20px;
     
     
  .navbar-brand>img {
-    padding:20px;
     margin-top:20px;
     margin-bottom: 15px;
 } 
@@ -21,6 +21,7 @@ const Styles = styled.div`
 }
 .navbar-collapse {
     background: black; 
+    margin-top: 20px;
    
 }
 
@@ -63,7 +64,7 @@ export default class NavigationBar extends Component {
         return (
             <Styles>
                 <MDBNavbar color="indigo" dark expand="md">
-                    <MDBNavbarBrand href = "/" ><img style={{ }} src={Logo}  height="100"alt="Luna Cinema's" />
+                    <MDBNavbarBrand href = "/" ><img style={{width:150 }} src={Logo}  height="100"alt="Luna Cinema's" />
                     </MDBNavbarBrand>
                     <MDBNavbarToggler onClick={this.toggleCollapse} />
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
