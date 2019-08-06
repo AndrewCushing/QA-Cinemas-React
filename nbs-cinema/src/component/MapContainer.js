@@ -38,7 +38,7 @@ export class MapContainer extends Component {
     };
 
     render() {
-        return (<>
+        return (<div>
                 <div name="mapContainer" className="mapContainer" style={this.props.style || {}}>
                     <Map className="mapStyle"
                          google={this.props.google}
@@ -92,12 +92,12 @@ export class MapContainer extends Component {
                                 <h4>{this.state.selectedPlace.name}</h4>
                                 <h5>{this.state.selectedPlace.address}</h5>
 
-                                <img width="200" src={this.state.selectedPlace.pic} />
+                                <img alt="selectedPic" width="200" src={this.state.selectedPlace.pic} />
                             </div>
                         </InfoWindow>
                     </Map>
                 </div>
-            </>
+            </div>
         );
     }
 }

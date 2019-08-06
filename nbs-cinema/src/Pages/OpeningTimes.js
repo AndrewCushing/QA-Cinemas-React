@@ -25,8 +25,8 @@ class OpeningTimes extends Component {
     <tr>
       
       <th>Opening Times</th>
-      <th>Open 🚪 </th>
-      <th>Closed 😴 </th>
+      <th>Open </th>
+      <th>Closed </th>
     </tr>
   </thead>
   <tbody>

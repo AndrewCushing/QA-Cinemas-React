@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import MovieDetails from '../component/MovieDetails'
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 class FilmDetails extends Component {
 
@@ -34,10 +36,11 @@ class FilmDetails extends Component {
 
     render() {
         return (
-            <div>
-                {this.state.rows}
-            </div>
-
+            <Row className ="row">
+                <Col className="col" md="4">
+                    {this.state.rows}
+                </Col>
+            </Row>
         )
     }
 }
