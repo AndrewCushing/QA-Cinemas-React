@@ -23,20 +23,19 @@ class Booking extends Component {
         };
         console.log('http://localhost:8080/getshowingsbyfilm/'+this.props.match.params.id);
         fetch('http://localhost:8080/getshowingsbyfilm/'+this.props.match.params.id)
-            .then(res => res.json() ).catch(console.log).then(results => {
+            .then(res => res.json()).catch(console.log).then(results => {
             const film = results.contentList[0];
+            const showings = results.contentList[1];
             film.classification = classifications[film.classification];
             console.log(film);
-            const showings = results.contentList[1];
-            console.log(showings);
             let newStuffToShow = [];
             newStuffToShow.push(<MovieDetails movie={film}/>);
-            newStuffToShow.push(<ShowingsTable showingsArr={showings}/>)
+            if (showings.length>0) {
+                newStuffToShow.push(<ShowingsTable showingsArr={showings}/>);
+            } else {
+                newStuffToShow.push(<h3>Sorry, there are currently no showings available for this film</h3>);
+            }
             this.setState({stuffToShow:newStuffToShow});
-        }).catch(()=>{
-            this.setState({
-                stuffToShow:<NotFound/>
-            })
         });
     }
 

@@ -26,7 +26,6 @@ import NoMatch from '../Pages/NotFound';
 import CommentBoard from './CommentBoard';
 import { Layout } from './Layout';
 import NavigationBar  from './NavigationBar';
-import { Jumbotron } from './Jumbotron';
 import  Footer  from  './Footer';
 
 

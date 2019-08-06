@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565071233820</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Showing times are now displayed on front end for each film">
+      <created>1565073393520</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1565073393520</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +261,7 @@
     <MESSAGE value="Added a fetch to insertreview" />
     <MESSAGE value="Finished ability to submit reviews from front end" />
     <MESSAGE value="Added runtime to film details page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added runtime to film details page" />
+    <MESSAGE value="Showing times are now displayed on front end for each film" />
+    <option name="LAST_COMMIT_MESSAGE" value="Showing times are now displayed on front end for each film" />
   </component>
 </project>
