@@ -8,7 +8,13 @@
 }
 
 .card {
-    width:100px;
+
+    margin: 0 auto;
+
+    float: none;
+
+    margin-bottom: 10px;
+
 }
 
 .card-footer{
