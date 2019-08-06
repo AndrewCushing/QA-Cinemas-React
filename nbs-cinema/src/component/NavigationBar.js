@@ -9,7 +9,13 @@ const Styles = styled.div`
     background: black;
     margin-bottom: 0px;
     padding:20px;
+    }
     
+
+    
+ .nav-item {
+ padding:10px;
+ }
     
  .navbar-brand>img {
     margin-top:20px;
@@ -32,6 +38,10 @@ const Styles = styled.div`
 .navbar-toggler:not(:disabled):not(.disabled) {
     margin-left:auto;
     margin-right:40px;
+}
+
+.input {
+   width:100%;
 }
 
   `;
@@ -84,11 +94,9 @@ export default class NavigationBar extends Component {
                         <MDBNavbarNav right>
                             <MDBNavItem>
                                 <MDBFormInline waves onSubmit={this.performSearch}>
-                                    <div className="md-form my-0">
-                                        <input id="searchBar" className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                                    <div className="md-form my-9230">
+                                        <input id="searchBar" className="form-control mr-md-2" type="text" placeholder="Search" aria-label="Search" />
                                     </div>
-                                    <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="search" />
-
                                 </MDBFormInline>
                             </MDBNavItem>
                         </MDBNavbarNav>
