@@ -22,38 +22,31 @@ class FilmDetails extends Component {
         };
         fetch('http://localhost:8080/getfilm/'+this.props.match.params.id)
             .then(res => res.json() ).catch(console.log).then(results => {
-                const movies = results.contentList;
-                movies.forEach(movie => {
-                    movie.classification = classifications[movie.classification];
-                    const movieRow = <MovieDetails key={movie.id} movie={movie}/>;
-                    movieRows.push(movieRow)
-                });
-        this.setState({
-            rows:movieRows
-
-
-
-                //     .map(movie => ({
-            //                 //     ...movie,
-            //                 //     classification: classifications[movie.classification]
-            //                 // }));
-            //                 // this.setState({
-            //                 //     rows: movies
-                });
+            const movies = results.contentList;
+            movies.forEach(movie => {
+                movie.classification = classifications[movie.classification];
+                const movieRow = <MovieDetails isBooking={false} key={movie.id} movie={movie}/>;
+                movieRows.push(movieRow)
             });
-        };
+            this.setState({
+                rows:movieRows
+            });
+        });
+    };
+
 
 
 
     render() {
         return (
             <Row className ="row">
-                    <Col className="col" md="4">
-                        {this.state.rows}
-                    </Col>
+                <Col className="col" md="4">
+                    {this.state.rows}
+                </Col>
             </Row>
         )
-        }
     }
+}
+
 
 export default FilmDetails
