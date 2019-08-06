@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import MovieRow from '../component/MovieRow'
-
-import { BrowserRouter as Router} from 'react-router-dom'
-
+import MovieRow from '../component/MovieRow';
+import NotFound from "./NotFound";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 class CurrentFilms extends Component {
 
@@ -23,44 +23,49 @@ class CurrentFilms extends Component {
         };
         fetch('http://localhost:8080/getnewfilms')
             .then(res => res.json() ).catch(console.log).then(results => {
-            const movies = results.contentList;
-            movies.forEach(movie => {
-                movie.classification = classifications[movie.classification];
-                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
-                movieRows.push(movieRow)
-            });
+
+            const movies = results.contentList.map(movie => ({
+
+                ...movie,
+
+                classification: classifications[movie.classification]
+
+            }));
+
             this.setState({
-                rows:movieRows
+
+                rows: movies
+
             });
+
         });
+
     };
 
-    handleHome = () => {
 
-        this.props.history.push('/home');
-    };
-
-    handleClose = () => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
 
     render() {
+
         return (
-                <div>
 
-                {this.state.rows}
+            <Row>
 
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-            </div>
+                { this.state.rows.map(movie => (
+
+                    <Col md="6">
+
+                        <MovieRow key={movie.id} movie={movie}/>
+
+                    </Col>
+
+                )) }
+
+            </Row>
 
         )
+
     }
+
 }
 
 export default CurrentFilms

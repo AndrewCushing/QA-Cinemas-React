@@ -53,7 +53,7 @@ class StandardScreen extends Component {
 </Jumbotron>
 <br/>
 <Media>
-  <img src={ ("/standardscreen.png") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ ("/standardscreen.png") } alt="standardscreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
       <br/>
     <h5>Amazing Experiences..</h5>
@@ -66,7 +66,7 @@ class StandardScreen extends Component {
 </Media>
 <br/>
 <Media>
-  <img src={ ("/standardscreenimage.jpg") } style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
+  <img src={ ("/standardscreenimage.jpg") } alt="standardscreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
   <Media.Body>
   <br/>
     <h5>Why our screens..</h5>

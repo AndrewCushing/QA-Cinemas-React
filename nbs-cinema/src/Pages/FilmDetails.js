@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import MovieDetails from '../component/MovieDetails'
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 class FilmDetails extends Component {
 
@@ -23,7 +25,7 @@ class FilmDetails extends Component {
             const movies = results.contentList;
             movies.forEach(movie => {
                 movie.classification = classifications[movie.classification];
-                const movieRow = <MovieDetails key={movie.id} movie={movie}/>;
+                const movieRow = <MovieDetails isBooking={false} key={movie.id} movie={movie}/>;
                 movieRows.push(movieRow)
             });
             this.setState({
@@ -32,32 +34,19 @@ class FilmDetails extends Component {
         });
     };
 
-    handleHome = () => {
 
-        this.props.history.push('/home');
-    };
 
-    handleClose = () => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
 
     render() {
         return (
-            <div>
-
-                {this.state.rows}
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-            </div>
-
+            <Row className ="row">
+                <Col className="col" md="4">
+                    {this.state.rows}
+                </Col>
+            </Row>
         )
     }
 }
+
 
 export default FilmDetails
