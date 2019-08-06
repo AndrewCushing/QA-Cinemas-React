@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import ExtraDetails from './MovieDetailsArray.js'
+import ExtraDetails from './MovieDetailsArray'
 
 
 class MovieDetails extends React.Component {
@@ -21,6 +21,7 @@ class MovieDetails extends React.Component {
                     <label>Director:</label> <ExtraDetails content={this.props.movie.directors}/><br/>
                     <label>Starring:</label> <ExtraDetails content={this.props.movie.actors}/><br/>
                     <label>Genre:</label> <ExtraDetails content={this.props.movie.genres}/><br/>
+                    <label>Runtime:</label> <span>{this.props.movie.length}</span><br/>
                     <a href ={"/Booking/" + this.props.movie.id}>
                         <button className="bookButton"><i class="fas fa-ticket-alt"></i>Book</button>
                     </a>
