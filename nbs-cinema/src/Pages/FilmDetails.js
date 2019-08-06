@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MovieRow from '../component/MovieRow';
+import MovieDetails from '../component/MovieDetails'
 
 class FilmDetails extends Component {
 
@@ -23,7 +23,7 @@ class FilmDetails extends Component {
             const movies = results.contentList;
             movies.forEach(movie => {
                 movie.classification = classifications[movie.classification];
-                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
+                const movieRow = <MovieDetails key={movie.id} movie={movie}/>;
                 movieRows.push(movieRow)
             });
             this.setState({
@@ -33,10 +33,12 @@ class FilmDetails extends Component {
     };
 
     handleHome = () => {
+
         this.props.history.push('/home');
     };
 
     handleClose = () => {
+
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
         }

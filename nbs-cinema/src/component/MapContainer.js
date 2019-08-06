@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 import './MapContainer.css';
 
-const FB = '../images/F&B.jpg';
-const Chiquto = '../images/Chiquto.jpg';
-const HW = '../images/Hall&Woodhouse.jpg';
-const PizzaHut = '../images/PizzaHut.jpg';
-const Nandos = '../images/Nandos.jpg';
-const Fratellos = '../images/Fratellos.jpg';
+const FB = '/F&B.jpg';
+const Chiquto = '/Chiquto.jpg';
+const HW = '/Hall&Woodhouse.jpg';
+const PizzaHut = '/PizzaHut.jpg';
+const Nandos = '/Nandos.jpg';
+const Fratellos = '/Fratellos.jpg';
 const Logo = '/luna_building.jpg';
 
 export class MapContainer extends Component {
@@ -107,6 +107,6 @@ export class MapContainer extends Component {
 export default GoogleApiWrapper(
     () => ({
 
-            apiKey: ('AIzaSyD2O-ECIRCr_CaI8JxPqBK-qVjf6PHnYlg')
+            apiKey: ('AIzaSyA-B45jxqRMZfbp1j-BjzC2jReEDr_0Zms')
         }
     ))(MapContainer)
