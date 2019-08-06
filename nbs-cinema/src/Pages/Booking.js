@@ -22,7 +22,6 @@ class Booking extends Component {
 
     bookTime = (showing) => (event) => {
         event.preventDefault();
-        //this.setState({stuffToShow:<BookingStage2Advanced selectedSeats={this.state.seatsToBook} addSeatFunc={this.addSeatToBooking} bookingFunc={this.attemptBooking} showing={showing} film={this.state.filmSelected}/>});
         this.setButtonArray(showing, []);
     };
 
