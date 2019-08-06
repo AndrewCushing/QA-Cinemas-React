@@ -2,6 +2,7 @@ import React from "react";
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
 import ClassNames from "classnames";
 import Jumbotron from "react-bootstrap/Jumbotron";
+import style from "./styleclass.css";
 
 
 export default class Classifications extends React.Component {
@@ -30,9 +31,9 @@ export default class Classifications extends React.Component {
         return (  
         <div>
              <br/>
-                <Jumbotron>
+               
   <h1>Classifications</h1>
-</Jumbotron>
+ <hr />
 <br/>
             <br/>
           <Row>
@@ -90,16 +91,6 @@ export default class Classifications extends React.Component {
                     <img src="/ClassificationImages/18.png"/>
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink
-                    className={ClassNames({active: this.state.activeTab === "6"})}
-                    onClick={() => {
-                      this.toggle("6");
-                    }}
-                  >
-                    <img src="/ClassificationImages/R18.png"/>
-                  </NavLink>
-                </NavItem>
               </Nav>
             </Col>
             <Col xs="6" sm="6" md="6">
@@ -111,9 +102,8 @@ export default class Classifications extends React.Component {
                       <p>o What are the standard film classifications? </p>
 
                       <p>o What are the rules and conditions relating to each classification?</p>
-                      <p>For more information, click <a href="/bbfc" onClick={this.props.handleClick}>
-        here.
-      </a>        </p>
+                      <br/>
+                      <p>For more information, click <a class="one" href="/bbfc" onClick={this.props.handleClick}>here.</a></p>
                 </TabPane>
                 <TabPane tabId="2">
         
@@ -255,13 +245,6 @@ Sex works are works whose primary purpose is sexual arousal or stimulation. Sex 
 <p>
 How can I find out more about a specific 18 film?
 Please check the Ratings info for the film or video you are thinking of watching. Ratings info is available on this website, on our free App as well as on film posters, DVD and Blu-ray packaging, and on some listings. It provides comprehensive information on exactly why a film or video has been given a particular category. All the issues are discussed in detail and parents in particular can use this information to make informed decisions when choosing viewing material for their children.</p>
-                </TabPane>
-                <TabPane tabId="6">
-                  <h4>R18</h4>
-                  <p>R18 - To be shown only in specially licensed cinemas, or supplied only in licensed sex shops, and to adults only
-The R18 category is a special and legally-restricted classification primarily for explicit works of consenting sex or strong fetish material involving adults. Films may only be shown to adults in specially licensed cinemas, and video works may be supplied to adults only in licensed sex shops. R18 video works may not be supplied by mail order.
-
-For full details of the legal restrictions for these works please see the BBFC Classification Guidelines document here.</p>
                 </TabPane>
               </TabContent>
             </Col>
