@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Booking.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -25,14 +28,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="SearchBarAgain" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="39" />
+    <option name="y" value="18" />
     <option name="width" value="1890" />
     <option name="height" value="960" />
   </component>
@@ -40,11 +43,10 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nbs-cinema/public/ClassificationImages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,15 +54,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Andy\IdeaProjects\QA-Cinemas-React\nbs-cinema\public\ClassificationImages" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Andy\IdeaProjects\QA-Cinemas-React\nbs-cinema\public" />
-      <recent name="C:\Users\Andy\IdeaProjects\QA-Cinemas-React" />
+      <recent name="C:\Users\Dale\IdeaProjects\QA-Cinemas-React\nbs-cinema\public\ClassificationImages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,7 +88,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="344b9c40-876a-4f5a-8ac8-8390031eb5c7" name="Default Changelist" comment="" />
+      <changelist id="2f82623e-3227-4d73-b882-d8325287eadc" name="Default Changelist" comment="" />
       <created>1564065823630</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -98,6 +96,9 @@
       <workItem from="1564065826894" duration="2376000" />
       <workItem from="1564409133835" duration="1068000" />
       <workItem from="1564475084168" duration="10000" />
+      <workItem from="1564731031726" duration="19763000" />
+      <workItem from="1564758014010" duration="525000" />
+      <workItem from="1564990402126" duration="2311000" />
     </task>
     <task id="LOCAL-00001" summary="Carl's First Commit">
       <created>1564066113006</created>
@@ -120,56 +121,91 @@
       <option name="project" value="LOCAL" />
       <updated>1564409337329</updated>
     </task>
-    <task id="LOCAL-00004" summary="Put in a MapContainer so that the code will compile">
-      <created>1564578835718</created>
+    <task id="LOCAL-00004" summary="API Caller commit, caller now pulls data on Current Films, upcoming films and get FilmDetails. Began work on the search function.">
+      <created>1564731152775</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1564578835718</updated>
+      <updated>1564731152775</updated>
     </task>
-    <task id="LOCAL-00005" summary="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working.">
-      <created>1564920477198</created>
+    <task id="LOCAL-00005" summary="API Caller commit, updated the paths so that the images can be found on any page.">
+      <created>1564737841969</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1564920477198</updated>
+      <updated>1564737841969</updated>
     </task>
-    <task id="LOCAL-00006" summary="Fixed path of deluxe screen image">
-      <created>1564984315642</created>
+    <task id="LOCAL-00006" summary="Created a second MovieDetails page to show extended details of any movie when clicked on.">
+      <created>1564745275706</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1564984315642</updated>
+      <updated>1564745275706</updated>
     </task>
-    <task id="LOCAL-00007" summary="Merged changes from origin">
-      <created>1564984575425</created>
+    <task id="LOCAL-00007" summary="MovieRow.js, MovieDetails.js, CurrentFilms.js, UpcomingFilms.js and FilmDetails.js all updated in line with pulling information from an API rather than being hardcoded.">
+      <created>1564991998758</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1564984575425</updated>
+      <updated>1564991998758</updated>
     </task>
-    <task id="LOCAL-00008" summary="Changed image paths in PlacesToGo as relative image paths outside src/ prevent app from compiling">
-      <created>1564984704349</created>
+    <task id="LOCAL-00008" summary="Syntax updated (semi colon's).">
+      <created>1564995806551</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1564984704349</updated>
+      <updated>1564995806551</updated>
     </task>
-    <task id="LOCAL-00009" summary="Fixed routing to Classifications page">
-      <created>1564985062852</created>
+    <task id="LOCAL-00009" summary="Pulled all changes from Master.">
+      <created>1564996196623</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1564985062852</updated>
+      <updated>1564996196623</updated>
     </task>
-    <task id="LOCAL-00010" summary="Swapped out the classification images to 32 bit versions">
-      <created>1564990430416</created>
+    <task id="LOCAL-00010" summary="File path update.">
+      <created>1564996634529</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1564990430417</updated>
+      <updated>1564996634529</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Put username above review in review header">
+      <created>1565016461141</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565016461141</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Put username above review in review">
+      <created>1565017510377</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565017510377</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added a fetch to insertreview">
+      <created>1565021879633</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565021879633</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Finished ability to submit reviews from front end">
+      <created>1565024354480</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565024354480</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added runtime to film details page">
+      <created>1565071233820</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1565071233820</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,23 +214,6 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="range">
-                    <value>
-                      <list>
-                        <option value="HEAD..Discussion_board_skeleton" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -203,11 +222,6 @@
           </value>
         </entry>
       </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -225,16 +239,20 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Carl's First Commit" />
     <MESSAGE value="Carl's Second Commit" />
-    <MESSAGE value="Put in a MapContainer so that the code will compile" />
-    <MESSAGE value="Put all images into the directory that Ian told us to put it in. Added an import to package.json needed to start. Made some small changes to get things working." />
-    <MESSAGE value="Fixed path of deluxe screen image" />
-    <MESSAGE value="Merged changes from origin" />
-    <MESSAGE value="Changed image paths in PlacesToGo as relative image paths outside src/ prevent app from compiling" />
-    <MESSAGE value="Fixed routing to Classifications page" />
-    <MESSAGE value="Swapped out the classification images to 32 bit versions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swapped out the classification images to 32 bit versions" />
+    <MESSAGE value="API Caller commit, caller now pulls data on Current Films, upcoming films and get FilmDetails. Began work on the search function." />
+    <MESSAGE value="API Caller commit, updated the paths so that the images can be found on any page." />
+    <MESSAGE value="Created a second MovieDetails page to show extended details of any movie when clicked on." />
+    <MESSAGE value="MovieRow.js, MovieDetails.js, CurrentFilms.js, UpcomingFilms.js and FilmDetails.js all updated in line with pulling information from an API rather than being hardcoded." />
+    <MESSAGE value="Syntax updated (semi colon's)." />
+    <MESSAGE value="Pulled all changes from Master." />
+    <MESSAGE value="File path update." />
+    <MESSAGE value="Put username above review in review header" />
+    <MESSAGE value="Put username above review in review" />
+    <MESSAGE value="Added a fetch to insertreview" />
+    <MESSAGE value="Finished ability to submit reviews from front end" />
+    <MESSAGE value="Added runtime to film details page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added runtime to film details page" />
   </component>
 </project>

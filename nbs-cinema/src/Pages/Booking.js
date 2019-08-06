@@ -1,35 +1,50 @@
 import React, { Component } from 'react';
+import NotFound from "./NotFound";
+import MovieDetails from "../component/MovieDetails";
+import ShowingsTable from '../component/ShowingsTable';
 
 class Booking extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-        }
+        this.state={
+            stuffToShow:<p>Loading</p>
+        };
     };
 
-
-    handleHome = event => {
-
-        this.props.history.push('/home');
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
+    componentDidMount() {
+        const classifications = {
+            ClassU:"/ClassificationImages/U.png",
+            ClassPG:"/ClassificationImages/PG.png",
+            Class12A:"/ClassificationImages/12A.png",
+            Class12:"/ClassificationImages/12.png",
+            Class15:"/ClassificationImages/15.png",
+            Class18:"/ClassificationImages/18.png"
+        };
+        console.log('http://localhost:8080/getshowingsbyfilm/'+this.props.match.params.id);
+        fetch('http://localhost:8080/getshowingsbyfilm/'+this.props.match.params.id)
+            .then(res => res.json() ).catch(console.log).then(results => {
+            const film = results.contentList[0];
+            film.classification = classifications[film.classification];
+            console.log(film);
+            const showings = results.contentList[1];
+            console.log(showings);
+            let newStuffToShow = [];
+            newStuffToShow.push(<MovieDetails movie={film}/>);
+            newStuffToShow.push(<ShowingsTable showingsArr={showings}/>)
+            this.setState({stuffToShow:newStuffToShow});
+        }).catch(()=>{
+            this.setState({
+                stuffToShow:<NotFound/>
+            })
+        });
+    }
 
     render() {
-        return (<>
-                <h1>Booking Page</h1>
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-            </>
+        return (
+            <div>
+                {this.state.stuffToShow}
+            </div>
         )
     }
 }
