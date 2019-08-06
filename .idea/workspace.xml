@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/BookingStage2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -218,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565075036297</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Showing table now prints the showing id that the user selects to the console">
+      <created>1565075910508</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565075910508</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +277,7 @@
     <MESSAGE value="Added runtime to film details page" />
     <MESSAGE value="Showing times are now displayed on front end for each film" />
     <MESSAGE value="Added message to display when no showings are available" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added message to display when no showings are available" />
+    <MESSAGE value="Showing table now prints the showing id that the user selects to the console" />
+    <option name="LAST_COMMIT_MESSAGE" value="Showing table now prints the showing id that the user selects to the console" />
   </component>
 </project>

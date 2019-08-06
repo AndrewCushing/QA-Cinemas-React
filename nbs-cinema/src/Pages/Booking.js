@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NotFound from "./NotFound";
 import MovieDetails from "../component/MovieDetails";
 import ShowingsTable from '../component/ShowingsTable';
+import BookingStage2 from "./BookingStage2";
 
 class Booking extends Component {
 
@@ -10,6 +11,36 @@ class Booking extends Component {
         this.state={
             stuffToShow:<p>Loading</p>
         };
+        this.bookTime = this.bookTime.bind(this);
+        this.attemptBooking = this.attemptBooking.bind(this);
+    };
+
+    bookTime = (showing) => (event) => {
+        event.preventDefault();
+        console.log(showing);
+        this.setState({stuffToShow:<BookingStage2 bookingFunc={this.attemptBooking} showing={showing} film={this.state.filmSelected}/>});
+    };
+
+    attemptBooking = (showingId) => (event) => {
+        event.preventDefault();
+        const numAdults = Number(document.getElementById("adults").value);
+        const numChildren = Number(document.getElementById("children").value);
+        const numSeniors = Number(document.getElementById("seniors").value);
+        const totalSeats = numAdults+numChildren+numSeniors;
+        console.log('http://localhost:8080/bookany/'+showingId+"/"+totalSeats);
+        fetch('http://localhost:8080/bookany/'+showingId+"/"+totalSeats)
+            .then(res => res.json()).catch(console.log).then(results => {
+            console.log(results);
+            if (results.successful){
+                this.setState({
+                    stuffToShow:<h1>Congrats! Your tickets have been booked!</h1>
+                });
+            } else {
+                this.setState({
+                    stuffToShow:<h1>Sorry, we don't have that many seats available. This showing only has {results.contentList[0].seatsAvailable} seats available. If you need more then please select another showing.</h1>
+                });
+            }
+        });
     };
 
     componentDidMount() {
@@ -21,7 +52,6 @@ class Booking extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        console.log('http://localhost:8080/getshowingsbyfilm/'+this.props.match.params.id);
         fetch('http://localhost:8080/getshowingsbyfilm/'+this.props.match.params.id)
             .then(res => res.json()).catch(console.log).then(results => {
             const film = results.contentList[0];
@@ -31,11 +61,15 @@ class Booking extends Component {
             let newStuffToShow = [];
             newStuffToShow.push(<MovieDetails movie={film}/>);
             if (showings.length>0) {
-                newStuffToShow.push(<ShowingsTable showingsArr={showings}/>);
+                newStuffToShow.push(<ShowingsTable bookTimeCallback={this.bookTime} showingsArr={showings}/>);
             } else {
                 newStuffToShow.push(<h3>Sorry, there are currently no showings available for this film</h3>);
             }
-            this.setState({stuffToShow:newStuffToShow});
+            this.setState({stuffToShow:newStuffToShow, filmSelected:film});
+        }).catch(()=>{
+            this.setState({
+                stuffToShow:<NotFound/>
+            });
         });
     }
 
