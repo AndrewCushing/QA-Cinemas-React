@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/BookingStage2Advanced.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/BookingStage2.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/BookingStage2Basic.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nbs-cinema/src/Pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,6 +59,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andy\IdeaProjects\QA-Cinemas-React\nbs-cinema\src\Pages" />
       <recent name="C:\Users\Dale\IdeaProjects\QA-Cinemas-React\nbs-cinema\public\ClassificationImages" />
     </key>
   </component>
@@ -235,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565082039184</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added flag so that the book button doesn't show up on the bookings page">
+      <created>1565083157689</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1565083157689</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +294,7 @@
     <MESSAGE value="Added message to display when no showings are available" />
     <MESSAGE value="Showing table now prints the showing id that the user selects to the console" />
     <MESSAGE value="Got a basic booking system up and running" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got a basic booking system up and running" />
+    <MESSAGE value="Added flag so that the book button doesn't show up on the bookings page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added flag so that the book button doesn't show up on the bookings page" />
   </component>
 </project>

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import NotFound from "./NotFound";
 import MovieDetails from "../component/MovieDetails";
 import ShowingsTable from '../component/ShowingsTable';
-import BookingStage2 from "./BookingStage2";
+import BookingStage2Basic from "./BookingStage2Basic";
+import BookingStage2Advanced from "./BookingStage2Advanced";
 
 class Booking extends Component {
 
@@ -18,7 +19,7 @@ class Booking extends Component {
     bookTime = (showing) => (event) => {
         event.preventDefault();
         console.log(showing);
-        this.setState({stuffToShow:<BookingStage2 bookingFunc={this.attemptBooking} showing={showing} film={this.state.filmSelected}/>});
+        this.setState({stuffToShow:<BookingStage2Advanced bookingFunc={this.attemptBooking} showing={showing} film={this.state.filmSelected}/>});
     };
 
     attemptBooking = (showingId) => (event) => {

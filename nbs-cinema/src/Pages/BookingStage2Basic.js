@@ -1,9 +1,6 @@
 import React from "react";
-import MovieDetails from "../component/MovieDetails";
-import ShowingsTable from "../component/ShowingsTable";
-import NotFound from "./NotFound";
 
-export default class BookingStage2 extends React.Component {
+export default class BookingStage2Basic extends React.Component {
 
     constructor(props){
         super(props);
