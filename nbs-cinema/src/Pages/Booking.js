@@ -59,7 +59,7 @@ class Booking extends Component {
             film.classification = classifications[film.classification];
             console.log(film);
             let newStuffToShow = [];
-            newStuffToShow.push(<MovieDetails movie={film}/>);
+            newStuffToShow.push(<MovieDetails isBooking={true} movie={film}/>);
             if (showings.length>0) {
                 newStuffToShow.push(<ShowingsTable bookTimeCallback={this.bookTime} showingsArr={showings}/>);
             } else {

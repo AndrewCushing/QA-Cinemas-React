@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/BookingStage2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565075910508</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Got a basic booking system up and running">
+      <created>1565082039184</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1565082039184</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +286,7 @@
     <MESSAGE value="Showing times are now displayed on front end for each film" />
     <MESSAGE value="Added message to display when no showings are available" />
     <MESSAGE value="Showing table now prints the showing id that the user selects to the console" />
-    <option name="LAST_COMMIT_MESSAGE" value="Showing table now prints the showing id that the user selects to the console" />
+    <MESSAGE value="Got a basic booking system up and running" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got a basic booking system up and running" />
   </component>
 </project>

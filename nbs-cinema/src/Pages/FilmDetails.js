@@ -23,7 +23,7 @@ class FilmDetails extends Component {
             const movies = results.contentList;
             movies.forEach(movie => {
                 movie.classification = classifications[movie.classification];
-                const movieRow = <MovieDetails key={movie.id} movie={movie}/>;
+                const movieRow = <MovieDetails isBooking={false} key={movie.id} movie={movie}/>;
                 movieRows.push(movieRow)
             });
             this.setState({
