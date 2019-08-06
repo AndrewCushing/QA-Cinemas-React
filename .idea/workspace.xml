@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef42ecb9-ab1b-4270-95fe-629c2d77466b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CurrentFilmImages/Angrybirds.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CurrentFilmImages/CurrentWar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CurrentFilmImages/FastAndFurious.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CurrentFilmImages/HorribleHistories.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CurrentFilmImages/Stuber.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Angel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Crawl.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/IT.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Joker.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Maleficent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/UpcomingFilmsImages/Zombieland2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/BookingStage2Advanced.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/BookingStage2Advanced.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/FilmDetails.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +46,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -243,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565085805376</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Got the basics of a booking system working which allows seat selection">
+      <created>1565120500334</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1565120500334</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +293,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Carl's First Commit" />
     <MESSAGE value="Carl's Second Commit" />
     <MESSAGE value="API Caller commit, caller now pulls data on Current Films, upcoming films and get FilmDetails. Began work on the search function." />
@@ -297,6 +314,7 @@
     <MESSAGE value="Got a basic booking system up and running" />
     <MESSAGE value="Added flag so that the book button doesn't show up on the bookings page" />
     <MESSAGE value="Displayed colour coded buttons to show the status of each seat when booking tickets (red for booked, green for not booked)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Displayed colour coded buttons to show the status of each seat when booking tickets (red for booked, green for not booked)" />
+    <MESSAGE value="Got the basics of a booking system working which allows seat selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got the basics of a booking system working which allows seat selection" />
   </component>
 </project>
