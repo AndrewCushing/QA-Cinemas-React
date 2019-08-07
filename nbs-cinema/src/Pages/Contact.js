@@ -18,14 +18,13 @@ class Contact extends Component {
     render() {
         return (<div>
                 <ContactJumbotron/>
-            <h1>Contact</h1>
             <div className="EmailAdd">
-                <h4> Address </h4>
-                <h6> Alexandra House </h6>
-                <h6> Whittingham Dr </h6>
-                <h6> Wroughton</h6>
-                <h6> Swindon </h6>
-                <h6> SN4 0QJ </h6>
+                <h3> Address </h3>
+                <h5> Alexandra House </h5>
+                <h5> Whittingham Dr </h5>
+                <h5> Wroughton</h5>
+                <h5> Swindon </h5>
+                <h5> SN4 0QJ </h5>
             </div>
             <br/>
             <div className="EmailAdd">

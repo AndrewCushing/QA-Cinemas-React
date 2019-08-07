@@ -34,7 +34,7 @@ h5{
 
 
 .emailButton{
-    background-color: #335170;
+    background-color: #2E9FD1;
     border: none;
     border-radius: 6px;
     padding: 10px 18px;
@@ -63,17 +63,21 @@ h5{
     width: 50%;
     font: 12px arial, sans-serif;
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 5px;
     border-width: thick;
     background-color: #c6d8f5;
     background-image: linear-gradient(to bottom right, #c2ecff, whitesmoke);
 
-    padding-top: 5px;
+    padding-top: 0px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 
+.form-control{
+    margin: 10px;
+    background-image: linear-gradient(to bottom right, whitesmoke, whitesmoke, rgba(253, 255, 189, 0.55))
+}
 
 textarea {
     resize: none;

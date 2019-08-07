@@ -1,6 +1,6 @@
 .filmTable {
-    border: 1px solid lightslategrey;
     box-shadow: 5px 5px 8px #888888;
+    border-radius: 6px;
     cellpadding: none;
     width: 80%;
     height: 80%;
@@ -27,6 +27,9 @@
 .AddCommentInput{
     height: 33px;
     border-radius: 4px;
+    padding: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
     border: 2px solid #2E9FD1;
 }
 
@@ -40,18 +43,21 @@ input[type=submit] {
 }
 
 .filmHead{
-
     background-image: linear-gradient(to right, black, dimgrey, whitesmoke, dimgrey, black );
+    border-radius: 2px;
 }
 
 .ReviewHead{
     width: 60%;
     height: 60%;
+    border-radius: 4px;
     background-image: linear-gradient(to bottom right, #335170, white);
 }
 
 .reviewTable{
-    background-color: #e8e8e8;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .CommentContainer {
@@ -83,3 +89,25 @@ input[type=submit] {
     background-color: #2E9FD1;
     transition: 300ms;
 }
+
+
+.AddCommentText{
+    width: 400px;
+    border-radius: 4px;
+    border: 2px solid #2E9FD1;
+}
+
+
+.AddReviewForm{
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 8px #888888;
+    border-radius: 6px;
+    cellpadding: none;
+    width: 60%;
+    height: 60%;
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+
+

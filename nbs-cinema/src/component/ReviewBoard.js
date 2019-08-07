@@ -3,6 +3,7 @@ import DiscussionHeader from './DiscussionHeader.js';
 import Review from './Review';
 import './ReviewBoard.css';
 import AddReview from "./AddReview";
+import Comment from "./Comment";
 import NoReviewsFound from "./NoReviewsFound";
 import {ReviewJumbotron} from "./ReviewJumbotron";
 
@@ -61,20 +62,18 @@ export default class ReviewBoard extends Component {
             <div>
                 <table className="filmTable">
 
-                    <th className={"ReviewHead"}>
+                    <th className={"filmTable"}>
                         {this.state.movieHeader}
                     </th>
                         <tr>
                             <td>
                                 {this.state.reviews}
-
                             </td>
                         </tr>
 
 
                 </table>
                 <AddReview filmId={this.state.filmId}/>
-                {this.state.reviews}
             </div>
             </div>
 

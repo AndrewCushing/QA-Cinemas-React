@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieDetails from "./MovieDetails";
+import './ReviewBoard.css';
 
 export default class AddReview extends React.Component {
 
@@ -27,12 +28,13 @@ export default class AddReview extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.submitReview}>
+                <form className={"AddReviewForm"} onSubmit={this.submitReview}>
                     <div>
-                        <input type="text" placeholder="username" id="username"/>
+                        <h3> Please Add a Review </h3>
+                        <input type="text" className={"AddCommentInput"} placeholder="username" id="username"/>
                     </div>
                     <div>
-                        <select id="rating">
+                        <select className={"AddCommentInput"} id="rating">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -41,10 +43,10 @@ export default class AddReview extends React.Component {
                         </select>
                     </div>
                     <div>
-                        <textarea rows={3} placeholder={"Enter your review here"} id="review"/>
+                        <textarea className={"AddCommentText"} rows={3} placeholder={"Enter your review here"} id="review"/>
                     </div>
                     <div>
-                        <button>Submit</button>
+                        <input className={"AddCommentBtn"} type={"Submit"}/>
                     </div>
                 </form>
             </div>

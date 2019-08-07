@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
+import AddComment from "./AddComment";
 import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
 import {CommentJumbotron} from "./CommentJumbotron";
+import AddReview from "./AddReview";
 
 
 
@@ -59,33 +61,33 @@ export default class CommentBoard extends Component {
     };
 
     render() {
-        return (<div>
+        return (
+            <div>
             <CommentJumbotron/>
             <div>
                 <table className="filmTable">
-                    <tbody>
+                    <th className={"ReviewHead"}>
+                        {this.state.movieHeader}
+                    </th>
                     <tr>
-                        <td>
-                            {this.state.movieHeader}
+                        <td className={"ChosenReview"}>
+                            <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
+                            <AddComment filmId={this.state.review.filmId} reviewId={this.state.review.id}/>
                         </td>
                     </tr>
-                    </tbody>
+                    <tr>
+                        <td className={"ReviewHead"}>
+                            {this.state.comments}
+                        </td>
+                    </tr>
+
                 </table>
 
-                <table className="filmTable">
-                    <tbody>
-                    <tr>
-                        <td>
-                            <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                {this.state.comments}
                 <div>
                     <button className="ReturnButton" id="ReturnButton" type="submit"
                             onClick={this.returnFunction}> Return </button>
                 </div>
+
             </div>
             </div>
 

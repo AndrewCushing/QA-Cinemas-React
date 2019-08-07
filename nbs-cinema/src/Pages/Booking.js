@@ -116,7 +116,8 @@ class Booking extends Component {
     render() {
         return (<div>
             <BookingJumbotron/>
-            <div>
+            <div className={"filmHead"}>
+
                 {this.state.movieHeader}
                 {this.state.stuffToShow}
             </div>

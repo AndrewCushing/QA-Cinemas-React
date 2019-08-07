@@ -83,7 +83,7 @@ export default class AppFooter extends Component {
             </MDBContainer>
             <div className="footer-copyright text-center py-3">
               <MDBContainer fluid className="FooterText" >
-                &copy; {new Date().getFullYear()} Luna Cinema's
+                &copy; {new Date().getFullYear()} Luna Cinemas
               </MDBContainer>
             </div>
           </MDBFooter>
