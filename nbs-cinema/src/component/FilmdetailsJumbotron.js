@@ -27,12 +27,12 @@ const Styles = styled.div`
   }
 `;
 
-export const AboutJumbotron = () => (
+export const FilmdetailsJumbotron = () => (
     <Styles>
         <Jumbo fluid className="jumbo">
             <div className="overlay"></div>
             <Container>
-                <h1> About Us </h1>
+                <h1> More Info </h1>
             </Container>
         </Jumbo>
     </Styles>
