@@ -2,24 +2,30 @@ import React, { Component } from "react";
 import { MDBCol,MDBIcon, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import styled from 'styled-components';
 
+
 const Styles = styled.div`
 .page-footer{
     background:#22465E;
+    position: relative;
+    height: 210px;
 }
 
 .FooterText{
-    color: antiquewhite;  
+    color: lightpink;  
 }
 
 .mb-4 {
     font-style:normal;
     color: antiquewhite;
-    font-size:12px;
+    font-size:18px;
 }
 .ul.list-unstyled  {
     font-style:normal;
     color: antiquewhite;
-    
+}
+
+pa{
+  font-size: 26px;
 }
   `;
 
@@ -33,7 +39,7 @@ export default class AppFooter extends Component {
               <MDBRow className="my-4">
                 <hr className="clearfix w-100 d-md-none" />
                 <MDBCol md="2" lg="2" className="ml-auto">
-                  <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>About</h5>
+                  <h5 className="mb-4 font-weight-bold"  style={{textDecoration: "underline"}}>About</h5>
                   <ul className="list-unstyled">
                     <p>
                       <a className="FooterText" href="/About">About Us</a>
@@ -73,8 +79,8 @@ export default class AppFooter extends Component {
                     <a className="btn btn-link" href="#!">
                       <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="facebook" />
                     </a>
-                    <a className="btn btn-link" href="!#">
-                      <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="twitter" />
+                    <a className="btn btn-link" href="https://twitter.com/TheLunaCinema?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                      <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="twitter"/>
                     </a>
                   </div>
                 </MDBCol>

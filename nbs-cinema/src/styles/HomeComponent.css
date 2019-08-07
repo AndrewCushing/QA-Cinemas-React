@@ -1,19 +1,19 @@
 body {
-    margin: 0;
-    padding: 0;
-    border-radius: 2px;
-    background-image: linear-gradient(125deg, #faf0d2, #f0e5c4, #ead8a1, #e1c782, #ffdd80, #ffe08c, #f0e5c4);
-    background-size: 100%;
+
 }
 
 .carousel {
     /* any dimensions are fine, it can be responsive with max-width */
-    position: center;
+    position: relative;
+    float: none;
+    margin: 0 auto;
     margin-left: 100px;
     margin-right: 100px;
+
     width: 80%;
     height: 300px;
     background-image: linear-gradient(to right, black, dimgrey, whitesmoke, white,  whitesmoke, dimgrey, black );
+    border: 100px;
 }
 
 .carousel.item {
@@ -30,3 +30,4 @@ body {
 
     width: 100%;
 }
+

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import '../styles/HomeComponent.css';
 
 const Styles = styled.div`
   .jumbo {
@@ -9,9 +10,7 @@ const Styles = styled.div`
     color: #efefef;
     height: 150px;
     position: relative;
-    z-index: 0;
-    
-    
+    z-index: 0; 
     }
 
   .overlay {
@@ -33,7 +32,7 @@ export const Jumbotron = () => (
       <div className="overlay"></div>
       <Container>
           <h1> Welcome to Luna Cinemas </h1>
-          <h3> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h3>
+          <h3> "Flying you to the moon for an out of this world viewing experience” </h3>
       </Container>
     </Jumbo>
   </Styles>

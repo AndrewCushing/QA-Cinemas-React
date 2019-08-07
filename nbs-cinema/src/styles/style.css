@@ -3,6 +3,35 @@ card-group {
    margin: 50px;
 }
 
-.card-footer{*/
+.card-footer{
     background-color: #1c1918;
+}
+h2{
+    color: lightpink;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.ScreenDesc{
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.ScreenSelector{
+    width: 40%;
+    background-color: #335170;
+    transition: 0.6s;
+    font: 16px arial, sans-serif;
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ScreenSelector:hover {
+    transition: 0.6s;
+    background-color: #2E9FD1;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 12px 40px 0 rgba(0,0,0,0.19);
 }
