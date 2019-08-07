@@ -17,14 +17,13 @@ const Styles = styled.div`
  padding:5px;
  }
  
-.li.nav-item {
- padding-left: 550px;
  
- }
- 
- #searchBar {
+.NavSearch {
 
- }
+font-size: 20px;
+margin-left:29px;
+
+}
     
  .navbar-brand>img {
     margin-top:20px;
@@ -78,8 +77,8 @@ export default class NavigationBar extends Component {
     render() {
         return (
             <Styles>
-                <MDBNavbar color="indigo" dark expand="md">
-                    <MDBNavbarBrand href = "/" ><img style={{width:150 }} src={Logo}  height="100"alt="Luna Cinema's" />
+                <MDBNavbar fluid color="indigo" dark expand="md">
+                    <MDBNavbarBrand href = "/" ><img style={{width:150 }} src={Logo} alt="Luna Cinema's" />
                     </MDBNavbarBrand>
                     <MDBNavbarToggler onClick={this.toggleCollapse} />
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -102,11 +101,11 @@ export default class NavigationBar extends Component {
                         </MDBNavbarNav>
                         <MDBNavbarNav right>
                             <MDBNavItem>
-                                {/*<MDBFormInline waves onSubmit={this.performSearch}>*/}
-                                {/*    <div className="md-form my-0">*/}
-                                {/*        <input id="searchBar" className="searchBar" type="text" placeholder="Search" aria-label="Search" />*/}
-                                {/*    </div>*/}
-                                {/*</MDBFormInline>*/}
+                                <MDBFormInline className="NavSearch" onSubmit={this.performSearch}>
+                                    <div className="md-form my-0">
+                                        <input id="searchBar" className="searchBar" type="text" placeholder="Search" aria-label="Search" />
+                                    </div>
+                                </MDBFormInline>
                             </MDBNavItem>
                         </MDBNavbarNav>
                     </MDBCollapse>

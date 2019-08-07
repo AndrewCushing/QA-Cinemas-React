@@ -18,11 +18,17 @@
 }
 
 .card-footer{
-  background-color: #22465E;
+  background-color: whitesmoke;
 }
   .card-body{
     background-color: whitesmoke;
   }
+  .Pfooter {
+    font-size: larger;
+  }
+.Bfooter {
+  text-decoration: underline;
+}
 
 
 #body {

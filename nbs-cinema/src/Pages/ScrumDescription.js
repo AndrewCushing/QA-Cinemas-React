@@ -13,6 +13,7 @@ class Scrum extends Component {
         return (<div>
                 <ScrumJumbotron/>
 
+
             </div>
         )
     }

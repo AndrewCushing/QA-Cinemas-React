@@ -31,21 +31,25 @@ export const PlacesToGo = () =>(
                     </Card.Text>
                 </Card.Body>
                 <Card.Img variant="top" src={FB}/>
-                <Card.Footer>
-                    <small className="text-muted">
+                <Card.Footer className ="Pfooter">
+                    <small>
                         <ul>
-                            <p>Address: Greenbridge Retail Park, Drakes Way, Swindon SN3 3SQ</p>
-                            <p>Hours:
-                                <li>Friday	7:30am–11pm</li>
-                                <li>Saturday	7:30am–11pm</li>
-                                <li>Sunday	7:30am–10:30pm</li>
-                                <li>Monday	9am–11pm</li>
-                                <li>Tuesday	9am–11pm</li>
-                                <li>Wednesday	9am–11pm</li>
-                                <li>Thursday	9am–11pm</li>
+                            <b className="Bfooter">Address</b>
+                                <p>Greenbridge Retail Park, Drakes Way, Swindon SN3 3SQ</p>
+                            <b className="Bfooter">Hours</b>
+                            <p>
+                                Friday	7:30am–11pm<br/>
+                                Saturday	7:30am–11pm<br/>
+                                Sunday	7:30am–10:30pm<br/>
+                                Monday	9am–11pm<br/>
+                                Tuesday	9am–11pm<br/>
+                                Wednesday	9am–11pm<br/>
+                                Thursday	9am–11pm<br/>
                             </p>
-                            <p>Menu: <a href = "https://www.frankieandbennys.com/restaurants/swindon/menu">frankieandbennys.com</a></p>
-                            <p>Phone: 01793 613136</p>
+                            <b className="Bfooter">Menu</b>
+                            <p><a href = "https://www.frankieandbennys.com/restaurants/swindon/menu">frankieandbennys.com</a></p>
+                            <b className="Bfooter">Phone</b>
+                            <p>01793 613136</p>
                         </ul></small>
                 </Card.Footer>
             </Card>
@@ -57,21 +61,25 @@ export const PlacesToGo = () =>(
                     </Card.Text>
                 </Card.Body>
                 <Card.Img variant="top" src={HW} />
-                <Card.Footer>
-                    <small className="text-muted">
+                <Card.Footer className ="Pfooter">
+                    <small>
                         <ul>
-                            <p>Address: Hall & Woodhouse, Peglars Way, Swindon SN1 7DA</p>
-                            <p>Hours:
-                                <li>Friday	9am–11pm</li>
-                                <li>Saturday	9am–11pm</li>
-                                <li>Sunday	9am–10:30pm</li>
-                                <li>Monday	9am–11pm</li>
-                                <li>Tuesday	9am–11pm</li>
-                                <li>Wednesday	9am–11pm</li>
-                                <li>Thursday	9am–11pm</li>
+                            <b className="Bfooter">Address</b>
+                                <p>Hall & Woodhouse, Peglars Way, Swindon SN1 7DA</p>
+                            <b className="Bfooter">Hours</b>
+                            <p>
+                                Friday	9am–11pm<br/>
+                                Saturday	9am–11pm<br/>
+                                Sunday	9am–10:30pm<br/>
+                                Monday	9am–11pm<br/>
+                                Tuesday	9am–11pm<br/>
+                                Wednesday	9am–11pm<br/>
+                                Thursday	9am–11pm<br/>
                             </p>
-                            <p>Menu: <a href = "https://www.hall-woodhousewichelstowe.co.uk/dine/?utm_source=local&utm_medium=organic&utm_content=gmb">hall-woodhousewichelstowe.co.uk</a></p>
-                            <p>Phone: 01793 209207</p>
+                            <b className="Bfooter">Menu</b>
+                            <p><a href = "https://www.hall-woodhousewichelstowe.co.uk/dine/?utm_source=local&utm_medium=organic&utm_content=gmb">hall-woodhousewichelstowe.co.uk</a></p>
+                            <b className="Bfooter">Phone</b>
+                            <p>01793 209207</p>
                         </ul></small>
                 </Card.Footer>
             </Card>
@@ -83,21 +91,25 @@ export const PlacesToGo = () =>(
                     </Card.Text>
                 </Card.Body>
                 <Card.Img variant="top" src={Chiquto} />
-                <Card.Footer>
-                    <small className="text-muted">
+                <Card.Footer className ="Pfooter">
+                    <small className>
                         <ul>
-                            <p>Address: Greenbridge Retail Park, Drakes Way, Swindon SN3 3SQ</p>
-                            <p>Hours:
-                                <li>Friday	7:30am–11pm</li>
-                                <li>Saturday	7:30am–11pm</li>
-                                <li>Sunday	7:30am–10:30pm</li>
-                                <li>Monday	9am–11pm</li>
-                                <li>Tuesday	9am–11pm</li>
-                                <li>Wednesday	9am–11pm</li>
-                                <li>Thursday	9am–11pm</li>
+                            <b className="Bfooter">Address</b>
+                            <p>Greenbridge Retail Park, Drakes Way, Swindon SN3 3SQ</p>
+                            <b className="Bfooter">Hours</b>
+                            <p>
+                                Friday	7:30am–11pm<br/>
+                                Saturday	7:30am–11pm<br/>
+                                Sunday	7:30am–10:30pm<br/>
+                                Monday	9am–11pm<br/>
+                                Tuesday	9am–11pm<br/>
+                                Wednesday	9am–11pm<br/>
+                                Thursday	9am–11pm<br/>
                             </p>
-                            <p>Menu: <a href = "https://www.chiquito.co.uk/restaurants/south-west/swindon/swindon">chiquito.co.uk</a></p>
-                            <p>Phone: 01793 482830</p>
+                            <b className="Bfooter">Menu</b>
+                            <p><a href = "https://www.chiquito.co.uk/restaurants/south-west/swindon/swindon">chiquito.co.uk</a></p>
+                            <b className="Bfooter">Phone</b>
+                            <p>01793 482830</p>
                         </ul>
                     </small>
                 </Card.Footer>
@@ -112,21 +124,26 @@ export const PlacesToGo = () =>(
                     </Card.Text>
                 </Card.Body>
                 <Card.Img variant="top" src={PizzaHut} />
-                <Card.Footer>
-                    <small className="text-muted">
+                <Card.Footer className ="Pfooter">
+                    <small>
                         <ul>
-                            <p>Address: Greenbridge Retail Park, Drakes Way, Swindon SN3 3SQ</p>
-                            <p>Hours:
-                                <li>Friday	11:30am–11pm</li>
-                                <li>Saturday	11am–11pm</li>
-                                <li>Sunday	12pm–10pm</li>
-                                <li>Monday	11:30am–10:30pm</li>
-                                <li>Tuesday	11:30am–10:30pm</li>
-                                <li>Wednesday	11:30am–10:30pm</li>
-                                <li>Thursday	11:30am–10:30pm</li>
+                            <b className="Bfooter">Address</b>
+                                <p>Greenbridge Retail Park, Drakes Way, Swindon SN3 3SQ</p>
+                            <b className="Bfooter">Hours</b>
+                            <p>
+                                Friday	11:30am–11pm<br/>
+                                Saturday	11am–11pm<br/>
+                                Sunday	12pm–10pm<br/>
+                                Monday	11:30am–10:30pm<br/>
+                                Tuesday	11:30am–10:30pm<br/>
+                                Wednesday	11:30am–10:30pm<br/>
+                                Thursday	11:30am–10:30pm<br/>
                             </p>
-                            <p>Menu: <a href = "https://www.pizzahut.co.uk/restaurants/food/">pizzahut.co.uk</a></p>
-                            <p>Phone: 01793 422844</p>
+                            <b className="Bfooter">Menu</b>
+                            <p><a href = "https://www.pizzahut.co.uk/restaurants/food/">pizzahut.co.uk</a></p>
+                            <b className="Bfooter"></b>
+                            <b className="Bfooter">Phone</b>
+                            <p>01793 422844</p>
                         </ul>
                     </small>
                 </Card.Footer>
@@ -139,22 +156,26 @@ export const PlacesToGo = () =>(
                     </Card.Text>
                 </Card.Body>
                 <Card.Img variant="top" src={Nandos} />
-                <Card.Footer>
-                    <small className="text-muted">
+                <Card.Footer className = "Pfooter">
+                    <small>
                         <ul>
-                            <p>Address: 2, Regent Circus, Swindon SN1 1FA</p>
-                            <p>Hours:
-                                <li>Friday	11:30am–10:30pm</li>
-                                <li>Saturday	11:30am–10:30pm</li>
-                                <li>Sunday	11:30am–10pm</li>
-                                <li>Monday	11:30am–10:30pm</li>
-                                <li>Tuesday	11:30am–10:30pm</li>
-                                <li>Wednesday	11:30am–10:30pm</li>
-                                <li>Thursday	11:30am–10:30pm</li>
+                            <b className="Bfooter">Address</b>
+                            <p>2, Regent Circus, Swindon SN1 1FA</p>
+                        <b className="Bfooter">Hours</b>
+                            <p>
+                               Friday	11:30am–10:30pm<br/>
+                                Saturday	11:30am–10:30pm<br/>
+                                Sunday	11:30am–10pm<br/>
+                                Monday	11:30am–10:30pm<br/>
+                                Tuesday	11:30am–10:30pm<br/>
+                                Wednesday	11:30am–10:30pm<br/>
+                                Thursday	11:30am–10:30pm<br/>
 
                             </p>
-                            <p>Menu: <a href = "https://www.nandos.co.uk/food/menu?utm_source=googlemaps&utm_medium=organic&utm_content=menu&utm_campaign=local">nandos.co.uk</a></p>
-                            <p>Phone: 01793 480769</p>
+                            <b className="Bfooter">Menu</b>
+                            <p><a href = "https://www.nandos.co.uk/food/menu?utm_source=googlemaps&utm_medium=organic&utm_content=menu&utm_campaign=local">nandos.co.uk</a></p>
+                            <b className="Bfooter">Phone</b>
+                            <p>01793 480769</p>
                         </ul></small>
                 </Card.Footer>
             </Card>
@@ -166,21 +187,25 @@ export const PlacesToGo = () =>(
                     </Card.Text>
                 </Card.Body>
                 <Card.Img variant="top" src={Fratellos} />
-                <Card.Footer>
-                    <small className="text-muted"><ul>
-                        <p>Address: 12 Victoria Rd, Swindon SN1 3AJ</p>
-                        <p>Hours:
-                            <li>Friday	12pm-2pm,6pm-11pm</li>
-                            <li>Saturday	12pm-11pm</li>
-                            <li>Sunday	12pm-11pm</li>
-                            <li>Monday	12pm-2pm,6pm-11pm</li>
-                            <li>Tuesday	12pm-2pm,6pm-11pm</li>
-                            <li>Wednesday	12pm-2pm,6pm-11pm</li>
-                            <li>Thursday	12pm-2pm,6pm-11pm</li>
+                <Card.Footer className="Pfooter">
+                    <small><ul>
+                        <b className="Bfooter">Address</b>
+                        <p>12 Victoria Rd, Swindon SN1 3AJ</p>
+                        <b className="Bfooter">Hours</b>
+                        <p>
+                            Friday	12pm-2pm,6pm-11pm<br/>
+                            Saturday	12pm-11pm<br/>
+                            Sunday	12pm-11pm<br/>
+                            Monday	12pm-2pm,6pm-11pm<br/>
+                            Tuesday	12pm-2pm,6pm-11pm<br/>
+                            Wednesday	12pm-2pm,6pm-11pm<br/>
+                            Thursday	12pm-2pm,6pm-11pm<br/>
 
                         </p>
-                        <p>Menu: <a href = "http://www.fratellosswindon.co.uk/swindon/menu.html">fratellosswindon.co.uk</a></p>
-                        <p>Phone: 01793 574444</p>
+                        <b className="Bfooter">Menu</b>
+                        <p><a href = "http://www.fratellosswindon.co.uk/swindon/menu.html">fratellosswindon.co.uk</a></p>
+                        <b className="Bfooter">Phone</b>
+                        <p>01793 574444</p>
                     </ul></small>
                 </Card.Footer>
             </Card>
