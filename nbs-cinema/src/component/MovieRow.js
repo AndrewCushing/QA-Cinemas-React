@@ -17,18 +17,18 @@ class MovieRow extends React.Component {
                     <Card.Text>{this.props.movie.briefDescription}</Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted">
-                        <Link to ={"/Booking/" + this.props.movie.id}>
-                            <button className="bookButton"><i class="material-icons"> event_seat</i></button>
-                        </Link>
-                        <Link to ={"/FilmDetails/" + this.props.movie.id}>
-                            <button className="infoButton"><i style = {{width:34}}class="material-icons">info</i></button>
-                        </Link>
-                        <Link to ={"/Reviews/" + this.props.movie.id}>
-                            <button className="infoButton"><i class="material-icons">rate_review</i></button>
-                        </Link>
-                    </small>
-                </Card.Footer>
+                <small className="text-muted">
+                    <Link to ={"/Booking/" + this.props.movie.id}>
+                        <button className="bookButton"><i class="material-icons"> event_seat</i></button>
+                    </Link>
+                    <Link to ={"/FilmDetails/" + this.props.movie.id}>
+                        <button className="infoButton"><i style = {{width:34}}class="material-icons">info</i></button>
+                    </Link>
+                    <Link to ={"/Reviews/" + this.props.movie.id}>
+                        <button className="infoButton"><i class="material-icons">rate_review</i></button>
+                    </Link>
+                </small>
+            </Card.Footer>
             </Card>
         )
     }
