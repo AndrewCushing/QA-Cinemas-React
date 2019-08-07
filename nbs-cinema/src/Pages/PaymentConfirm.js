@@ -6,7 +6,7 @@ import receipt_url from "./Checkout";
 import InputGroup from "react-bootstrap/InputGroup";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
-import style from "./paymentsstyle.css";
+import style from "../styles/paymentsstyle.css";
 
 
 class Payment extends React.Component{
