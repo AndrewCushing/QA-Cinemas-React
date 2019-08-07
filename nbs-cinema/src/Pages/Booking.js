@@ -35,16 +35,13 @@ class Booking extends Component {
     attemptBooking = (showing, seatsToBook) => (event) => {
         event.preventDefault();
         showing = this.getRequestedSeatLayout(showing, seatsToBook);
-        console.log(JSON.stringify(showing));
         fetch('http://localhost:8080/booktickets/'+showing.id,{
             method: 'POST',
             headers:{'content-type': 'application/json'},
             body: JSON.stringify(showing)
         }).then(res => res.json()).catch(console.log).then(results => {
             if (results.successful){
-                this.setState({
-                    stuffToShow:<h1>Congrats! Your tickets have been booked!</h1>
-                });
+                window.location="http://localhost:3000/payment/"+(results.body.split(":")[1]);
             } else {
                 this.setState({
                     stuffToShow:<h1>{results.body}</h1>
