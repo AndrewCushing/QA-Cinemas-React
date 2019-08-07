@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="adf7c430-4df2-455a-88bb-3b35ee19e40f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/styles/paymentsstyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/styles/styleclass.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/FooterComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,18 +84,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="969">
@@ -109,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Footer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="38" column="78" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
+            <state relative-caret-position="136">
+              <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -121,22 +104,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/OpeningTimes.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="283">
+              <caret line="214" lean-forward="true" selection-start-line="214" selection-end-line="214" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/OpeningJumbotron.js">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ClassificationsJumbotron.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="-315">
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1037">
+              <caret line="106" column="128" selection-start-line="106" selection-start-column="128" selection-end-line="106" selection-end-column="128" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -189,13 +184,14 @@
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/paymentsstyle.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Payment.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/FooterComponent.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/About.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/Footer.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js" />
       </list>
     </option>
   </component>
@@ -327,7 +323,7 @@
       <workItem from="1565076299740" duration="7991000" />
       <workItem from="1565097727635" duration="3979000" />
       <workItem from="1565158517096" duration="2815000" />
-      <workItem from="1565169441880" duration="3726000" />
+      <workItem from="1565169441880" duration="6875000" />
     </task>
     <task id="LOCAL-00001" summary="Carl's First Commit">
       <created>1564066113006</created>
@@ -413,11 +409,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565170116825</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Continue to update elements to include ID's where required for testing purposes.">
+      <created>1565173421450</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565173421450</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Continue to update elements to include ID's where required for testing purposes.">
+      <created>1565176315382</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1565176315382</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54251000" />
+    <option name="totallyTimeSpent" value="57400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,11 +559,10 @@
     <MESSAGE value="File path update." />
     <MESSAGE value="Updated Elements to include ID's for Selenium Testing" />
     <MESSAGE value="Fixed issues with certain code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issues with certain code." />
+    <MESSAGE value="Continue to update elements to include ID's where required for testing purposes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Continue to update elements to include ID's where required for testing purposes." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/StandardScreen.js" />
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Classifications.js" />
     <entry file="file://$PROJECT_DIR$/nbs-cinema/build/index.html" />
     <entry file="file://$PROJECT_DIR$/nbs-cinema/build/static/js/2.546d9aa2.chunk.js" />
     <entry file="file://$PROJECT_DIR$/nbs-cinema/build/static/js/main.d39a3349.chunk.js" />
@@ -721,16 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Payment.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -875,12 +874,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ClassificationsJumbotron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="106" column="128" selection-start-line="106" selection-start-column="128" selection-end-line="106" selection-end-column="128" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="78" selection-start-line="38" selection-start-column="78" selection-end-line="38" selection-end-column="78" />
+        <state relative-caret-position="136">
+          <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="214" lean-forward="true" selection-start-line="214" selection-end-line="214" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>

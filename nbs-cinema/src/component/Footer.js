@@ -57,10 +57,10 @@ export default class AppFooter extends Component {
                       <a className="FooterText" href="/Classifications" id={"Classifications_Link"}>Classifications</a>
                     </p>
                     <p>
-                      <a className="FooterText" href="/Travel">Directions</a>
+                      <a className="FooterText" href="/Travel" id={"GettingHere_Link"}>Directions</a>
                     </p>
                     <p>
-                      <a className="FooterText" href="/PlacesToGo">Places To Go</a>
+                      <a className="FooterText" href="/PlacesToGo" id={"Places_Link"}>Places To Go</a>
                     </p>
                   </ul>
                 </MDBCol>
