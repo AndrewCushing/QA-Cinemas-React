@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import {Jumbotron} from "./Jumbotron";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 
 
@@ -16,7 +18,10 @@ class HomeComponent extends Component {
         return (
             <div>
                 <Jumbotron/>
-                <Carousel
+                <div className="Carousel">
+
+
+                    <Carousel
                     className={"carousel"}
                     controls = {true}
                     fade = {true}
@@ -52,6 +57,7 @@ class HomeComponent extends Component {
 
 
                 </Carousel>
+            </div>
             </div>
         )
     }

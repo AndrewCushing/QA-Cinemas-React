@@ -69,14 +69,18 @@ class Booking extends Component {
         for (let i = 0 ; i < booleanSeatsArr.length ; i++){
             for (let j = 0 ; j < booleanSeatsArr[i].length ; j++){
                 let colour="";
+                let background="";
                 if (this.checkSelected(i,j,seatsToBook)){
-                    colour = "blue";
+                    colour = "white";
+                    background="green";
                 } else if (booleanSeatsArr[i][j]){
-                    colour = "red";
+                    colour = "white";
+                    background="red";
                 } else {
-                    colour = "green";
+                    colour = "black";
+                    background="white";
                 }
-                newSeatElementArr.push(<button key={i+":"+j} style={{color:colour}} onClick={booleanSeatsArr[i][j] ? ()=>{} : this.addSeatToBooking(showing, seatsToBook, i+":"+j)}>Row:{i} Col:{j}</button>);
+                newSeatElementArr.push(<button key={i+":"+j} style={{color:colour,background:background}} onClick={booleanSeatsArr[i][j] ? ()=>{} : this.addSeatToBooking(showing, seatsToBook, i+":"+j)}>Row:{i} Col:{j}</button>);
             }
             newSeatElementArr.push(<br key={"RowEnd"+i}/>);
         }
