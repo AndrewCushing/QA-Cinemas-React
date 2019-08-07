@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../styles/ContactComponent.css';
-import EmailService from '../services/EmailService';
 
 class EMail extends Component {
 
@@ -24,18 +23,43 @@ class EMail extends Component {
         event.preventDefault();
         // const data = new FormData( event.target);
         const {Forename,Surname,EmailAdd,Subject,Message} = this.state;
-        console.log("Some Data: " + Forename+Surname+EmailAdd+Subject+Message);
-        let EmailResponse =  EmailService.sendEmailToPO(Forename,Surname,EmailAdd,Subject,Message);
-        console.log(EmailResponse);
-    };
+        console.log("Sending email. Please wait: " + Forename+Surname+EmailAdd+Subject+Message);
 
+        let senderName = Forename + " " + Surname;
+        let labelMessage = "Sending Email. Please wait a moment";
+        this.setState({EmailResponse: labelMessage});
+        labelMessage = "";
+
+        fetch('http://localhost:8080/sendEmail', {
+            method: 'POST',
+            headers: { "Accept": "application/json", "Content-Type": "application/json"},
+            body: JSON.stringify({"senderName": senderName, "fromEmail": EmailAdd, "subject": Subject, "message": Message})
+        })
+            .then(res => res.json() )
+            .catch(results => {
+                console.log(results);
+                labelMessage = "An Error occurred. \nPlease try again later";
+            })
+            .then(results => {
+                if (labelMessage.length == 0){
+                    labelMessage = results.response;
+                }
+               this.setState({
+                   Forename:"",
+                   Surname:"",
+                   EmailAdd:"",
+                   Subject:"",
+                   Message:"",
+                   EmailResponse: labelMessage
+            });
+        });
+    };
     render() {
         const {Forename,Surname,EmailAdd,Subject,Message,EmailResponse} =this.state;
-        return (<>
-                <div >
-                    <label>{EmailResponse}</label>
-                    <form onSubmit={this.handleSubmit} >
-                        <h1>Email</h1>
+        return (
+                <div>
+                     <form onSubmit={this.handleSubmit} >
+                         <h1>Email</h1>
                         <input required type="text" className="form-control" name ="Forename" id={"Forename"} maxLength="30"  placeholder="Forename" value={Forename} onChange={this.handleOnChange} />
                         <input required type="text" className="form-control"  name ="Surname" id={"Surname"} maxLength="30" placeholder="Surname" value={Surname} onChange={this.handleOnChange}/>
                         <input required type="email" className="form-control"  name ="EmailAdd" id={"EmailAdd"} maxLength="50" placeholder="name@example.com" value={EmailAdd} onChange={this.handleOnChange}/>
@@ -43,15 +67,11 @@ class EMail extends Component {
                         <textarea rows="7" cols="58" className="form-control"  name ="Message" id={"Message"}
                                   maxLength="200" placeholder="Enter your message here" value={Message} onChange={this.handleOnChange} required></textarea>
                         <input className="popup" type="submit" value="Submit"/>
+                         <br/><label className={EmailResponse} id={EmailResponse}>{EmailResponse}</label>
+                         <br/>
                         <br/>
-                        <br/>
-                        <br/>
-
-
                     </form>
                 </div>
-
-            </>
         )
     }
 }
