@@ -3,6 +3,7 @@ import MovieRow from '../component/MovieRow';
 import NotFound from "./NotFound";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {CurrentJumbotron} from "../component/CurrentJumbotron";
 
 class CurrentFilms extends Component {
 
@@ -46,21 +47,24 @@ class CurrentFilms extends Component {
 
     render() {
 
+
         return (
+            <div>
+                <CurrentJumbotron/>
+                <Row>
 
-            <Row>
+                    { this.state.rows.map(movie => (
 
-                { this.state.rows.map(movie => (
+                        <Col md="6">
 
-                    <Col md="6">
+                            <MovieRow key={movie.id} movie={movie}/>
 
-                        <MovieRow key={movie.id} movie={movie}/>
+                        </Col>
 
-                    </Col>
+                    )) }
 
-                )) }
-
-            </Row>
+                </Row>
+            </div>
 
         )
 

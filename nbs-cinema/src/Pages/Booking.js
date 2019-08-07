@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import NotFound from "./NotFound";
 import MovieDetails from "../component/MovieDetails";
 import ShowingsTable from '../component/ShowingsTable';
+import BookingStage2 from "./BookingStage2";
+import { BookingJumbotron }  from "../component/BookingJumbotron";
+
 
 class Booking extends Component {
 
@@ -112,10 +115,12 @@ class Booking extends Component {
     }
 
     render() {
-        return (
+        return (<div>
+            <BookingJumbotron/>
             <div>
                 {this.state.movieHeader}
                 {this.state.stuffToShow}
+            </div>
             </div>
         )
     }

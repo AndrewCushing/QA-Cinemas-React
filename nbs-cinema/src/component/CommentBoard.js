@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
+import {CommentJumbotron} from "./CommentJumbotron";
 
 export default class CommentBoard extends Component {
 
@@ -50,7 +51,8 @@ export default class CommentBoard extends Component {
     };
 
     render() {
-        return (
+        return (<div>
+            <CommentJumbotron/>
             <div>
                 <table className="filmTable">
                     <tbody>
@@ -76,6 +78,7 @@ export default class CommentBoard extends Component {
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                     <button type="close" onClick={this.handleClose}>Close</button>
                 </div>
+            </div>
             </div>
 
         )

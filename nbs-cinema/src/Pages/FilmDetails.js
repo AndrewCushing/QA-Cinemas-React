@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MovieDetails from '../component/MovieDetails'
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-
+import { FilmdetailsJumbotron }  from "../component/FilmdetailsJumbotron"
 class FilmDetails extends Component {
 
     constructor(props) {
@@ -35,12 +35,14 @@ class FilmDetails extends Component {
     };
 
     render() {
-        return (
+        return (<div>
+            <FilmdetailsJumbotron/>
             <Row className ="row">
                 <Col className="col" md="4">
                     {this.state.rows}
                 </Col>
             </Row>
+            </div>
         )
     }
 }
