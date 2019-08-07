@@ -18,6 +18,7 @@ class Payment extends React.Component{
 
 componentDidMount() {
     document.getElementById("check").style.display = 'none';
+    
 }
 
   handlenameChange = e => {
@@ -26,6 +27,7 @@ componentDidMount() {
     if(e.target.value == ""){
       document.getElementById("check").style.display = 'none';
     }
+    localStorage.setItem("name", this.state.name);
   };
 
     handleHome = event => {
@@ -39,20 +41,18 @@ componentDidMount() {
             window.close();
         }
     };
-    
     render() {
+      
         return (<>
-        
+       
         <div>
-        
                            <br/>
                 <Jumbotron>
-  <h1>Payment</h1>
+  <h1>Payment </h1>
   <p>
     To book your tickets please enter your <b><em>full name </em></b>below:
   </p>
-  <p>Total: £{localStorage.getItem('cost')/100}</p>
-  <p>{this.props.test}</p>
+  <p>Total: £{fromurl}</p>
   <p>
   <h2>
   {this.props.receipt_url}
@@ -68,7 +68,7 @@ componentDidMount() {
   <div id = "check">
             <Checkout
             name={"Luna Cinemas"}
-            description={"Ordered Reservation"}
+            description={"Movie Booking"}
             image={"https://static.tumblr.com/nljhkjv/z0Jlpk23i/logo"}
             amount={1}
           />
@@ -76,19 +76,19 @@ componentDidMount() {
           </div>
   </p>
 </Jumbotron>
-
-    
-        
     </div>
                
             </>
         )
     }
 }
-      let key = 'cost';
-      localStorage.setItem(key, 2350);
+
+let pathArray = window.location.pathname.split('/');
+let fromurl = parseFloat(pathArray[2]);
 
 
+let key = 'cost';
+localStorage.setItem(key, (fromurl)*100);
 
 export default Payment;
 
