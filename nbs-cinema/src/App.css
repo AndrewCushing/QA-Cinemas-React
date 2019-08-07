@@ -126,6 +126,10 @@
   float: left;
 }
 
+.container {
+  overflow: hidden;
+}
+
 .input-group:-ms-input-placeholder  {
   font-family: FontAwesome;
   font-weight: normal;
