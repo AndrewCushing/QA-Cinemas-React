@@ -36,7 +36,7 @@ class Booking extends Component {
         event.preventDefault();
         showing = this.getRequestedSeatLayout(showing, seatsToBook);
         console.log(JSON.stringify(showing));
-        fetch('http://localhost:8080/booktickets/'+showing.id,{
+        fetch('http://35.176.119.160:8080/booktickets/'+showing.id,{
             method: 'POST',
             headers:{'content-type': 'application/json'},
             body: JSON.stringify(showing)
@@ -94,7 +94,7 @@ class Booking extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getshowingsbyfilm/'+this.props.match.params.id)
+        fetch('http://35.176.119.160:8080/getshowingsbyfilm/'+this.props.match.params.id)
             .then(res => res.json()).catch(console.log).then(results => {
             const film = results.contentList[0];
             const showings = results.contentList[1];
