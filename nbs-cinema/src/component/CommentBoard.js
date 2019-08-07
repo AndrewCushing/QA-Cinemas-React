@@ -3,6 +3,8 @@ import DiscussionHeader from './DiscussionHeader.js';
 import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
 
+
+
 export default class CommentBoard extends Component {
 
     constructor(props) {
@@ -13,6 +15,12 @@ export default class CommentBoard extends Component {
             comments:[]
         };
     };
+
+
+    returnFunction = event => {
+            window.history.back();
+    };
+
 
     componentDidMount(){
         const classifications = {
@@ -73,8 +81,8 @@ export default class CommentBoard extends Component {
                 </table>
                 {this.state.comments}
                 <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
+                    <button className="ReturnButton" id="ReturnButton" type="submit"
+                            onClick={this.returnFunction}> Return </button>
                 </div>
             </div>
 

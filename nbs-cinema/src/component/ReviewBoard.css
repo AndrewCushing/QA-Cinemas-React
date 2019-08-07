@@ -1,0 +1,85 @@
+.filmTable {
+    border: 1px solid lightslategrey;
+    box-shadow: 5px 5px 8px #888888;
+    cellpadding: none;
+    width: 80%;
+    height: 80%;
+    font-size: 14px;
+    background-image: linear-gradient(to bottom right, #335170, white);
+}
+
+.infoButton{
+    font-size: 16px;
+    background-color: whitesmoke;
+    width: 130px;
+    color: darkslategrey;
+    border: 2px solid #2E9FD1;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.infoButton:hover {
+    color: whitesmoke;
+    background-color: #2E9FD1;
+    transition: 300ms;
+}
+
+.AddCommentInput{
+    height: 33px;
+    border-radius: 4px;
+    border: 2px solid #2E9FD1;
+}
+
+.AddCommentBtn{
+    height: 32px;
+    width: 8px;
+}
+
+input[type=submit] {
+    width: 100px;
+}
+
+.filmHead{
+
+    background-image: linear-gradient(to right, black, dimgrey, whitesmoke, dimgrey, black );
+}
+
+.ReviewHead{
+    width: 60%;
+    height: 60%;
+    background-image: linear-gradient(to bottom right, #335170, white);
+}
+
+.reviewTable{
+    background-color: #e8e8e8;
+}
+
+.CommentContainer {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.CommentContainer::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.ReturnButton{
+    font-size: 16px;
+    background-color: whitesmoke;
+    width: 130px;
+    color: darkslategrey;
+    border: 2px solid #2E9FD1;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.ReturnButton:hover {
+    color: whitesmoke;
+    background-color: #2E9FD1;
+    transition: 300ms;
+}

@@ -1,0 +1,63 @@
+
+
+.topnav {
+    background-image: linear-gradient(to right, whitesmoke, #2E9FD1, #335170);
+    height: 14%;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(131, 150, 152, 0.54);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a{
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    color: rgba(61, 61, 61, 0.9);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#logo {
+    height: 40px;
+    padding-right: 0%;
+    text-align: center;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(131, 150, 152, 0.54);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: black;
+}
+
+.searchBar{
+    border-radius: 5px;
+    border: red;
+    border-width: 10px;
+    height: 35px;
+    width: 150px;
+    font-size: 18px;
+    padding: 4px;
+}
+
+.searchFunction{
+    text-align: right;
+    width: 1000px;
+
+}
+

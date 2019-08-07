@@ -15,7 +15,7 @@ class HomeComponent extends Component {
                     className={"carousel"}
                     controls = {true}
                     fade = {true}
-                    interval = {4000}
+                    interval = {3000}
                     wrap = {true}
                     indicators = {false}
 
@@ -28,6 +28,7 @@ class HomeComponent extends Component {
                         />
 
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img
                             className="CaroImg"
@@ -35,7 +36,6 @@ class HomeComponent extends Component {
                             alt="Spiderman: Far from home poster"
                         />
                     </Carousel.Item>
-
 
                     <Carousel.Item>
                         <img
@@ -58,6 +58,38 @@ class HomeComponent extends Component {
                             className="CaroImg"
                             src="/CarouselPics/ZombieLand2.jpg"
                             alt="ZombieLand 2"
+                        />
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/CarouselPics/AngelHasFallen.png"
+                            alt="Angel Has Fallen"
+                        />
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/CarouselPics/angrybirds2.jpg"
+                            alt="Angry Birds 2"
+                        />
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/CarouselPics/MaleficentMistressofEvil.jpg"
+                            alt="Maleficent: Mistress of Evil"
+                        />
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <img
+                            className="CaroImg"
+                            src="/CarouselPics/FastAndFurious.jpg"
+                            alt="Fast & Furious: Hobbs & Shaw"
                         />
                     </Carousel.Item>
                 </Carousel>

@@ -16,8 +16,6 @@ body {
     background-image: linear-gradient(to right, black, dimgrey, whitesmoke, white,  whitesmoke, dimgrey, black );
 }
 
-
-
 .carousel.item {
     height: 200px;
     width: 100px;

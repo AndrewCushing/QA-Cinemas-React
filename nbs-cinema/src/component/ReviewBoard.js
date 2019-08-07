@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import Review from './Review';
+import './ReviewBoard.css';
 
 export default class ReviewBoard extends Component {
 
@@ -46,19 +47,19 @@ export default class ReviewBoard extends Component {
         return (
             <div>
                 <table className="filmTable">
-                    <tbody>
+
+                    <th className={"ReviewHead"}>
+                        {this.state.movieHeader}
+                    </th>
                         <tr>
                             <td>
-                                {this.state.movieHeader}
+                                {this.state.reviews}
+
                             </td>
                         </tr>
-                    </tbody>
+
+
                 </table>
-                {this.state.reviews}
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
             </div>
 
         )

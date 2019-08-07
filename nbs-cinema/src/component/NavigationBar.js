@@ -3,8 +3,10 @@ import {
     MDBNavbar, MDBNavbarBrand,MDBIcon, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 } from "mdbreact";
+import './NavBar.css';
 import styled from 'styled-components';
 const Logo = '/qacinemalogo.png'
+
 
 const Styles = styled.div`
 .navbar {
@@ -45,7 +47,7 @@ export default class NavigationBar extends Component {
         return (
             <Styles>
                 <MDBNavbar color="indigo" dark expand="md">
-                    <MDBNavbarBrand href = "/" ><img style={{ }} src={Logo}  height="100"alt="Luna Cinema's" />
+                    <MDBNavbarBrand href = "/" ><img style={{ }} src={Logo}  height="100" alt="Luna Cinema's" />
                     </MDBNavbarBrand>
                     <MDBNavbarToggler onClick={this.toggleCollapse} />
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
@@ -66,7 +68,7 @@ export default class NavigationBar extends Component {
                         </MDBNavbarNav>
                         <MDBNavbarNav right>
                             <MDBNavItem>
-                                <MDBFormInline waves onSubmit={this.performSearch}>
+                                <MDBFormInline id={"SearchBar"}waves onSubmit={this.performSearch}>
                                     <div className="md-form my-0">
                                         <input id="searchBar" className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
                                     </div>
@@ -77,6 +79,7 @@ export default class NavigationBar extends Component {
                         </MDBNavbarNav>
                     </MDBCollapse>
                 </MDBNavbar>
+
             </Styles>
         );
     }
