@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2554d16d-c7d8-4817-9650-f896befe28db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/CinemaContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -292,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565174359959</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Created workings of a booking system. Small change needed to proceed to payment page.">
+      <created>1565189302230</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1565189302230</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,6 +355,7 @@
     <MESSAGE value="formatted PlacesToGo page" />
     <MESSAGE value="Booking process now continues onto the payment page, although that page is not part of this branch." />
     <MESSAGE value="Booking process has been refined so that the tickets requested are properly checked and can be rejected if someone has booked them since that page was loaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Booking process has been refined so that the tickets requested are properly checked and can be rejected if someone has booked them since that page was loaded" />
+    <MESSAGE value="Created workings of a booking system. Small change needed to proceed to payment page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created workings of a booking system. Small change needed to proceed to payment page." />
   </component>
 </project>

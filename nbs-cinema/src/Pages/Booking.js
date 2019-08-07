@@ -45,8 +45,7 @@ class Booking extends Component {
             body: JSON.stringify(seatsToBook)
         }).then(res => res.json()).catch(console.log).then(results => {
             if (results.successful){
-                alert("Booked!");
-                console.log(window.location+"http://localhost:3000/payment/"+(results.body.split(":")[1]));
+                window.location="http://localhost:3000/payment/"+(results.body.split(":")[1]);
             } else {
                 alert("Sorry, some of your seats have been booked by someone else. Please select some of the remaining seats.");
                 this.setButtonArray(results.contentList[0],[], filmId);
