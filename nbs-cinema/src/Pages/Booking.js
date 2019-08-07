@@ -39,13 +39,13 @@ class Booking extends Component {
         }
         event.preventDefault();
         showing = this.getRequestedSeatLayout(showing, seatsToBook);
-        fetch('http://localhost:8080/booktickets/'+showing.id,{
+        fetch('http://35.176.119.160:8080/booktickets/'+showing.id,{
             method: 'POST',
             headers:{'content-type': 'application/json'},
             body: JSON.stringify(seatsToBook)
         }).then(res => res.json()).catch(console.log).then(results => {
             if (results.successful){
-                window.location="http://localhost:3000/payment/"+(results.body.split(":")[1]);
+                window.location="http://35.176.119.160:3000/payment/"+(results.body.split(":")[1]);
             } else {
                 alert("Sorry, some of your seats have been booked by someone else. Please select some of the remaining seats.");
                 this.setButtonArray(results.contentList[0],[], filmId);
@@ -99,7 +99,7 @@ class Booking extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getshowingsbyfilm/'+filmId)
+        fetch('http://35.176.119.160:8080/getshowingsbyfilm/'+filmId)
             .then(res => res.json()).catch(console.log).then(results => {
             const film = results.contentList[0];
             const showings = results.contentList[1];
