@@ -19,7 +19,7 @@ class MovieDetails extends React.Component {
     }
     render () {
         return (
-        <Card className="card" style={{width:270}} key={this.props.movie.id}>
+        <Card className="card" style={{width:250}} key={this.props.movie.id}>
             <Link to ={"/FilmDetails/" + this.props.movie.id}>
                 <Card.Img variant="top"  src={this.props.movie.imagePath}/>
             </Link>

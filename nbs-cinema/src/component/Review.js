@@ -1,9 +1,10 @@
 import React from 'react';
-
+import { ReviewJumbotron }  from "../component/ReviewJumbotron"
 export default class Review extends React.Component {
 
     render(){
-        return(
+        return(<div>
+            <ReviewJumbotron/>
             <table className="filmTable">
                 <tbody>
                     <tr>
@@ -18,6 +19,7 @@ export default class Review extends React.Component {
                     </tr>
                 </tbody>
             </table>
+            </div>
         )
     }
 

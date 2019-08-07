@@ -29,7 +29,6 @@ To create a cinema application that will allow a customer to:-
   * Logo
   
 ## Stack
-Using React, Java and Mongo to display and save film data
-Incorporating Spring Boot to run APIs and gateway to the database.
+Using React, Node (to host the website), Spring Boot and Mongo to display, retrieve and save data.
 
 "# Luna-QA-Cinema" 

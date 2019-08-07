@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import {ContactJumbotron} from "../component/ContactJumbotron";
+import { ScrumJumbotron } from "../component/ScrumJumbotron";
 class Scrum extends Component {
 
     constructor(props) {
@@ -8,28 +9,12 @@ class Scrum extends Component {
         }
     };
 
-
-    handleHome = event => {
-
-        this.props.history.push('/home');
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
-        return (<>
-                <h1>Scrum Description</h1>
+        return (<div>
+                <ScrumJumbotron/>
 
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-            </>
+
+            </div>
         )
     }
 }

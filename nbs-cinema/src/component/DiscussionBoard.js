@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { DiscussionJumbotron } from "../component/DiscussionJumbotron";
 class Discussion extends Component {
 
     constructor(props) {
@@ -8,28 +8,10 @@ class Discussion extends Component {
         }
     };
 
-
-    handleHome = event => {
-
-        this.props.history.push('/home');
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
-        return (<>
-                <h1>Discussion Board</h1>
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
-                </div>
-            </>
+        return (<div>
+                <DiscussionJumbotron/>
+            </div>
         )
     }
 }

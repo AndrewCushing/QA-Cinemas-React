@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { AboutJumbotron } from "../component/AboutJumbotron"
 
 
 class About extends Component {
@@ -18,8 +19,8 @@ class About extends Component {
     };
 
     render() {
-        return (<>
-                <h1 style={{margin: 50}}> About Luna Cinemas </h1>
+        return (<div>
+            <AboutJumbotron/>
 <CardGroup style={{margin: 25}}> 
   <Card>
   <Card.Img variant="top" src="https://www.w3schools.com/howto/img_avatar.png" />
@@ -119,7 +120,7 @@ site and is an area to provide credits and a way for the team to sign its work.
                     <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
                     <button type="close" onClick={this.handleClose}>Close</button>
                 </div>
-            </>
+            </div>
         )
     }
 }
