@@ -6,7 +6,6 @@ import Booking from '../Pages/Booking';
 import Classification from '../Pages/Classifications';
 import Contact from '../Pages/Contact';
 import CurrentFilms from '../Pages/CurrentFilms';
-import TestFilms from '../Pages/TestFilms'
 import Deluxe from '../Pages/DeluxeScreen';
 import Discussion from './DiscussionBoard';
 import Email from '../Pages/EMail';
@@ -26,7 +25,6 @@ import NoMatch from '../Pages/NotFound';
 import CommentBoard from './CommentBoard';
 import { Layout } from './Layout';
 import NavigationBar  from './NavigationBar';
-import { Jumbotron } from './Jumbotron';
 import  Footer  from  './Footer';
 
 
@@ -61,7 +59,6 @@ class LunaCinemaApp extends Component {
                             <Route path="/Scrum" component={Scrum} />
                             <Route path="/StandardScreen" component={Standard} />
                             <Route path="/search/:searchText" component={SearchResults} />
-                            <Route path="/TestFilms" component={TestFilms} />
                             <Route path="/UpcomingFilms" component={UpcomingFilms} />
                             <Route component={NoMatch} />
                         </Switch>

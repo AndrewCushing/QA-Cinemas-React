@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import Review from './Review';
 import './ReviewBoard.css';
+import AddReview from "./AddReview";
+import NoReviewsFound from "./NoReviewsFound";
+import {ReviewJumbotron} from "./ReviewJumbotron";
 
 export default class ReviewBoard extends Component {
 
@@ -37,14 +40,24 @@ export default class ReviewBoard extends Component {
                     }
                     this.setState({
                         movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
-                        reviews:reviewArr
+                        reviews:reviewArr,
+                        filmId:movies[0].id
                     });
+            }).catch(()=>{
+                this.setState({
+                    movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
+                    reviews:<NoReviewsFound/>,
+                    filmId:movies[0].id
+                });
             });
+        }).catch(()=>{
+            window.location="/noMatch";
         });
     };
 
     render() {
-        return (
+        return (<div>
+            <ReviewJumbotron/>
             <div>
                 <table className="filmTable">
 
@@ -60,6 +73,9 @@ export default class ReviewBoard extends Component {
 
 
                 </table>
+                <AddReview filmId={this.state.filmId}/>
+                {this.state.reviews}
+            </div>
             </div>
 
         )

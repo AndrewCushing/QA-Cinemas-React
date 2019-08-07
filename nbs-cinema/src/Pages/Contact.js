@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { ContactJumbotron } from "../component/ContactJumbotron";
+
 import '../styles/ContactComponent.css';
 class Contact extends Component {
 
@@ -14,15 +16,16 @@ class Contact extends Component {
     };
 
     render() {
-        return (<>
-            <h1>Contact Us</h1>
+        return (<div>
+                <ContactJumbotron/>
+            <h1>Contact</h1>
             <div className="EmailAdd">
-                <h3> Address </h3>
-                <h5> Alexandra House </h5>
-                <h5> Whittingham Dr </h5>
-                <h5> Wroughton</h5>
-                <h5> Swindon </h5>
-                <h5> SN4 0QJ </h5>
+                <h4> Address </h4>
+                <h6> Alexandra House </h6>
+                <h6> Whittingham Dr </h6>
+                <h6> Wroughton</h6>
+                <h6> Swindon </h6>
+                <h6> SN4 0QJ </h6>
             </div>
             <br/>
             <div className="EmailAdd">
@@ -30,7 +33,7 @@ class Contact extends Component {
                  <button className="emailButton" id="emailButton" type="submit"
                         onClick={this.handleEmailSubmit}>Email Luna Cinemas</button>
             </div>
-            </>
+            </div>
         )
     }
 }

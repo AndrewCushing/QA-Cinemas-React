@@ -4,20 +4,55 @@ import {
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 } from "mdbreact";
 import './NavBar.css';
+
 import styled from 'styled-components';
 const Logo = '/qacinemalogo.png'
 
-
 const Styles = styled.div`
 .navbar {
-    background: black; 
-    padding: 25px;
-    margin-bottom:0px;
+    background: black;
+    margin-bottom: 0px;
+    padding:20px;
+    }
+    
+
+    
+ .nav-item {
+ padding:5px;
+ }
+ 
+ 
+.NavSearch {
+
+font-size: 20px;
+margin-left:29px;
+
+}
+    
+ .navbar-brand>img {
+    margin-top:20px;
+    margin-bottom: 15px;
+} 
     
 }
 .navbar-collapse {
     background: black; 
+    margin-top: 20px;
+   
 }
+
+.navbar-nav .nav-link {
+    color: #36A1CF;
+    font-size: x-large;
+ 
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    margin-left:auto;
+    margin-right:40px;
+}
+
+
 
   `;
 
@@ -46,13 +81,15 @@ export default class NavigationBar extends Component {
     render() {
         return (
             <Styles>
-                <MDBNavbar color="indigo" dark expand="md">
-                    <MDBNavbarBrand href = "/" ><img style={{ }} src={Logo}  height="100" alt="Luna Cinema's" />
+                <MDBNavbar fluid color="indigo" dark expand="md">
+                    <MDBNavbarBrand href = "/" ><img style={{width:150 }} src={Logo} alt="Luna Cinema's" />
                     </MDBNavbarBrand>
                     <MDBNavbarToggler onClick={this.toggleCollapse} />
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                         <MDBNavbarNav left>
-
+                            <MDBNavItem>
+                                <MDBNavLink to="/Home"><b>Home</b></MDBNavLink>
+                            </MDBNavItem>
                             <MDBNavItem>
                                 <MDBNavLink to="/Screens"><b>Screens</b></MDBNavLink>
                             </MDBNavItem>
@@ -68,18 +105,15 @@ export default class NavigationBar extends Component {
                         </MDBNavbarNav>
                         <MDBNavbarNav right>
                             <MDBNavItem>
-                                <MDBFormInline id={"SearchBar"}waves onSubmit={this.performSearch}>
+                                <MDBFormInline className="NavSearch" onSubmit={this.performSearch}>
                                     <div className="md-form my-0">
-                                        <input id="searchBar" className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
+                                        <input id="searchBar" className="searchBar" type="text" placeholder="Search" aria-label="Search" />
                                     </div>
-                                    <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="search" />
-
                                 </MDBFormInline>
                             </MDBNavItem>
                         </MDBNavbarNav>
                     </MDBCollapse>
                 </MDBNavbar>
-
             </Styles>
         );
     }

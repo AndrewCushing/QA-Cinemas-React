@@ -3,6 +3,8 @@ import Carousel from 'react-bootstrap/Carousel'
 import '../styles/HomeComponent.css';
 import {Jumbotron} from "./Jumbotron";
 
+
+
 class HomeComponent extends Component {
     state = {
     };
@@ -24,7 +26,7 @@ class HomeComponent extends Component {
                         <img
                             className="CaroImg"
                             src="/luna_building.jpg"
-                            alt="External image of our cinema"
+                            alt="Exterior Picture of Luna Cinemas"
                         />
 
                     </Carousel.Item>

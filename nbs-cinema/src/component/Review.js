@@ -1,26 +1,19 @@
 import React from 'react';
 import './ReviewBoard.css';
+import { ReviewJumbotron }  from "../component/ReviewJumbotron";
 
-function myFunction() {
-    var x = document.getElementById("Demo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
 
 export default class Review extends React.Component {
 
-
-
     render(){
         return(
-            <table className="filmTable">
+            <div>
+            <ReviewJumbotron/>
+            <table className={"filmTable"}>
 
                         <td className = "reviewTable">
-                            <label>Rating: </label> <span>{this.props.rating}</span><br/>
                             <label>User: </label> <span>{this.props.username}</span><br/>
+                            <label>Rating: </label> <span>{this.props.rating}</span><br/>
                             <label>Review: </label> <span>{this.props.review}</span><br/>
 
                             <form className={"AddCommentForm"}>
@@ -31,13 +24,9 @@ export default class Review extends React.Component {
                                 <a href={"/CommentBoard/"+this.props.filmId+"/"+this.props.reviewId}>
                                     <button className="infoButton">▼ Comments ▼</button>
                                 </a>
-
                         </td>
-
-
             </table>
-
-        )
+            </div>
+            )
     }
-
 }

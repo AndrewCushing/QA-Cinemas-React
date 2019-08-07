@@ -4,19 +4,42 @@
 
 .App {
   text-align: center;
-  
- 
+  background-color: #031E31
+}
+
+.card {
+
+    margin: 0 auto;
+
+    float: none;
+
+    margin-bottom: 10px;
 
 }
 
+.card-footer{
+  background-color: whitesmoke;
+}
+  .card-body{
+    background-color: whitesmoke;
+  }
+  .Pfooter {
+    font-size: larger;
+  }
+.Bfooter {
+  text-decoration: underline;
+}
+
+
 #body {
   background-color: #1A181D;
+  background: #1A181D;
 
 }
 
 .mapTable {
   width: 50px;
-} 
+}
 
 
 .App-logo {
@@ -109,6 +132,28 @@ h5 {
   font-size: 100%;
 }
 
+.CaroImg{
+  height: 100%;
+  widght: 100%;
+}
+
+.carousel {
+  /* any dimensions are fine, it can be responsive with max-width */
+  position: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 80%;
+  height: 300px;
+  background-image: linear-gradient(to right,black,dimgrey, dimgrey,black );
+  border: lightcoral;
+  border: 100px;
+}
+
+.carousel-inner {
+  /* make sure your .items will get correct height */
+  height: 80%;
+}
+
 .item {
   background-size: cover;
   background-position: 70% 70%;
@@ -123,9 +168,9 @@ h5 {
 .filmTable {
   margin: 100px;
   background-color:
-  #6C757E;
+          #6C757E;
   text-align: center;
-} 
+}
 
 .fa-ticket-alt {
   color: black;
@@ -145,7 +190,7 @@ h5 {
   padding: 10px;
 }
 
-  
+
 
 .cPoster {
   margin-left: 15px;
@@ -160,3 +205,16 @@ a {
   letter-spacing: 1px;
 }
 
+.card {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+
+
+.col {
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
