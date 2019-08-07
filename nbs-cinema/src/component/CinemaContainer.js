@@ -26,6 +26,7 @@ import CommentBoard from './CommentBoard';
 import { Layout } from './Layout';
 import NavigationBar  from './NavigationBar';
 import  Footer  from  './Footer';
+import  PaymentConfirm  from  '../Pages/PaymentConfirm';
 
 class LunaCinemaApp extends Component {
     render() {
@@ -58,6 +59,7 @@ class LunaCinemaApp extends Component {
                             <Route path="/StandardScreen" component={Standard} />
                             <Route path="/search/:searchText" component={SearchResults} />
                             <Route path="/UpcomingFilms" component={UpcomingFilms} />
+                            <Route path="/p_confirm" component={PaymentConfirm} />
                             <Route component={NoMatch} />
                         </Switch>
                     </Layout>
