@@ -1,0 +1,9 @@
+#inputt {
+  width: 50% !important;
+  position: relative;
+  transform: translate(50%, -50%);
+}
+
+#check { animation-name: fadeIn; animation-duration: 500ms; animation-timing-function: linear; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
