@@ -34,9 +34,6 @@ class FilmDetails extends Component {
         });
     };
 
-
-
-
     render() {
         return (<div>
             <FilmdetailsJumbotron/>
@@ -49,6 +46,5 @@ class FilmDetails extends Component {
         )
     }
 }
-
 
 export default FilmDetails

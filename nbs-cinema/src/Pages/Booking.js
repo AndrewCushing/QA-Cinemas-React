@@ -11,39 +11,80 @@ class Booking extends Component {
     constructor(props) {
         super(props);
         this.state={
-            stuffToShow:<p>Loading</p>
+            movieHeader:"",
+            stuffToShow:<p>Loading</p>,
+            seatsAvailable:[],
+            seatsToBook:["4:4"]
         };
         this.bookTime = this.bookTime.bind(this);
         this.attemptBooking = this.attemptBooking.bind(this);
+        this.addSeatToBooking = this.addSeatToBooking.bind(this);
+        this.setButtonArray = this.setButtonArray.bind(this);
+        this.getRequestedSeatLayout = this.getRequestedSeatLayout.bind(this);
     };
 
     bookTime = (showing) => (event) => {
         event.preventDefault();
-        console.log(showing);
-        this.setState({stuffToShow:<BookingStage2 bookingFunc={this.attemptBooking} showing={showing} film={this.state.filmSelected}/>});
+        this.setButtonArray(showing, []);
     };
 
-    attemptBooking = (showingId) => (event) => {
+    addSeatToBooking = (showing, seatsToBook, seatPos) => (event) => {
+        this.addOrRemove(seatsToBook, seatPos);
+        this.setButtonArray(showing, seatsToBook);
+    };
+
+    attemptBooking = (showing, seatsToBook) => (event) => {
         event.preventDefault();
-        const numAdults = Number(document.getElementById("adults").value);
-        const numChildren = Number(document.getElementById("children").value);
-        const numSeniors = Number(document.getElementById("seniors").value);
-        const totalSeats = numAdults+numChildren+numSeniors;
-        console.log('http://localhost:8080/bookany/'+showingId+"/"+totalSeats);
-        fetch('http://localhost:8080/bookany/'+showingId+"/"+totalSeats)
-            .then(res => res.json()).catch(console.log).then(results => {
-            console.log(results);
+        showing = this.getRequestedSeatLayout(showing, seatsToBook);
+        console.log(JSON.stringify(showing));
+        fetch('http://localhost:8080/booktickets/'+showing.id,{
+            method: 'POST',
+            headers:{'content-type': 'application/json'},
+            body: JSON.stringify(showing)
+        }).then(res => res.json()).catch(console.log).then(results => {
             if (results.successful){
                 this.setState({
                     stuffToShow:<h1>Congrats! Your tickets have been booked!</h1>
                 });
             } else {
                 this.setState({
-                    stuffToShow:<h1>Sorry, we don't have that many seats available. This showing only has {results.contentList[0].seatsAvailable} seats available. If you need more then please select another showing.</h1>
+                    stuffToShow:<h1>{results.body}</h1>
                 });
             }
         });
     };
+
+    getRequestedSeatLayout(showing, seatsToBook) {
+        seatsToBook.forEach( seat => {
+            let posX = seat.split(":")[0];
+            let posY = seat.split(":")[1];
+            showing.seatAvailability[posX][posY] = true;
+        });
+        return showing;
+    }
+
+    setButtonArray(showing, seatsToBook){
+        const booleanSeatsArr = showing.seatAvailability;
+        let newSeatElementArr = [];
+        for (let i = 0 ; i < booleanSeatsArr.length ; i++){
+            for (let j = 0 ; j < booleanSeatsArr[i].length ; j++){
+                let colour="";
+                if (this.checkSelected(i,j,seatsToBook)){
+                    colour = "blue";
+                } else if (booleanSeatsArr[i][j]){
+                    colour = "red";
+                } else {
+                    colour = "green";
+                }
+                newSeatElementArr.push(<button key={i+":"+j} style={{color:colour}} onClick={booleanSeatsArr[i][j] ? ()=>{} : this.addSeatToBooking(showing, seatsToBook, i+":"+j)}>Row:{i} Col:{j}</button>);
+            }
+            newSeatElementArr.push(<br key={"RowEnd"+i}/>);
+        }
+        newSeatElementArr.push(<div><br/><br/><br/><button onClick={this.attemptBooking(showing, seatsToBook)}>Book seats</button></div>);
+            this.setState({
+            stuffToShow:newSeatElementArr
+        });
+    }
 
     componentDidMount() {
         const classifications = {
@@ -59,15 +100,13 @@ class Booking extends Component {
             const film = results.contentList[0];
             const showings = results.contentList[1];
             film.classification = classifications[film.classification];
-            console.log(film);
             let newStuffToShow = [];
-            newStuffToShow.push(<MovieDetails isBooking={true} movie={film}/>);
             if (showings.length>0) {
                 newStuffToShow.push(<ShowingsTable bookTimeCallback={this.bookTime} showingsArr={showings}/>);
             } else {
                 newStuffToShow.push(<h3>Sorry, there are currently no showings available for this film</h3>);
             }
-            this.setState({stuffToShow:newStuffToShow, filmSelected:film});
+            this.setState({movieHeader:<MovieDetails isBooking={true} movie={film}/>,stuffToShow:newStuffToShow, filmSelected:film});
         }).catch(()=>{
             this.setState({
                 stuffToShow:<NotFound/>
@@ -79,10 +118,31 @@ class Booking extends Component {
         return (<div>
             <BookingJumbotron/>
             <div>
+                {this.state.movieHeader}
                 {this.state.stuffToShow}
             </div>
             </div>
         )
+    }
+
+    checkSelected(i, j, seatsToBook){
+        let result = false;
+        seatsToBook.forEach(positionString => {
+            const posX = Number(positionString.split(":")[0]);
+            const posY = Number(positionString.split(":")[1]);
+            if (posX==i && posY == j){
+                result = true;
+            }
+        });
+        return result;
+    };
+
+    addOrRemove(seatsToBook, seatPos) {
+        if (seatsToBook.includes(seatPos)){
+            seatsToBook.splice(seatsToBook.indexOf(seatPos),1);
+        } else {
+            seatsToBook.push(seatPos);
+        }
     }
 }
 
