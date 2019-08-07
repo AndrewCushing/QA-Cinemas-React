@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3602a85a-650a-4a92-8ee9-4e842c23d2c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/AngelHasFallen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/FastAndFurious.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/GeminiMan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/MaleficentMistressofEvil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/SpiderMan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/ToyStory4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/ZombieLand2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nbs-cinema/public/CarouselPics/angrybirds2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,11 +69,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Checkout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+            <state relative-caret-position="-136">
+              <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,7 +154,6 @@
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/App.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/styles/HomeComponent.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/NavBar.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.styl" />
@@ -142,6 +165,7 @@
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/CommentBoard.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" />
       </list>
     </option>
   </component>
@@ -181,6 +205,19 @@
               <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
               <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="CarouselPics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
+              <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -189,13 +226,6 @@
               <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Cinemas-React" type="462c0819:PsiDirectoryNode" />
-              <item name="nbs-cinema" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QA-Cinemas-React" type="b2602c69:ProjectViewProjectNode" />
@@ -388,17 +418,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565172331202</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added dependencies for Stripe">
+      <created>1565172361766</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1565172361766</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45480000" />
+    <option name="totallyTimeSpent" value="45926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2534413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -414,7 +451,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31616342" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31616342" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.348135" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -692,16 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -775,8 +802,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Checkout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        <state relative-caret-position="-136">
+          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

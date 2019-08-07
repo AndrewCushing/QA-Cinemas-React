@@ -79,4 +79,4 @@ class EMail extends Component {
     }
 }
 
-export default EMail();
+export default EMail;
