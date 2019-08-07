@@ -76,23 +76,19 @@ componentDidMount() {
           </div>
   </p>
 </Jumbotron>
-<br/>          
 
-    <div id="namee">
-    
-
-    <br/>
     
         
     </div>
-                </div>
+               
             </>
         )
     }
-
-
+}
       let key = 'cost';
       localStorage.setItem(key, 2350);
+
+
 
 export default Payment;
 
