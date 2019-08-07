@@ -8,30 +8,74 @@ class Payment extends Component {
         }
     };
 
-
-    handleHome = event => {
-
-        this.props.history.push('/home');
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
-        return (<>
-                <h1>Payment</h1>
-
-                <div>
-                    <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                    <button type="close" onClick={this.handleClose}>Close</button>
+        return (
+<div>
+            <div className="row info">
+                <div className="col-sm-4"><label className="reserved">
+                    <input type="checkbox" className="cust-checkbox" disabled/>
+                    <span></span>Reserve Seat </label>
                 </div>
-            </>
-        )
+                <div className="col-sm-4">
+                    <label className="selected"><input type="checkbox" className="cust-checkbox" disabled/>
+                    <span></span>Selected Seat</label>
+                </div>
+                <div className="col-sm-4"><label>
+                    <input type="checkbox" className="cust-checkbox" disabled/>
+                    <span></span>Empty Seat </label>
+                </div>
+            </div>
+
+            <div className="seats">
+            <div className="row">
+            <div className="col-sm-4">
+            <label>
+            <input type="checkbox" className="cust-checkbox"/>
+            <span></span></label>
+
+        <label>
+        <input type="checkbox" className="cust-checkbox"/>
+            <span></span>
+        </label>
+        <label className="reserved">
+            <input type="checkbox" className="cust-checkbox"/>
+                <span></span>
+        </label>
+        </div>
+        <div className="col-sm-4">
+            <label>
+                <input type="checkbox" className="cust-checkbox"/>
+                    <span></span>
+            </label>
+            <label className="reserved">
+                <input type="checkbox" className="cust-checkbox"/>
+                    <span></span>
+            </label>
+            <label>
+                <input type="checkbox" className="cust-checkbox"/>
+                    <span></span>
+            </label>
+        </div>
+        <div className="col-sm-4">
+            <label className="reserved">
+                <input type="checkbox" className="cust-checkbox"/>
+                    <span></span>
+            </label>
+            <label>
+                <input type="checkbox" className="cust-checkbox"/>
+                    <span></span>
+            </label>
+            <label>
+                <input type="checkbox" className="cust-checkbox"/>
+                    <span></span>
+            </label>
+        </div>
+    </div>
+    </div>
+</div>
+
+    )
     }
-}
+    }
 
 export default Payment

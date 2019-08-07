@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { ContactJumbotron } from "../component/ContactJumbotron";
 
 class Contact extends Component {
 
@@ -14,7 +15,8 @@ class Contact extends Component {
     };
 
     render() {
-        return (<>
+        return (<div>
+                <ContactJumbotron/>
             <h1>Contact</h1>
             <div className="ContactAdd">
                 <h4> Address </h4>
@@ -30,7 +32,7 @@ class Contact extends Component {
                  <button className="emailButton" id="emailButton" type="submit"
                         onClick={this.handleEmailSubmit}>Email Luna Cinemas</button>
             </div>
-            </>
+            </div>
         )
     }
 }

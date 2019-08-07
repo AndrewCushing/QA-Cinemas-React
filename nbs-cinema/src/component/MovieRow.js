@@ -19,13 +19,13 @@ class MovieRow extends React.Component {
                 <Card.Footer>
                     <small className="text-muted">
                         <Link to ={"/Booking/" + this.props.movie.id}>
-                            <button className="bookButton"><i class="material-icons"> event_seat</i>Book</button>
+                            <button className="bookButton"><i class="material-icons"> event_seat</i></button>
                         </Link>
                         <Link to ={"/FilmDetails/" + this.props.movie.id}>
-                            <button className="infoButton"><i style = {{width:34}}class="material-icons">info</i>More Info</button>
+                            <button className="infoButton"><i style = {{width:34}}class="material-icons">info</i></button>
                         </Link>
                         <Link to ={"/Reviews/" + this.props.movie.id}>
-                            <button className="infoButton"><i class="material-icons">rate_review</i>Reviews</button>
+                            <button className="infoButton"><i class="material-icons">rate_review</i></button>
                         </Link>
                     </small>
                 </Card.Footer>

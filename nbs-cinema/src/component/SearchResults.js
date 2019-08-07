@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MovieRow from './MovieRow.js';
-
+import { SearchJumbotron } from "../component/SearchJumbotron";
 import { BrowserRouter as Router} from 'react-router-dom'
 import NotFound from "../Pages/NotFound";
 
@@ -41,11 +41,14 @@ class SearchResults extends Component {
     };
 
     render() {
-        return (
+        return (<div>
+                <SearchJumbotron/>
+
             <div>
                 <Router>
                     {this.state.rows}
                 </Router>
+            </div>
             </div>
         )
     }
