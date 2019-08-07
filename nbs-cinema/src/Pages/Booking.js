@@ -38,14 +38,14 @@ class Booking extends Component {
         fetch('http://localhost:8080/booktickets/'+showing.id,{
             method: 'POST',
             headers:{'content-type': 'application/json'},
-            body: JSON.stringify(showing)
+            body: JSON.stringify(seatsToBook)
         }).then(res => res.json()).catch(console.log).then(results => {
             if (results.successful){
-                window.location="http://localhost:3000/payment/"+(results.body.split(":")[1]);
+                alert("Booked!");
+                console.log(window.location+"http://localhost:3000/payment/"+(results.body.split(":")[1]));
             } else {
-                this.setState({
-                    stuffToShow:<h1>{results.body}</h1>
-                });
+                alert("Sorry, some of your seats have been booked by someone else. Please select some of the remaining seats.");
+                this.setButtonArray(results.contentList[0],[]);
             }
         });
     };
