@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import NotFound from "./NotFound";
 import MovieDetails from "../component/MovieDetails";
 import ShowingsTable from '../component/ShowingsTable';
-import BookingStage2 from "./BookingStage2";
 import { BookingJumbotron }  from "../component/BookingJumbotron";
 
 
