@@ -27,20 +27,18 @@ import { Layout } from './Layout';
 import NavigationBar  from './NavigationBar';
 import  Footer  from  './Footer';
 
-
 class LunaCinemaApp extends Component {
     render() {
         return (
-                <React.Fragment>
-                    <Router>
+            <React.Fragment>
+                <Router>
                     <NavigationBar/>
-
-                     <Layout>
+                    <Layout>
                         <Switch>
                             <Route path="/" exact component={HomeComponent} />
                             <Route path="/Home" component={HomeComponent} />
                             <Route path="/About" exact component={About} />
-                            <Route path="/bbfc" component={() => window.location = "https://bbfc.co.uk/"} />
+                            <Route path="/bbfc" component={() => window.location="https://bbfc.co.uk/"} />
                             <Route path="/Booking/:id" component={Booking} />
                             <Route path="/Classifications" component={Classification} />
                             <Route path="/CommentBoard/:filmId/:reviewId" component={CommentBoard} />
@@ -62,9 +60,9 @@ class LunaCinemaApp extends Component {
                             <Route path="/UpcomingFilms" component={UpcomingFilms} />
                             <Route component={NoMatch} />
                         </Switch>
-                </Layout>
-                <Footer/>
-            </Router>
+                    </Layout>
+                    <Footer/>
+                </Router>
             </React.Fragment>
         );
     }
