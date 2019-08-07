@@ -36,7 +36,7 @@ export default class AppFooter extends Component {
                   <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>About</h5>
                   <ul className="list-unstyled">
                     <p>
-                      <a className="FooterText" href="/About">About Us</a>
+                      <a className="FooterText" href="/About" id={"About_Link"}>About Us</a>
                     </p>
                     <p>
                       <a className="FooterText" href="/Contact">Contact Us</a>

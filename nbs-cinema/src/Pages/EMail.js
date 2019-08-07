@@ -66,7 +66,7 @@ class EMail extends Component {
                         <input required type="text" className="form-control"  name ="Subject" id={"Subject"} maxLength="20" placeholder="Subject" value={Subject} onChange={this.handleOnChange}/>
                         <textarea rows="7" cols="58" className="form-control"  name ="Message" id={"Message"}
                                   maxLength="200" placeholder="Enter your message here" value={Message} onChange={this.handleOnChange} required></textarea>
-                        <input className="popup" type="submit" value="Submit"/>
+                        <input className="popup" type="submit" value="Submit" id={"SubmitMsg_btn"}/>
                          <br/><label className={EmailResponse} id={EmailResponse}>{EmailResponse}</label>
                          <br/>
                         <br/>

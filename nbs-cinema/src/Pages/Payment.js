@@ -80,21 +80,18 @@ class Payment extends React.Component {
                     </Jumbotron>
                     <br/>
 
-                    <div id="namee">
 
 
-                        <br/>
+    </div>
 
-
-                    </div>
-                </div>
             </>
         )
     }
-
 }
-    let key = 'cost';
-    localStorage.setItem(key, 2350);
+      let key = 'cost';
+      localStorage.setItem(key, 2350);
 
-    export default Payment;
+
+
+export default Payment;
 
