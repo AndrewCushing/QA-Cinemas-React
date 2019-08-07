@@ -33,19 +33,16 @@ export default class AppFooter extends Component {
               <MDBRow className="my-4">
                 <hr className="clearfix w-100 d-md-none" />
                 <MDBCol md="2" lg="2" className="ml-auto">
-                  <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>About</h5>
+                  <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>Luna Cinemas</h5>
                   <ul className="list-unstyled">
+                    <p>
+                      <a className="FooterText" href="/">Home</a>
+                    </p>
                     <p>
                       <a className="FooterText" href="/About">About Us</a>
                     </p>
                     <p>
                       <a className="FooterText" href="/Contact">Contact Us</a>
-                    </p>
-                    <p>
-                      <a className="FooterText" href="/Scrum">Scrum Description</a>
-                    </p>
-                    <p>
-                      <a className="FooterText"href="/DiscussionBoard">Discussion Board</a>
                     </p>
                   </ul>
                 </MDBCol>
