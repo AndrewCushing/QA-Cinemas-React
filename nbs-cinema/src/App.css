@@ -17,14 +17,20 @@
 
 }
 
+.card-title {
+  font-size: larger;
+}
+
 .card-footer{
   background-color: whitesmoke;
 }
   .card-body{
     background-color: whitesmoke;
+    font-size: medium;
   }
   .Pfooter {
-    font-size: larger;
+    font-size: medium;
+    text-align: initial;
   }
 .Bfooter {
   text-decoration: underline;

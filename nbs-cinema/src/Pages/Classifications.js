@@ -1,8 +1,6 @@
 import React from "react";
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
 import ClassNames from "classnames";
-import Jumbotron from "react-bootstrap/Jumbotron";
-import style from "../styles/styleclass.css";
 import { ClassificationsJumbotron } from "../component/ClassificationsJumbotron";
 
 export default class Classifications extends React.Component {
@@ -58,7 +56,7 @@ export default class Classifications extends React.Component {
                     }}
                   >
                   
-     <img src="/ClassificationImages/U.png"></img>
+     <img src="/ClassificationImages/U.png" alt="U"></img>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -68,8 +66,8 @@ export default class Classifications extends React.Component {
                       this.toggle("3");
                     }}
                   >
-                   <img src="/ClassificationImages/12.png" />
-                      <img src="/ClassificationImages/12A.png" />
+                   <img src="/ClassificationImages/12.png" alt="12"/>
+                      <img src="/ClassificationImages/12A.png" alt ="12A" />
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -79,7 +77,7 @@ export default class Classifications extends React.Component {
                       this.toggle("4");
                     }}
                   >
-                    <img src="/ClassificationImages/15.png"/>
+                    <img src="/ClassificationImages/15.png" alt="15"/>
                   </NavLink>
                 </NavItem>
                 <NavItem>
@@ -89,7 +87,7 @@ export default class Classifications extends React.Component {
                       this.toggle("5");
                     }}
                   >
-                    <img src="/ClassificationImages/18.png"/>
+                    <img src="/ClassificationImages/18.png" alt="18"/>
                   </NavLink>
                 </NavItem>
               </Nav>
