@@ -2,8 +2,8 @@ import React from "react";
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
 import ClassNames from "classnames";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import style from "./styleclass.css";
-
+import style from "../styles/styleclass.css";
+import { ClassificationsJumbotron } from "../component/ClassificationsJumbotron";
 
 export default class Classifications extends React.Component {
   constructor(props) {
@@ -30,6 +30,7 @@ export default class Classifications extends React.Component {
       render() { 
         return (  
         <div>
+        <ClassificationsJumbotron/>
              <br/>
                
   <h1>Classifications</h1>
@@ -258,3 +259,4 @@ Please check the Ratings info for the film or video you are thinking of watching
         )
       }
 }
+

@@ -27,14 +27,14 @@ const Styles = styled.div`
   }
 `;
 
-export const Jumbotron = () => (
-  <Styles>
-    <Jumbo fluid style = {{width:"100%"}} className="jumbo">
-      <div className="overlay"></div>
-      <Container>
-          <h1> Welcome to Luna Cinemas </h1>
-          <h3> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h3>
-      </Container>
-    </Jumbo>
-  </Styles>
+export const ScreenJumbotron = () => (
+    <Styles>
+        <Jumbo fluid className="jumbo">
+            <div className="overlay"></div>
+            <Container>
+                <h1> Our Screens </h1>
+                <h3>  Here we have information about both our Screen options. We have a Standard screen as well as a Deluxe screen, look below to find out more. </h3>
+            </Container>
+        </Jumbo>
+    </Styles>
 )

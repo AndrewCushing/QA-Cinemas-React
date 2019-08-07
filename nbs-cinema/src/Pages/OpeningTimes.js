@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Table from "react-bootstrap/Table";
+import { OpeningJumbotron } from "../component/OpeningJumbotron";
 
 class OpeningTimes extends Component {
 
@@ -10,7 +11,11 @@ class OpeningTimes extends Component {
     };
 
     render() {
-        return (<>
+        return (<div>
+                <OpeningJumbotron/>
+                <br/>
+                <br/>
+
 
  <br/>
  <br/>
@@ -66,7 +71,7 @@ class OpeningTimes extends Component {
   </tbody>
 </Table>
 
-            </>
+            </div>
         )
     }
 }

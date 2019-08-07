@@ -89,22 +89,10 @@ componentDidMount() {
             </>
         )
     }
-// componentDidMount(){
-//     let inputName=document.getElementById(name).innerHTML;
-//   console.log(inputName);
-// }
 
-    
-}
-
-  // function create(props) {
-  //       const total = document.getElementById('cost').innerHTML;
-  //       // cost = total.value;
-
-      
-  //   }
 
       let key = 'cost';
       localStorage.setItem(key, 2350);
 
 export default Payment;
+

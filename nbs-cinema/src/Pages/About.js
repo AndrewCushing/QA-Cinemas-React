@@ -118,5 +118,4 @@ site and is an area to provide credits and a way for the team to sign its work.{
     )
   }
 }
-
 export default About;

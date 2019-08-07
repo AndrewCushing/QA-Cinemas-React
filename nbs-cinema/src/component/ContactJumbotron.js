@@ -2,6 +2,7 @@ import React from 'react';
 import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
+
 const Styles = styled.div`
   .jumbo {
     background: url(/Moon.jpg) no-repeat fixed bottom;
@@ -27,14 +28,13 @@ const Styles = styled.div`
   }
 `;
 
-export const Jumbotron = () => (
-  <Styles>
-    <Jumbo fluid style = {{width:"100%"}} className="jumbo">
-      <div className="overlay"></div>
-      <Container>
-          <h1> Welcome to Luna Cinemas </h1>
-          <h3> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h3>
-      </Container>
-    </Jumbo>
-  </Styles>
+export const ContactJumbotron = () => (
+    <Styles>
+        <Jumbo fluid className="jumbo">
+            <div className="overlay"></div>
+            <Container>
+                <h1> Contact Us </h1>
+            </Container>
+        </Jumbo>
+    </Styles>
 )
