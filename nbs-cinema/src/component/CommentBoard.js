@@ -32,7 +32,7 @@ export default class CommentBoard extends Component {
             fetch('http://35.176.119.160:8080/getreview/'+this.props.match.params.reviewId)
                 .then(res => res.json() ).catch(console.log).then(results => {
                 let reviewObject = results.contentList[0];
-                console.log('http://localhost:8080/getcomments/'+this.props.match.params.reviewId);
+                console.log('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId);
                 fetch('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId)
                     .then(res => res.json() ).catch(console.log).then(results => {
                     let commentArr = [];
