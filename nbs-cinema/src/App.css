@@ -24,9 +24,11 @@
 .card-footer{
   background-color: whitesmoke;
 }
-  .card-body{
+  .filmcard-body{
     background-color: whitesmoke;
     font-size: medium;
+    min-height: 295px;
+
   }
   .Pfooter {
     font-size: medium;

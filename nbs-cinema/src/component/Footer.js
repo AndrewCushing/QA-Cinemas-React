@@ -67,7 +67,7 @@ export default class AppFooter extends Component {
                       <a className="FooterText" href="/Classifications" id={"Classifications_Link"}>Classifications</a>
                     </b><br/>
                     <b>
-                      <a className="FooterText" href="/Travel" id={"GettingHere_Here">Getting Here</a>
+                      <a className="FooterText" href="/Travel" id={"GettingHere_Here"}>Getting Here</a>
                     </b><br/>
                     <b>
                       <a className="FooterText" href="/PlacesToGo" id={"Places_Link"}>Places To Go</a>
