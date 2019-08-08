@@ -10,6 +10,7 @@ const Styles = styled.div`
     height: 150px;
     position: relative;
     z-index: 0;
+    margin-bottom:70px;
     
     
     }

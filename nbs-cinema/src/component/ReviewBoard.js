@@ -66,9 +66,10 @@ export default class ReviewBoard extends Component {
                             </td>
                         </tr>
                         </tbody>
+                        {this.state.reviews}
                     </table>
                     <AddReview filmId={this.state.filmId}/>
-                    {this.state.reviews}
+
                 </div>
             </div>
 

@@ -58,7 +58,7 @@ class StandardScreen extends Component {
                         <img src={ ("/standardscreen.png") } alt="standardscreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
                         <Media.Body>
                             <br/>
-                            <h2>Amazing Experiences..</h2>
+                            <h2 className="screenFont">Amazing Experiences..</h2>
 
                             <p className={"ScreenDesc"} id="myP">
                                 The sights and sounds, the hushed conversation, the great anticipation.
@@ -76,7 +76,7 @@ class StandardScreen extends Component {
                         <img src={ ("/standardscreenimage.jpg") } alt="standardscreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
                         <Media.Body>
                             <br/>
-                            <h2>Why our screens..</h2>
+                            <h2 className="screenFont">Why our screens..</h2>
 
                             <p className={"ScreenDesc"}>
                                 We believe the best entertainment deserves the best quality picture.
