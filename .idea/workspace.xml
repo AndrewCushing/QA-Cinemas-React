@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2554d16d-c7d8-4817-9650-f896befe28db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MapContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MapContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +106,7 @@
       <workItem from="1564731031726" duration="19763000" />
       <workItem from="1564758014010" duration="525000" />
       <workItem from="1564990402126" duration="2311000" />
-      <workItem from="1565254406809" duration="2042000" />
+      <workItem from="1565254406809" duration="2693000" />
     </task>
     <task id="LOCAL-00001" summary="Carl's First Commit">
       <created>1564066113006</created>
@@ -306,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565251738278</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fixed search results">
+      <created>1565258136504</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1565258136504</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +356,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Carl's First Commit" />
     <MESSAGE value="Carl's Second Commit" />
     <MESSAGE value="API Caller commit, caller now pulls data on Current Films, upcoming films and get FilmDetails. Began work on the search function." />
     <MESSAGE value="API Caller commit, updated the paths so that the images can be found on any page." />
@@ -376,6 +380,7 @@
     <MESSAGE value="Created workings of a booking system. Small change needed to proceed to payment page." />
     <MESSAGE value="Made change needed to proceed to payment page as it is ready." />
     <MESSAGE value="Fixed a couple of typos and made the links work in the search results page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a couple of typos and made the links work in the search results page" />
+    <MESSAGE value="Fixed search results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed search results" />
   </component>
 </project>
