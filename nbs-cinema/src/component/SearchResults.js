@@ -45,9 +45,7 @@ class SearchResults extends Component {
                 <SearchJumbotron/>
 
             <div>
-                <Router>
                     {this.state.rows}
-                </Router>
             </div>
             </div>
         )
