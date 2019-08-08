@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MovieRow from './MovieRow.js';
 import { SearchJumbotron } from "../component/SearchJumbotron";
-import { BrowserRouter as Router} from 'react-router-dom'
 import NotFound from "../Pages/NotFound";
 
 class SearchResults extends Component {
@@ -27,14 +26,20 @@ class SearchResults extends Component {
         fetch('http://localhost:8080/searchfilms/'+this.props.match.params.searchText)
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
-            movies.forEach(movie => {
-                movie.classification = classifications[movie.classification];
-                const movieRow = <MovieRow key={movie.id} movie={movie}/>;
-                movieRows.push(movieRow)
-            });
-            this.setState({
-                rows:movieRows
-            });
+            if (movies.length < 1){
+                this.setState({
+                    rows:<h1 style={{color:"white"}}>Sorry, no search results found. Please try something else.</h1>
+                });
+            } else {
+                movies.forEach(movie => {
+                    movie.classification = classifications[movie.classification];
+                    const movieRow = <MovieRow key={movie.id} movie={movie}/>;
+                    movieRows.push(movieRow)
+                });
+                this.setState({
+                    rows:movieRows
+                });
+            }
         }).catch(()=>{
             this.setState({rows:<NotFound/>})
         });
@@ -43,9 +48,9 @@ class SearchResults extends Component {
     render() {
         return (<div>
                 <SearchJumbotron/>
-            <div>
-                {this.state.rows}
-            </div>
+                <div>
+                    {this.state.rows}
+                </div>
             </div>
         )
     }

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 import {Jumbotron} from "./Jumbotron";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-
 
 class HomeComponent extends Component {
     state = {
@@ -22,42 +18,42 @@ class HomeComponent extends Component {
 
 
                     <Carousel
-                    className={"carousel"}
-                    controls = {true}
-                    fade = {true}
-                    interval = {4000}
-                    wrap = {true}
-                    indicators = {false}
+                        className={"carousel"}
+                        controls = {true}
+                        fade = {true}
+                        interval = {4000}
+                        wrap = {true}
+                        indicators = {false}
 
-                >
-                    <Carousel.Item>
-                        <img
-                            className="CaroImg"
-                            src="/luna_building.jpg"
-                            alt="cinema"
-                        />
+                    >
+                        <Carousel.Item>
+                            <img
+                                className="CaroImg"
+                                src="/luna_building.jpg"
+                                alt="cinema"
+                            />
 
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            className="CaroImg"
-                            src="/Spider.jpg"
-                            alt="Spiderman: Far from home poster"
-                        />
-                    </Carousel.Item>
-
-
-                    <Carousel.Item>
-                        <img
-                            className="CaroImg"
-                            src="/UpcomingFilmsImages/Goodboys.jpg"
-                            alt="Third slide"
-                        />
-                    </Carousel.Item>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="CaroImg"
+                                src="/Spider.jpg"
+                                alt="Spiderman: Far from home poster"
+                            />
+                        </Carousel.Item>
 
 
-                </Carousel>
-            </div>
+                        <Carousel.Item>
+                            <img
+                                className="CaroImg"
+                                src="/UpcomingFilmsImages/Goodboys.jpg"
+                                alt="Third slide"
+                            />
+                        </Carousel.Item>
+
+
+                    </Carousel>
+                </div>
             </div>
         )
     }

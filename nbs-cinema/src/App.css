@@ -17,17 +17,35 @@
 
 }
 
+.card-title {
+  font-size: larger;
+}
+
 .card-footer{
   background-color: whitesmoke;
 }
-  .card-body{
+  .filmcard-body{
     background-color: whitesmoke;
+    font-size: medium;
+    min-height: 295px;
+
   }
   .Pfooter {
-    font-size: larger;
+    font-size: medium;
+    text-align: initial;
   }
 .Bfooter {
   text-decoration: underline;
+}
+
+.h3, h3 {
+  font-size: 1.75rem;
+  color: antiquewhite;
+}
+
+.h2, h2 {
+  color: antiquewhite;
+  font-size: 1.75rem;
 }
 
 
@@ -124,6 +142,10 @@
 }
 .input-group-append {
   float: left;
+}
+
+.container {
+  overflow: hidden;
 }
 
 .input-group:-ms-input-placeholder  {
