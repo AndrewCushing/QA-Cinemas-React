@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import Review from './Review';
-import './ReviewBoard.css';
 import AddReview from "./AddReview";
 import NoReviewsFound from "./NoReviewsFound";
 import {ReviewJumbotron} from "./ReviewJumbotron";
@@ -60,19 +59,16 @@ export default class ReviewBoard extends Component {
                 <ReviewJumbotron/>
                 <div>
                     <table className="filmTable">
-
-                        <th className={"filmTable"}>
-                            {this.state.movieHeader}
-                        </th>
+                        <tbody>
                         <tr>
                             <td>
-                                {this.state.reviews}
+                                {this.state.movieHeader}
                             </td>
                         </tr>
-
-
+                        </tbody>
                     </table>
                     <AddReview filmId={this.state.filmId}/>
+                    {this.state.reviews}
                 </div>
             </div>
 

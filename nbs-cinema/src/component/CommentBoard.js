@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
-import AddComment from "./AddComment";
 import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
 import {CommentJumbotron} from "./CommentJumbotron";
-
-
 
 export default class CommentBoard extends Component {
 
@@ -17,12 +14,6 @@ export default class CommentBoard extends Component {
             comments:[]
         };
     };
-
-
-    returnFunction = event => {
-        window.history.back();
-    };
-
 
     componentDidMount(){
         const classifications = {
@@ -60,33 +51,33 @@ export default class CommentBoard extends Component {
     };
 
     render() {
-        return (
-            <div>
+        return (<div>
                 <CommentJumbotron/>
                 <div>
                     <table className="filmTable">
-                        <th className={"ReviewHead"}>
-                            {this.state.movieHeader}
-                        </th>
+                        <tbody>
                         <tr>
-                            <td className={"ChosenReview"}>
-                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
-                                <AddComment filmId={this.state.review.filmId} reviewId={this.state.review.id}/>
+                            <td>
+                                {this.state.movieHeader}
                             </td>
                         </tr>
-                        <tr>
-                            <td className={"ReviewHead"}>
-                                {this.state.comments}
-                            </td>
-                        </tr>
-
+                        </tbody>
                     </table>
 
+                    <table className="filmTable">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    {this.state.comments}
                     <div>
-                        <button className="ReturnButton" id="ReturnButton" type="submit"
-                                onClick={this.returnFunction}> Return </button>
+                        <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
+                        <button type="close" onClick={this.handleClose}>Close</button>
                     </div>
-
                 </div>
             </div>
 
