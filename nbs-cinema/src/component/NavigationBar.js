@@ -11,10 +11,9 @@ const Styles = styled.div`
     padding:20px;
     }
     
-
-    
  .nav-item {
  padding:5px;
+  margin: 0 auto;
  }
  
  
@@ -103,8 +102,12 @@ export default class NavigationBar extends Component {
                             <MDBNavItem>
                                 <MDBFormInline className="NavSearch" onSubmit={this.performSearch}>
                                     <div className="md-form my-0">
-                                        <input id="searchBar" className="searchBar" type="text" placeholder="Search" aria-label="Search" />
+                                        <div id="Search"><input id="searchBar" className="searchBar" type="text" placeholder=" Search..." aria-label="Search" />
+                                        </div>
+                                        <div id="Magnify"></div><button type="button" onClick={this.performSearch} className="btn btn-default"><span className="glyphicon glyphicon-search"></span>
+                                        </button>
                                     </div>
+
                                 </MDBFormInline>
                             </MDBNavItem>
                         </MDBNavbarNav>

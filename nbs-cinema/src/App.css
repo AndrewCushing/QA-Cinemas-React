@@ -63,14 +63,10 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px)
+  .navbar-expand-md .navbar-collapse {
+    display: inline-flex;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .navbar-brand {
   display: flex;
@@ -112,6 +108,24 @@
   color: hsl(9, 40%, 60%);
 }
 
+#Magnify {
+  color:  red;
+  background-color: red;
+}
+
+.mb-0, .my-0 {
+  display: inline-flex;
+  font-size: large;
+}
+
+
+.md-form my-0{
+  float: left;
+}
+.input-group-append {
+  float: left;
+}
+
 .input-group:-ms-input-placeholder  {
   font-family: FontAwesome;
   font-weight: normal;
@@ -137,20 +151,22 @@ h5 {
 
 .carousel {
   /* any dimensions are fine, it can be responsive with max-width */
-  position: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  width: 80%;
-  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  float: none;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 75%;
+  height: 400px;
   background-image: linear-gradient(to right,black,dimgrey, dimgrey,black );
   border: lightcoral;
   border: 100px;
 }
 
-.carousel-inner {
-  /* make sure your .items will get correct height */
-  height: 80%;
-}
+/*.carousel-inner {*/
+/*  !* make sure your .items will get correct height *!*/
+/*  height: 80%;*/
+/*}*/
 
 .item {
   background-size: cover;
@@ -213,6 +229,6 @@ a {
 
 .col {
   margin: 0 auto;
-  float: none;
-  margin-bottom: 10px;
+float: none;
+margin-bottom: 10px;
 }
