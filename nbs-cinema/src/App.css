@@ -5,7 +5,7 @@
 .App {
   text-align: center;
   background-color: #031E31;
-  min-height: 500px;
+  min-height: 800px;
 }
 
 .card {
@@ -45,7 +45,7 @@
 }
 
 .h2, h2 {
-  color: #e6fbff;
+  /*color: #e6fbff;*/
   font-size: 1.75rem;
 }
 
