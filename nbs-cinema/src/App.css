@@ -4,7 +4,8 @@
 
 .App {
   text-align: center;
-  background-color: #031E31
+  background-color: #031E31;
+  min-height: 500px;
 }
 
 .card {
