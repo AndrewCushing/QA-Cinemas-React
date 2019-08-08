@@ -48,7 +48,7 @@ class StandardScreen extends Component {
     Here we have infromation about the Standard screen. Also we have Duluxe screens, click below to find out more.
   </p>
   <p>
-    <Button variant="primary" onClick={this.handleDuluxe}>Deluxe Screens</Button>
+    <Button variant="primary" onClick={this.handleDuluxe} id={"DeluxeScn2_btn"}>Deluxe Screens</Button>
   </p>
 </Jumbotron>
 <br/>

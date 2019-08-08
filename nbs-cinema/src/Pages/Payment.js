@@ -6,19 +6,19 @@ import receipt_url from "./Checkout";
 import InputGroup from "react-bootstrap/InputGroup";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
-import style from "../styles/paymentsstyle.css";
+import style from "./paymentsstyle.css";
 
 
-class Payment extends React.Component{
-  state = {
+class Payment extends React.Component {
+    state = {
 
-    name: ""
+        name: ""
 
-  };
+    };
 
 componentDidMount() {
     document.getElementById("check").style.display = 'none';
-    
+
 }
 
   handlenameChange = e => {
@@ -42,9 +42,9 @@ componentDidMount() {
         }
     };
     render() {
-      
+
         return (<>
-       
+
         <div>
                            <br/>
                 <Jumbotron>
@@ -64,7 +64,7 @@ componentDidMount() {
       aria-describedby="inputGroup-sizing-default"
       />
   <br />
-     
+
   <div id = "check">
             <Checkout
             name={"Luna Cinemas"}

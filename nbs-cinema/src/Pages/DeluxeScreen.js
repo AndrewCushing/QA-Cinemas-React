@@ -32,7 +32,7 @@ class DeluxeScreen extends Component {
     Here we have infromation about the Deluxe screen. Also we have Standard screens, click below to find out more.
   </p>
   <p>
-    <Button variant="primary" onClick={this.handleStandard}>Standard Screens</Button>
+    <Button variant="primary" onClick={this.handleStandard} id={"StdScreen_btn"}>Standard Screens</Button>
   </p>
 </Jumbotron>
 <br/>
