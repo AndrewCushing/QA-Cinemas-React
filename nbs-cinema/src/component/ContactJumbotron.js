@@ -11,6 +11,7 @@ const Styles = styled.div`
     height: 150px;
     position: relative;
     z-index: 0;
+   
     
     
     }

@@ -41,7 +41,7 @@ class DeluxeScreen extends Component {
                         <img src={ ("/deluxescreen.png") } alt="deluxescreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
                         <Media.Body>
                             <br/>
-                            <h2>Never Before Experienced</h2>
+                            <h2 className="screenFont">Never Before Experienced</h2>
 
                             <p className={"ScreenDesc"} id="myP">
                                 Every seat on every row in our Luna cinemas has been expertly designed so
@@ -59,7 +59,7 @@ class DeluxeScreen extends Component {
                         <img src={ ("/deluxescreenimage.jpg") } alt="deluxescreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
                         <Media.Body>
                             <br/>
-                            <h2>Premium Comfort</h2>
+                            <h2 className="screenFont">Premium Comfort</h2>
 
                             <p className={"ScreenDesc"}>
                                 Every seat on every row in your cinema has been expertly designed so you can
