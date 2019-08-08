@@ -79,7 +79,7 @@ class Booking extends Component {
                     colour = "black";
                     background="white";
                 }
-                newSeatElementArr.push(<button key={i+":"+j} style={{color:colour,background:background}} onClick={booleanSeatsArr[i][j] ? ()=>{} : this.addSeatToBooking(showing, seatsToBook, i+":"+j)}>Row:{i} Col:{j}</button>);
+                newSeatElementArr.push(<button className ="bookingButton" key={i+":"+j} style={{color:colour,background:background}} onClick={booleanSeatsArr[i][j] ? ()=>{} : this.addSeatToBooking(showing, seatsToBook, i+":"+j)}>Row:{i} Col:{j}</button>);
             }
             newSeatElementArr.push(<br key={"RowEnd"+i}/>);
         }

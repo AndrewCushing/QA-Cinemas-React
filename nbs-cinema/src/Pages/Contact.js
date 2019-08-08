@@ -18,7 +18,7 @@ class Contact extends Component {
         return (<div>
                 <ContactJumbotron/>
             <h1>Contact</h1>
-            <div className="ContactAdd">
+            <div className="EmailAdd">
                 <h4> Address </h4>
                 <h6> Alexandra House </h6>
                 <h6> Whittingham Dr </h6>
