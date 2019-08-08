@@ -3,11 +3,12 @@ import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 import show from "react-bootstrap/Alert";
 import setShow from "react-bootstrap/Alert";
-// import useState from "react-bootstrap/Alert";
+import useState from "react-bootstrap/Alert";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
-// function AlertDismissible() {
-//   const [show, setShow] = useState(true);
-// }
+function AlertDismissible() {
+  const [show, setShow] = useState(true);
+}
 
 class notfound extends Component {
 
@@ -23,35 +24,31 @@ class notfound extends Component {
     };
 
     render() {
-        var divStyle = {
-            padding: "0px",
-            margin: "0px"
-          };
+
         return (<>
-    
                 <div>
-                <br/>
-                <br/>
-      <Alert show={show} variant="danger">
-        <Alert.Heading>Opps! Something went wrong...</Alert.Heading>
-        <p>
+<Jumbotron>
+      <h1>Opps!  Something went wrong...</h1>
+              <h3>
           Page not found. See the console for technical details.
-        </p>
-        <hr />
-        <div className="d-flex justify-content-end">
+        </h3>
+        <br/>
+        <br/>
+                <div className="d-flex justify-content-center">
           <Button onClick={this.handleHome} variant="outline-danger">
             Go Home
           </Button>
+          
         </div>
-        
-      </Alert>
-            <img src={ ("/compass-3_2.gif") } alt="compass" style={divStyle} Transformation height="330" width="450" crop="fill" />
-      
+        <img src={ ("/compass-3_2.gif") } Transformation height="330" width="450" crop="fill" />
+        </Jumbotron>
+            
 
 
       {!show && <Button onClick={() => setShow(true)}>Show Alert</Button>}
 </div>
-            </>
+           </>
+      
         );
     }
 }

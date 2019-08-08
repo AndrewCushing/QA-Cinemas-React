@@ -16,17 +16,19 @@ class Payment extends React.Component {
 
     };
 
-    componentDidMount() {
-        document.getElementById("check").style.display = 'none';
-    }
+componentDidMount() {
+    document.getElementById("check").style.display = 'none';
 
-    handlenameChange = e => {
-        this.setState({name: e.target.value}, () => console.log('name:', this.state.name));
-        document.getElementById("check").style.display = '';
-        if (e.target.value == "") {
-            document.getElementById("check").style.display = 'none';
-        }
-    };
+}
+
+  handlenameChange = e => {
+    this.setState({ name: e.target.value }, () => console.log('name:', this.state.name));
+    document.getElementById("check").style.display = '';
+    if(e.target.value == ""){
+      document.getElementById("check").style.display = 'none';
+    }
+    localStorage.setItem("name", this.state.name);
+  };
 
     handleHome = event => {
 
@@ -39,59 +41,54 @@ class Payment extends React.Component {
             window.close();
         }
     };
-
     render() {
+
         return (<>
 
-                <div>
+        <div>
+                           <br/>
+                <Jumbotron>
+  <h1>Payment </h1>
+  <p>
+    To book your tickets please enter your <b><em>full name </em></b>below:
+  </p>
+  <p>Total: £{fromurl}</p>
+  <p>
+  <h2>
+  {this.props.receipt_url}
+  </h2>
+  <div>
+<br/>
+  <Form.Control id="inputt" type="text" placeholder="Enter full name" value={this.props.name} required minlength="6" maxlength="50" onChange={this.handlenameChange}
+        aria-label="Default"
+      aria-describedby="inputGroup-sizing-default"
+      />
+  <br />
 
-                    <br/>
-                    <Jumbotron>
-                        <h1>Payment</h1>
-                        <p>
-                            To book your tickets please enter your <b><em>full name </em></b>below:
-                        </p>
-                        <p>Total: £{localStorage.getItem('cost') / 100}</p>
-                        <p>{this.props.test}</p>
-                        <p>
-                            <h2>
-                                {this.props.receipt_url}
-                            </h2>
-                            <div>
-                                <br/>
-                                <Form.Control id="inputt" type="text" placeholder="Enter full name"
-                                              value={this.props.name} required minlength="6" maxlength="50"
-                                              onChange={this.handlenameChange}
-                                              aria-label="Default"
-                                              aria-describedby="inputGroup-sizing-default"
-                                />
-                                <br/>
-
-                                <div id="check">
-                                    <Checkout
-                                        name={"Luna Cinemas"}
-                                        description={"Ordered Reservation"}
-                                        image={"https://static.tumblr.com/nljhkjv/z0Jlpk23i/logo"}
-                                        amount={1}
-                                    />
-                                </div>
-                            </div>
-                        </p>
-                    </Jumbotron>
-                    <br/>
-
-
-
+  <div id = "check">
+            <Checkout
+            name={"Luna Cinemas"}
+            description={"Movie Booking"}
+            image={"https://static.tumblr.com/nljhkjv/z0Jlpk23i/logo"}
+            amount={1}
+          />
+          </div>
+          </div>
+  </p>
+</Jumbotron>
     </div>
-
+               
             </>
         )
     }
 }
-      let key = 'cost';
-      localStorage.setItem(key, 2350);
+
+let pathArray = window.location.pathname.split('/');
+let fromurl = parseFloat(pathArray[2]);
 
 
+let key = 'cost';
+localStorage.setItem(key, (fromurl)*100);
 
 export default Payment;
 
