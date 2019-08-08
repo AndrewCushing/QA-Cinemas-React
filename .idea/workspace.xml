@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2554d16d-c7d8-4817-9650-f896befe28db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ShowingsTable.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +108,7 @@
       <workItem from="1564731031726" duration="19763000" />
       <workItem from="1564758014010" duration="525000" />
       <workItem from="1564990402126" duration="2311000" />
-      <workItem from="1565254406809" duration="2693000" />
+      <workItem from="1565254406809" duration="4315000" />
     </task>
     <task id="LOCAL-00001" summary="Carl's First Commit">
       <created>1564066113006</created>
@@ -311,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565258136504</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Fixed search results">
+      <created>1565259144212</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1565259144212</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
