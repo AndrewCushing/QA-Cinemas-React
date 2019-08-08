@@ -64,7 +64,7 @@ export default class NavigationBar extends Component {
     performSearch(event){
         event.preventDefault();
         console.log("hi");
-        window.location=('http://localhost:3000/search/'+document.getElementById("searchBar").value);
+        window.location=('http://35.176.119.160:3000/search/'+document.getElementById("searchBar").value);
     };
 
     state = {
