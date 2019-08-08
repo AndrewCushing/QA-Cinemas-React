@@ -22,7 +22,7 @@ export default class ShowingsTable extends React.Component{
         for (let key in showingsArr){
             stuffToDisplay.push(<label color={"white"}><font color="white">{key}:</font></label> );
             for (let i = 0 ; i < showingsArr[key].length ; i++){
-                stuffToDisplay.push(<button title={"Seats available: "+showingsArr[key][i].seatsAvailable} style={{color:showingsArr[key][i].seatsAvailable===0 ? "red" : "green" }} onClick={this.props.bookTimeCallback(showingsArr[key][i],showingsArr[key][i].filmId)}>{showingsArr[key][i].showingTime}</button>)
+                stuffToDisplay.push(<button title={"Seats available: "+showingsArr[key][i].seatsAvailable} style={{color:showingsArr[key][i].seatsAvailable===0 ? "red" : "green" }} onClick={this.props.bookTimeCallback(showingsArr[key][i],showingsArr[key][i].filmId)}>{showingsArr[key][i].screenType}: {showingsArr[key][i].showingTime}</button>)
             }
             stuffToDisplay.push(<div><br/><br/></div>);
         }

@@ -111,7 +111,7 @@ site and is an area to provide credits and a way for the team to sign its work.{
           <Card.Text>
             Thank you for taking your time to look at our cinema website. To find out more, get in touch.
     </Card.Text>
-          <Button type="submit" onClick={this.handleContact} variant="primary">Contact Us</Button>
+          <Button type="submit" onClick={this.handleContact} variant="primary" id={"ContactSub_btn"}>Contact Us</Button>
         </Card.Body>
       </Card>
     </div>
