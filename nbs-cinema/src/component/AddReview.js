@@ -30,10 +30,10 @@ export default class AddReview extends React.Component {
             <div>
                 <form className={"AddReviewForm"} onSubmit={this.submitReview}>
                     <div>
-                        <h3> Please Add a Review </h3>
+                        <h3 className={"commentHead"}> Please Add a Review </h3>
                         <input type="text" className={"AddCommentInput"} placeholder="username" id="username"/>
                     </div>
-                    <div>
+                    <div>Rating:
                         <select className={"AddCommentInput"} id="rating">
                             <option>1</option>
                             <option>2</option>

@@ -30,7 +30,7 @@ class DeluxeScreen extends Component {
                 <Jumbotron>
                     <h1>Deluxe Screen</h1>
                         <p>
-                            Here we have infromation about the Deluxe screen. Also we have Standard screens, click below to find out more.
+                            Here we have information about the Deluxe screen. Also we have Standard screens, click below to find out more.
                         </p>
                         <p>
                             <Button className={"ScreenSelector"} variant="primary" onClick={this.handleStandard}>Standard Screens</Button>
@@ -48,7 +48,7 @@ class DeluxeScreen extends Component {
         you can relax and recline during your film. With less seats and more
         personal space, you"ll have a more immersive experience with every visit.
         Now every seat is the best in the house, it’s time to experience films
-        way they were meant to be seen. With pitch-perfect Dolby Atmos sound
+        way they were meant to be seen. With pitch-perfect Dolby Atmospheric sound
         and flawless 4K projection, the film becomes breathtakingly real.
     </p>
     

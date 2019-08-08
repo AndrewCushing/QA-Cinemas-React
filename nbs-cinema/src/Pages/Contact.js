@@ -28,7 +28,7 @@ class Contact extends Component {
             </div>
             <br/>
             <div className="EmailAdd">
-                <h3>Email </h3>
+                <h3>Get In Touch </h3>
                  <button className="emailButton" id="emailButton" type="submit"
                         onClick={this.handleEmailSubmit}>Email Luna Cinemas</button>
             </div>

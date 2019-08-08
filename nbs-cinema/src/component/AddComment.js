@@ -30,6 +30,7 @@ export default class AddComment extends React.Component {
             <div>
                 <form className={"AddCommentForm"} onSubmit={this.submitComment}>
                     <div>
+                        <p className={"commentHead"}> Please Add Your Comment </p>
                         <input className={"AddCommentInput"} id="username" type={"text"} maxLength={15} placeholder={"Username"}/>
                     </div>
                     <div>

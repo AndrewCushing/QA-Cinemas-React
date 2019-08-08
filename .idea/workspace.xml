@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3602a85a-650a-4a92-8ee9-4e842c23d2c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nbs-cinema/src/styles/Footer.css" afterDir="false" />
+    <list default="true" id="3602a85a-650a-4a92-8ee9-4e842c23d2c3" name="Default Changelist" comment="Updated formatting on Screen pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/FooterComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/styles/HomeComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/styles/HomeComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/AddComment.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/AddComment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/styles/ContactComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/styles/ContactComponent.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/styles/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,28 +27,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/HomeComponent.js">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="680">
+              <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/ContactComponent.css">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="88" selection-start-line="88" selection-end-line="105" selection-end-column="1" />
+            <state relative-caret-position="153">
+              <caret line="48" column="52" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js">
+        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="64" />
+            <state relative-caret-position="289">
+              <caret line="45" column="31" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -56,34 +63,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state relative-caret-position="102">
+              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -100,6 +83,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -117,19 +101,13 @@
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/CurrentFilms.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.styl" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/DiscussionHeader.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/styles/ContactComponent.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/MovieDetails.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/MovieRow.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Booking.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/Comment.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/Review.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/CommentBoard.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/AddComment.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/NavigationBar.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/NavBar.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/styles/jumbostyle.css" />
@@ -142,9 +120,17 @@
         <option value="$PROJECT_DIR$/nbs-cinema/src/component/Jumbotron.js" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/styles/HomeComponent.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js" />
-        <option value="$PROJECT_DIR$/nbs-cinema/src/styles/style.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/styles/ContactComponent.css" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/AddComment.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.css" />
         <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" />
+        <option value="$PROJECT_DIR$/nbs-cinema/src/styles/style.css" />
       </list>
     </option>
   </component>
@@ -413,11 +399,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565192627981</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Updated formatting on Screen pages">
+      <created>1565212895026</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1565212895027</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68273000" />
+    <option name="totallyTimeSpent" value="79813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -515,28 +508,10 @@
     <MESSAGE value="Added dependencies for Stripe" />
     <MESSAGE value="Added carousel pictures" />
     <MESSAGE value="Updated review and comments CSS. Added &quot;add comment&quot; function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated review and comments CSS. Added &quot;add comment&quot; function." />
+    <MESSAGE value="Updated formatting on Screen pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated formatting on Screen pages" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/PlacesToGo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-778">
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/services/EmailService.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -561,15 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -610,26 +576,6 @@
           <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DiscussionHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -712,16 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Review.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/CommentBoard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -732,25 +668,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="105" column="22" lean-forward="true" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/paymentsstyle.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/AddComment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="32" column="58" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/jumbostyle.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -792,16 +711,6 @@
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/styleclass.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-148" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.js">
@@ -871,32 +780,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/EMail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="63" column="25" lean-forward="true" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        <state relative-caret-position="1014">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/ContactComponent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="88" selection-start-line="88" selection-end-line="105" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Screens.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="64" />
+        <state relative-caret-position="1020">
+          <caret line="63" column="27" lean-forward="true" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -905,8 +800,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/StandardScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state relative-caret-position="-255">
+          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DiscussionBoard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/DiscussionHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/AddComment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/ContactComponent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="109" column="20" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/Review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/ReviewBoard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/component/AddReview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -915,11 +880,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/DeluxeScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="289">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="31" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/GettingThere.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nbs-cinema/src/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>

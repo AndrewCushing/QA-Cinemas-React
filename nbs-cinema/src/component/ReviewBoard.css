@@ -12,6 +12,7 @@
     font-size: 16px;
     background-color: whitesmoke;
     width: 130px;
+    margin-bottom: 5px;
     color: darkslategrey;
     border: 2px solid #2E9FD1;
     border-radius: 4px;
@@ -36,6 +37,7 @@
 .AddCommentBtn{
     height: 32px;
     width: 8px;
+    margin-bottom: 5px;
 }
 
 input[type=submit] {
@@ -108,6 +110,18 @@ input[type=submit] {
     height: 60%;
     font-size: 14px;
     background-color: whitesmoke;
+}
+
+.AddCommentInput{
+    margin-left: 5px;
+}
+
+
+.commentHead{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+
 }
 
 

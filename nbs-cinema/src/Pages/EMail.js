@@ -72,7 +72,9 @@ class EMail extends Component {
                                   maxLength="200" placeholder="Enter your message here" value={Message} onChange={this.handleOnChange} required></textarea>
                         <input className="popup" type="submit" value="Submit"/>
 
-                         <br/><label className={EmailResponse} id={EmailResponse}>{EmailResponse}</label>
+                         <br/>
+                         <br/>
+                         <label className={EmailResponse} id={EmailResponse}>{EmailResponse}</label>
                          <br/>
                         <br/>
                     </form>

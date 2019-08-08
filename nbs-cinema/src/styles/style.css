@@ -12,6 +12,11 @@ h2{
     font-size: 20px;
 }
 
+.RatingsInfoHead{
+    color: whitesmoke;
+    font-size: 16px;
+}
+
 .ScreenDesc{
     font-size: 16px;
     color: whitesmoke;
@@ -34,4 +39,9 @@ h2{
     transition: 0.6s;
     background-color: #2E9FD1;
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 12px 40px 0 rgba(0,0,0,0.19);
+}
+
+
+.ClassNames{
+    font-color: red;
 }

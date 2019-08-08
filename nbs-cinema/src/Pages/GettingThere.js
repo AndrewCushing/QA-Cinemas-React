@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import LunaMap from '../component/LunaMap';
 import Media from "react-bootstrap/Media";
 import { DirectionsJumbotron } from "../component/DirectionsJumbotron";
+import '../styles/style.css';
+
 class GettingThere extends Component {
 
     constructor(props) {
@@ -33,12 +35,13 @@ class GettingThere extends Component {
                         <img src={ ("/luna_building.jpg") } alt="luna_building" style={divStyle} Transformation height="350" width="550" crop="fill" effect="sepia" radius="20" />
                         <br/>
                         <br/>
-                        <h4>Address:</h4>
-                        <h5>Whittingham Dr, Wroughton, Swindon SN4 0QJ</h5>
+                        <h2>Address:</h2>
+                        <p className={"ScreenDesc"}>Whittingham Dr, Wroughton, Swindon SN4 0QJ</p>
                         <br/>
-                        <h4>Directions from bus/train stations</h4>
+                        <h2>Directions from bus/train stations</h2>
                         <br/>
-                        <h4>Parking</h4>
+                        <h2>Parking</h2>
+
                     </Media.Body>
                 </Media>
                 <br/>
