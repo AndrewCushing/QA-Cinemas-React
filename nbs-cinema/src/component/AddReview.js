@@ -44,7 +44,7 @@ export default class AddReview extends React.Component {
                         <textarea rows={3} placeholder={"Enter your review here"} id="review"/>
                     </div>
                     <div>
-                        <button>Submit</button>
+                        <button id={"Submit_btn"}>Submit</button>
                     </div>
                 </form>
             </div>
