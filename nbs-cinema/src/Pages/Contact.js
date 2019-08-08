@@ -17,7 +17,6 @@ class Contact extends Component {
     render() {
         return (<div>
                 <ContactJumbotron/>
-            <h1>Contact</h1>
             <div className="EmailAdd">
                 <h4> Address </h4>
                 <h6> Alexandra House </h6>
