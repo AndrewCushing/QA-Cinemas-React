@@ -1,0 +1,250 @@
+.filmTable {
+
+    box-shadow: 5px 5px 8px #888888;
+
+    border-radius: 6px;
+
+    cellpadding: none;
+
+    width: 80%;
+
+    height: 80%;
+
+    font-size: 14px;
+
+    background-image: linear-gradient(to bottom right, #335170, white);
+
+}
+
+
+
+/*.infoButton{*/
+
+/*    font-size: 16px;*/
+
+/*    background-color: whitesmoke;*/
+
+/*    width: 130px;*/
+
+/*    margin-bottom: 5px;*/
+
+/*    color: darkslategrey;*/
+
+/*    border: 2px solid #2E9FD1;*/
+
+/*    border-radius: 4px;*/
+
+/*    padding: 4px;*/
+
+
+
+
+
+/*.infoButton:hover {*/
+
+/*    color: whitesmoke;*/
+
+/*    background-color: #2E9FD1;*/
+
+/*    transition: 300ms;*/
+
+
+
+
+
+.AddCommentInput{
+
+    height: 33px;
+
+    border-radius: 4px;
+
+    padding: 4px;
+
+    margin-right: 5px;
+
+    margin-bottom: 5px;
+
+    border: 2px solid #2E9FD1;
+
+}
+
+
+
+.AddCommentBtn{
+
+    height: 32px;
+
+    width: 8px;
+
+    margin-bottom: 5px;
+
+}
+
+
+
+input[type=submit] {
+
+    width: 100px;
+
+}
+
+
+
+.filmHead{
+
+    background-image: linear-gradient(to right, black, dimgrey, whitesmoke, dimgrey, black );
+
+    border-radius: 2px;
+
+}
+
+
+
+.ReviewHead{
+
+    width: 60%;
+
+    height: 60%;
+
+    border-radius: 4px;
+
+    background-image: linear-gradient(to bottom right, #335170, white);
+
+}
+
+
+
+.reviewTable{
+
+    background-color: whitesmoke;
+
+    border-radius: 4px;
+
+    padding: 5px;
+
+}
+
+
+
+.CommentContainer {
+
+    border: 2px solid #dedede;
+
+    background-color: #f1f1f1;
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    margin: 10px 0;
+
+}
+
+
+
+.CommentContainer::after {
+
+    content: "";
+
+    clear: both;
+
+    display: table;
+
+}
+
+
+
+.ReturnButton{
+
+    font-size: 16px;
+
+    background-color: whitesmoke;
+
+    width: 130px;
+
+    color: darkslategrey;
+
+    border: 2px solid #2E9FD1;
+
+    border-radius: 4px;
+
+    padding: 4px;
+
+}
+
+
+
+.ReturnButton:hover {
+
+    color: whitesmoke;
+
+    background-color: #2E9FD1;
+
+    transition: 300ms;
+
+}
+
+
+
+
+
+.AddCommentText{
+
+    width: 400px;
+
+    border-radius: 4px;
+
+    border: 2px solid #2E9FD1;
+
+}
+
+
+
+
+
+.AddReviewForm{
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    box-shadow: 5px 5px 8px #888888;
+
+    border-radius: 6px;
+
+    cellpadding: none;
+
+    width: 60%;
+
+    height: 60%;
+
+    font-size: 14px;
+
+    background-color: whitesmoke;
+
+}
+
+
+
+.AddCommentInput{
+
+    margin-left: 5px;
+
+}
+
+
+
+
+
+.commentHead{
+
+    text-decoration: underline;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+
+
+}
+

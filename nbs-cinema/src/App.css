@@ -40,14 +40,22 @@
 
 .h3, h3 {
   font-size: 1.75rem;
-  color: antiquewhite;
+  color: #e6fbff;
 }
 
 .h2, h2 {
-  color: antiquewhite;
+  color: #e6fbff;
   font-size: 1.75rem;
 }
 
+.ReviewText {
+
+  color: black;
+}
+
+.firstReview {
+  color: black;
+}
 
 #body {
   background-color: #1A181D;
