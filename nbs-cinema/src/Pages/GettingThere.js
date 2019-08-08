@@ -15,7 +15,8 @@ class GettingThere extends Component {
     render() {
         var divStyle = {
             padding: "10px",
-            margin: "0px"
+            margin: "0px",
+            color: "white"
            
         };
         return (<div>

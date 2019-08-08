@@ -10,6 +10,7 @@ const Styles = styled.div`
     height: 150px;
     position: relative;
     z-index: 0;
+    margin-bottom:70px;
     
     
     }
@@ -32,7 +33,7 @@ export const UpcomingJumbotron = () => (
         <Jumbo fluid className="jumbo">
             <div className="overlay"></div>
             <Container>
-                <h1> Films You Can Enjoy Soon! </h1>
+                <h1> Films To Enjoy Soon! </h1>
             </Container>
         </Jumbo>
     </Styles>

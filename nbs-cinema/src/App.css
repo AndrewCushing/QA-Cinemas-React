@@ -4,7 +4,12 @@
 
 .App {
   text-align: center;
-  background-color: #031E31
+  background-color: #031E31;
+  min-height: 600px;
+}
+
+.screenFont {
+  color: white;
 }
 
 .card {
@@ -14,6 +19,7 @@
     float: none;
 
     margin-bottom: 10px;
+
 
 }
 
@@ -44,9 +50,11 @@
 }
 
 .h2, h2 {
-  color: #e6fbff;
+  /*color: #e6fbff;*/
   font-size: 1.75rem;
 }
+
+
 
 .ReviewText {
 

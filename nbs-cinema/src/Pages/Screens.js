@@ -31,7 +31,7 @@ class Screens extends Component {
                     <img src={ ("/standardscreenimage.jpg") } alt="standdardscreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
                     <Media.Body>
                         <br/>
-                        <h2>Standard Screens</h2>
+                        <h2 className="screenFont">Standard Screens</h2>
 
                         <p className={"ScreenDesc"} id="myP">
                             The sights and sounds, the hushed conversation, the great anticipation.
@@ -51,7 +51,7 @@ class Screens extends Component {
                     <img src={ ("/deluxescreenimage.jpg") } alt="deluxescreen" style={divStyle} Transformation height="350" width="450" crop="fill" effect="sepia" radius="20" />
                     <Media.Body>
                         <br/>
-                        <h2>Deluxe Screens</h2>
+                        <h2 className="screenFont">Deluxe Screens</h2>
 
                         <p className={"ScreenDesc"}>
                             We believe the best entertainment deserves the best quality picture.

@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
-import AddComment from "./AddComment";
 import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
 import {CommentJumbotron} from "./CommentJumbotron";
-
-
+import CommentAdder from "./CommentAdder";
 
 export default class CommentBoard extends Component {
 
@@ -17,12 +15,6 @@ export default class CommentBoard extends Component {
             comments:[]
         };
     };
-
-
-    returnFunction = event => {
-        window.history.back();
-    };
-
 
     componentDidMount(){
         const classifications = {
@@ -40,15 +32,18 @@ export default class CommentBoard extends Component {
             fetch('http://35.176.119.160:8080/getreview/'+this.props.match.params.reviewId)
                 .then(res => res.json() ).catch(console.log).then(results => {
                 let reviewObject = results.contentList[0];
+                console.log('http://localhost:8080/getcomments/'+this.props.match.params.reviewId);
                 fetch('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId)
                     .then(res => res.json() ).catch(console.log).then(results => {
                     let commentArr = [];
                     let comments = results.contentList;
+                    console.log(results);
                     for (let i = 0 ; i < comments.length ; i++){
                         commentArr.push(
                             <Comment key={comments[i].id} username={comments[i].username} body={comments[i].body}></Comment>
                         )
                     }
+                    commentArr.push(<CommentAdder reviewId={reviewObject.id}/>);
                     this.setState({
                         movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
                         review:reviewObject,
@@ -60,33 +55,31 @@ export default class CommentBoard extends Component {
     };
 
     render() {
-        return (
-            <div>
+        return (<div>
                 <CommentJumbotron/>
                 <div>
                     <table className="filmTable">
-                        <th className={"ReviewHead"}>
-                            {this.state.movieHeader}
-                        </th>
+                        <tbody>
                         <tr>
-                            <td className={"ChosenReview"}>
-                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
-                                <AddComment filmId={this.state.review.filmId} reviewId={this.state.review.id}/>
+                            <td>
+                                {this.state.movieHeader}
                             </td>
                         </tr>
-                        <tr>
-                            <td className={"ReviewHead"}>
-                                {this.state.comments}
-                            </td>
-                        </tr>
-
+                        </tbody>
                     </table>
 
+                    <table className="filmTable">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                     <div>
-                        <button className="ReturnButton" id="ReturnButton" type="submit"
-                                onClick={this.returnFunction}> Return </button>
+                        {this.state.comments}
                     </div>
-
                 </div>
             </div>
 

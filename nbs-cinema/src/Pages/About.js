@@ -57,7 +57,7 @@ class About extends Component {
           <Card.Body>
             <Card.Title>Carl 'I will make it responsive' Stuart</Card.Title>
             <Card.Text>
-    From the start I made it my mission to ensure the website was responsive and in working condition, even if did mean kissing goodbye to sleeping before midnight each day. Next mission, to go cold turkey on double espressos!
+    From the start I made it my mission to ensure the website was responsive and in working condition, even if it did mean kissing goodbye to sleeping before midnight each day. Next mission, to go cold turkey on double espressos!
       </Card.Text>
           </Card.Body>
         </Card>
