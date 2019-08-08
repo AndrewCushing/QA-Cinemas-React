@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2554d16d-c7d8-4817-9650-f896befe28db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/Pages/Classifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/MapContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/MapContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" beforeDir="false" afterPath="$PROJECT_DIR$/nbs-cinema/src/component/SearchResults.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,17 +42,12 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TicketsAndPricing" />
+        <entry key="$PROJECT_DIR$" value="9cf0858e7b58721dc6aedda24d6931c5e551909d" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="481" />
-    <option name="y" value="510" />
-    <option name="width" value="1145" />
-    <option name="height" value="960" />
-  </component>
+  <component name="ProjectId" id="1P8SoMBnfqIBMJhKgx40ZFxRDQ8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -103,7 +97,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2f82623e-3227-4d73-b882-d8325287eadc" name="Default Changelist" comment="" />
+      <changelist id="2554d16d-c7d8-4817-9650-f896befe28db" name="Default Changelist" comment="" />
       <created>1564065823630</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -114,6 +108,7 @@
       <workItem from="1564731031726" duration="19763000" />
       <workItem from="1564758014010" duration="525000" />
       <workItem from="1564990402126" duration="2311000" />
+      <workItem from="1565254406809" duration="2042000" />
     </task>
     <task id="LOCAL-00001" summary="Carl's First Commit">
       <created>1564066113006</created>
@@ -304,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565189436646</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Fixed a couple of typos and made the links work in the search results page">
+      <created>1565251738277</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1565251738278</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +333,13 @@
       <map>
         <entry key="Branch">
           <value>
-            <list />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
         <entry key="User">
@@ -367,6 +375,7 @@
     <MESSAGE value="Booking process has been refined so that the tickets requested are properly checked and can be rejected if someone has booked them since that page was loaded" />
     <MESSAGE value="Created workings of a booking system. Small change needed to proceed to payment page." />
     <MESSAGE value="Made change needed to proceed to payment page as it is ready." />
-    <option name="LAST_COMMIT_MESSAGE" value="Made change needed to proceed to payment page as it is ready." />
+    <MESSAGE value="Fixed a couple of typos and made the links work in the search results page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a couple of typos and made the links work in the search results page" />
   </component>
 </project>

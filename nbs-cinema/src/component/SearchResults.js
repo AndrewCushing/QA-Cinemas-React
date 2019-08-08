@@ -43,9 +43,8 @@ class SearchResults extends Component {
     render() {
         return (<div>
                 <SearchJumbotron/>
-
             <div>
-                    {this.state.rows}
+                {this.state.rows}
             </div>
             </div>
         )
