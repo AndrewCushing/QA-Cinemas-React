@@ -4,7 +4,6 @@ import MovieDetails from "../component/MovieDetails";
 import ShowingsTable from '../component/ShowingsTable';
 import { BookingJumbotron }  from "../component/BookingJumbotron";
 
-
 class Booking extends Component {
 
     constructor(props) {
@@ -22,9 +21,9 @@ class Booking extends Component {
         this.getRequestedSeatLayout = this.getRequestedSeatLayout.bind(this);
     };
 
-    bookTime = (showing) => (event) => {
+    bookTime = (showing, filmId) => (event) => {
         event.preventDefault();
-        this.setButtonArray(showing, []);
+        this.setButtonArray(showing, [], filmId);
     };
 
     addSeatToBooking = (showing, seatsToBook, seatPos) => (event) => {
@@ -32,23 +31,23 @@ class Booking extends Component {
         this.setButtonArray(showing, seatsToBook);
     };
 
-    attemptBooking = (showing, seatsToBook) => (event) => {
+    attemptBooking = (showing, seatsToBook, filmId) => (event) => {
+        if (seatsToBook.length<1){
+            alert("You haven't selected any seats yet!");
+            return;
+        }
         event.preventDefault();
         showing = this.getRequestedSeatLayout(showing, seatsToBook);
-        console.log(JSON.stringify(showing));
-        fetch('http://35.176.119.160:8080/booktickets/'+showing.id,{
+        fetch('http://localhost:8080/booktickets/'+showing.id,{
             method: 'POST',
             headers:{'content-type': 'application/json'},
-            body: JSON.stringify(showing)
+            body: JSON.stringify(seatsToBook)
         }).then(res => res.json()).catch(console.log).then(results => {
             if (results.successful){
-                this.setState({
-                    stuffToShow:<h1>Congrats! Your tickets have been booked!</h1>
-                });
+                window.location="http://localhost:3000/payment/"+(results.body.split(":")[1]);
             } else {
-                this.setState({
-                    stuffToShow:<h1>{results.body}</h1>
-                });
+                alert("Sorry, some of your seats have been booked by someone else. Please select some of the remaining seats.");
+                this.setButtonArray(results.contentList[0],[], filmId);
             }
         });
     };
@@ -62,20 +61,25 @@ class Booking extends Component {
         return showing;
     }
 
-    setButtonArray(showing, seatsToBook){
+    setButtonArray(showing, seatsToBook, filmId){
         const booleanSeatsArr = showing.seatAvailability;
         let newSeatElementArr = [];
+        newSeatElementArr.push(<div><button onClick={this.showTheShowings(filmId)}>Back to showing times</button><br/><br/><br/></div>);
         for (let i = 0 ; i < booleanSeatsArr.length ; i++){
             for (let j = 0 ; j < booleanSeatsArr[i].length ; j++){
                 let colour="";
+                let background="";
                 if (this.checkSelected(i,j,seatsToBook)){
-                    colour = "blue";
+                    colour = "white";
+                    background="green";
                 } else if (booleanSeatsArr[i][j]){
-                    colour = "red";
+                    colour = "white";
+                    background="red";
                 } else {
-                    colour = "green";
+                    colour = "black";
+                    background="white";
                 }
-                newSeatElementArr.push(<button key={i+":"+j} style={{color:colour}} onClick={booleanSeatsArr[i][j] ? ()=>{} : this.addSeatToBooking(showing, seatsToBook, i+":"+j)}>Row:{i} Col:{j}</button>);
+                newSeatElementArr.push(<button className ="bookingButton" key={i+":"+j} style={{color:colour,background:background}} onClick={booleanSeatsArr[i][j] ? ()=>{} : this.addSeatToBooking(showing, seatsToBook, i+":"+j)}>Row:{i} Col:{j}</button>);
             }
             newSeatElementArr.push(<br key={"RowEnd"+i}/>);
         }
@@ -86,6 +90,10 @@ class Booking extends Component {
     }
 
     componentDidMount() {
+        this.showTheShowings(this.props.match.params.id)();
+    }
+
+    showTheShowings = (filmId) => () => {
         const classifications = {
             ClassU:"/ClassificationImages/U.png",
             ClassPG:"/ClassificationImages/PG.png",
@@ -94,7 +102,7 @@ class Booking extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://35.176.119.160:8080/getshowingsbyfilm/'+this.props.match.params.id)
+        fetch('http://localhost:8080/getshowingsbyfilm/'+filmId)
             .then(res => res.json()).catch(console.log).then(results => {
             const film = results.contentList[0];
             const showings = results.contentList[1];

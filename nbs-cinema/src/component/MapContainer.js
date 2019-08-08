@@ -18,8 +18,6 @@ export class MapContainer extends Component {
         selectedPlace: {}
     };
 
-
-
     onMarkerClick = (props, marker, e) =>
         this.setState({
             selectedPlace: props,
@@ -42,8 +40,8 @@ export class MapContainer extends Component {
                 <div name="mapContainer" className="mapContainer" style={this.props.style || {}}>
                     <Map className="mapStyle"
                          google={this.props.google}
-                         zoom={13}
-                         initialCenter={{ lat: 51.5716896, lng: -1.756816 }}
+                         zoom={11.5}
+                         initialCenter={{ lat: 51.512491, lng: -1.772591 }}
                     >
                         <Marker
                             onClick={this.onMarkerClick.bind(this)}
@@ -107,6 +105,6 @@ export class MapContainer extends Component {
 export default GoogleApiWrapper(
     () => ({
 
-            apiKey: ('AIzaSyA-B45jxqRMZfbp1j-BjzC2jReEDr_0Zms')
+            apiKey: ('AIzaSyBRZ03wenxHfPXdMNkiySal3yn8RzXS208')
         }
     ))(MapContainer)

@@ -1,5 +1,7 @@
+
 import React, { Component } from 'react';
 import '../styles/ContactComponent.css';
+import EmailService from '../services/EmailService';
 
 class EMail extends Component {
 
@@ -44,36 +46,42 @@ class EMail extends Component {
                 if (labelMessage.length == 0){
                     labelMessage = results.response;
                 }
-               this.setState({
-                   Forename:"",
-                   Surname:"",
-                   EmailAdd:"",
-                   Subject:"",
-                   Message:"",
-                   EmailResponse: labelMessage
+                this.setState({
+                    Forename:"",
+                    Surname:"",
+                    EmailAdd:"",
+                    Subject:"",
+                    Message:"",
+                    EmailResponse: labelMessage
+                });
             });
-        });
     };
     render() {
         const {Forename,Surname,EmailAdd,Subject,Message,EmailResponse} =this.state;
+
         return (
-                <div>
-                     <form onSubmit={this.handleSubmit} >
-                         <h1>Email</h1>
-                        <input required type="text" className="form-control" name ="Forename" id={"Forename"} maxLength="30"  placeholder="Forename" value={Forename} onChange={this.handleOnChange} />
-                        <input required type="text" className="form-control"  name ="Surname" id={"Surname"} maxLength="30" placeholder="Surname" value={Surname} onChange={this.handleOnChange}/>
-                        <input required type="email" className="form-control"  name ="EmailAdd" id={"EmailAdd"} maxLength="50" placeholder="name@example.com" value={EmailAdd} onChange={this.handleOnChange}/>
-                        <input required type="text" className="form-control"  name ="Subject" id={"Subject"} maxLength="20" placeholder="Subject" value={Subject} onChange={this.handleOnChange}/>
-                        <textarea rows="7" cols="58" className="form-control"  name ="Message" id={"Message"}
-                                  maxLength="200" placeholder="Enter your message here" value={Message} onChange={this.handleOnChange} required></textarea>
-                        <input className="popup" type="submit" value="Submit"/>
-                         <br/><label className={EmailResponse} id={EmailResponse}>{EmailResponse}</label>
-                         <br/>
-                        <br/>
-                    </form>
-                </div>
+            <div>
+                <label>{EmailResponse}</label>
+                <br/>
+                <form id={"emailForm"} onSubmit={this.handleSubmit} >
+                    <h1>Email</h1>
+                    <input required type="text" className="form-control" name ="Forename" id={"Forename"} maxLength="30"  placeholder="Forename" value={Forename} onChange={this.handleOnChange} />
+                    <input required type="text" className="form-control"  name ="Surname" id={"Surname"} maxLength="30" placeholder="Surname" value={Surname} onChange={this.handleOnChange}/>
+                    <input required type="email" className="form-control"  name ="EmailAdd" id={"EmailAdd"} maxLength="500" placeholder="name@example.com" value={EmailAdd} onChange={this.handleOnChange}/>
+                    <input required type="text" className="form-control"  name ="Subject" id={"Subject"} maxLength="20" placeholder="Subject" value={Subject} onChange={this.handleOnChange}/>
+                    <textarea rows="7" cols="58" className="form-control"  name ="Message" id={"Message"}
+                              maxLength="200" placeholder="Enter your message here" value={Message} onChange={this.handleOnChange} required></textarea>
+                    <input className="popup" type="submit" value="Submit"/>
+
+                    <br/>
+                    <br/>
+                    <label className={EmailResponse} id={EmailResponse}>{EmailResponse}</label>
+                    <br/>
+                    <br/>
+                </form>
+            </div>
         )
     }
 }
 
-export default EMail
+export default EMail;
