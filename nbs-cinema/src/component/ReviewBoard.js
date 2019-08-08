@@ -24,11 +24,11 @@ export default class ReviewBoard extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getfilm/'+this.props.match.params.filmId)
+        fetch('http://35.176.119.160:8080/getfilm/'+this.props.match.params.filmId)
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies[0].classification = classifications[movies[0].classification];
-            fetch('http://localhost:8080/getreviews/'+this.props.match.params.filmId)
+            fetch('http://35.176.119.160:8080/getreviews/'+this.props.match.params.filmId)
                 .then(res => res.json() ).catch(console.log).then(results => {
                 let reviews = results.contentList;
                 let reviewArr = [];

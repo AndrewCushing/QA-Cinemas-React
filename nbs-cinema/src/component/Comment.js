@@ -11,11 +11,11 @@ export default class Comment extends React.Component {
         event.preventDefault();
         const username = document.getElementById("username").value;
         const review = document.getElementById("review").value;
-        fetch('http://localhost:8080/insertreview/'+this.props.filmId+"/"+"/"+review+"/"+username)
+        fetch('http://35.176.119.160:8080/insertreview/'+this.props.filmId+"/"+"/"+review+"/"+username)
             .then(res => res.json() ).catch(()=> {window.alert("Unable to connect to back end!")}).then(results => {
             console.log(results.successful);
             if (results.successful){
-                window.location = 'http://localhost:3000/Reviews/'+this.props.filmId;
+                window.location = 'http://35.176.119.160:3000/Reviews/'+this.props.filmId;
             } else {
                 window.alert("Unable to submit review. Unlucky!");
             }
