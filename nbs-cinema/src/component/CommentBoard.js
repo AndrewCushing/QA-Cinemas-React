@@ -3,6 +3,7 @@ import DiscussionHeader from './DiscussionHeader.js';
 import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
 import {CommentJumbotron} from "./CommentJumbotron";
+import CommentAdder from "./CommentAdder";
 
 export default class CommentBoard extends Component {
 
@@ -31,15 +32,18 @@ export default class CommentBoard extends Component {
             fetch('http://localhost:8080/getreview/'+this.props.match.params.reviewId)
                 .then(res => res.json() ).catch(console.log).then(results => {
                 let reviewObject = results.contentList[0];
+                console.log('http://localhost:8080/getcomments/'+this.props.match.params.reviewId);
                 fetch('http://localhost:8080/getcomments/'+this.props.match.params.reviewId)
                     .then(res => res.json() ).catch(console.log).then(results => {
                     let commentArr = [];
                     let comments = results.contentList;
+                    console.log(results);
                     for (let i = 0 ; i < comments.length ; i++){
                         commentArr.push(
                             <Comment key={comments[i].id} username={comments[i].username} body={comments[i].body}></Comment>
                         )
                     }
+                    commentArr.push(<CommentAdder reviewId={reviewObject.id}/>);
                     this.setState({
                         movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
                         review:reviewObject,
@@ -73,10 +77,8 @@ export default class CommentBoard extends Component {
                         </tr>
                         </tbody>
                     </table>
-                    {this.state.comments}
                     <div>
-                        <button className="btn btn-add" type="submit" onClick={this.handleHome}>Home</button>
-                        <button type="close" onClick={this.handleClose}>Close</button>
+                        {this.state.comments}
                     </div>
                 </div>
             </div>
