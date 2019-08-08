@@ -20,7 +20,7 @@ export default class Classifications extends React.Component {
             });
         }
     }
-
+  
     handleClick = (e) => {
         e.preventDefault();
     };
@@ -42,7 +42,7 @@ export default class Classifications extends React.Component {
                                     className={ClassNames({active: this.state.activeTab === "1"})}
                                     onClick={() => {
                                         this.toggle("1");
-                                    }}
+                                    }}id={"Ratings_Info"}
                                 >
                                     Ratings info
                                 </NavLink>
@@ -52,7 +52,7 @@ export default class Classifications extends React.Component {
                                     className={ClassNames({active: this.state.activeTab === "2"})}
                                     onClick={() => {
                                         this.toggle("2");
-                                    }}
+                                    }} id={"U_Info"}
                                 >
 
                                     <img src="/ClassificationImages/U.png"></img>
@@ -63,7 +63,7 @@ export default class Classifications extends React.Component {
                                     className={ClassNames({active: this.state.activeTab === "3"})}
                                     onClick={() => {
                                         this.toggle("3");
-                                    }}
+                                    }} id={"12/12A_Info"}
                                 >
                                     <img src="/ClassificationImages/12.png" />
                                     <img src="/ClassificationImages/12A.png" />
@@ -74,7 +74,7 @@ export default class Classifications extends React.Component {
                                     className={ClassNames({active: this.state.activeTab === "4"})}
                                     onClick={() => {
                                         this.toggle("4");
-                                    }}
+                                    }} id={"15_Info"}
                                 >
                                     <img src="/ClassificationImages/15.png"/>
                                 </NavLink>
@@ -84,7 +84,7 @@ export default class Classifications extends React.Component {
                                     className={ClassNames({active: this.state.activeTab === "5"})}
                                     onClick={() => {
                                         this.toggle("5");
-                                    }}
+                                    }} id={"18_Info"}
                                 >
                                     <img src="/ClassificationImages/18.png"/>
                                 </NavLink>
@@ -101,7 +101,7 @@ export default class Classifications extends React.Component {
 
                                 <p>o What are the rules and conditions relating to each classification?</p>
                                 <br/>
-                                <p>For more information, click <a class="one" href="/bbfc" onClick={this.props.handleClick}>here.</a></p>
+                                <p>For more information, click <a class="one" href="/bbfc" onClick={this.props.handleClick} id={"BBFC_Link"}>here.</a></p>
                             </TabPane>
                             <TabPane tabId="2">
 

@@ -12,7 +12,7 @@ class MovieDetails extends React.Component {
         } else {
             this.state = {bookingButton:
                     <Link to ={"/Booking/" + this.props.movie.id}>
-                        <button className="bookButton"><i class="material-icons"> event_seat</i>Book</button>
+                        <button className="bookButton" id={"Book_btn"}><i class="material-icons" > event_seat</i>Book</button>
                     </Link>,
                 text:
                     <Card.Text><label>Synopsis:</label> {this.props.movie.detailedDescription}<br/>
@@ -41,7 +41,7 @@ class MovieDetails extends React.Component {
                 <small className="text-muted">
                     {this.state.bookingButton}
                     <Link to ={"/Reviews/" + this.props.movie.id}>
-                        <button className="infoButton"><i class="material-icons">rate_review</i>Reviews</button>
+                        <button className="infoButton" id={"Reviews_btn"}><i class="material-icons">rate_review</i>Reviews</button>
                     </Link>
                 </small>
             </Card.Footer>

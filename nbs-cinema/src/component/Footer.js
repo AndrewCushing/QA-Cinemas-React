@@ -48,9 +48,10 @@ export default class AppFooter extends Component {
                   <ul className="list-unstyled">
                     <b>
                       <a className="FooterText" href="/">Home</a>
+
                     </b><br/>
                     <b>
-                      <a className="FooterText" href="/About">About Us</a>
+                      <a className="FooterText" href="/About" id={"About_Link"}>About Us</a>
                     </b><br/>
                     <b>
                       <a className="FooterText" href="/Contact">Contact Us</a>
@@ -61,14 +62,15 @@ export default class AppFooter extends Component {
                 <MDBCol md="2" lg="2" className="ml-auto">
                   <h5 className="mb-4 font-weight-bold" >Cinema Info</h5>
                   <ul className="list-unstyled">
+
                     <b>
-                      <a className="FooterText" href="/Classifications">Classifications</a>
+                      <a className="FooterText" href="/Classifications" id={"Classifications_Link"}>Classifications</a>
                     </b><br/>
                     <b>
-                      <a className="FooterText" href="/Travel">Getting Here</a>
+                      <a className="FooterText" href="/Travel" id={"GettingHere_Here">Getting Here</a>
                     </b><br/>
                     <b>
-                      <a className="FooterText" href="/PlacesToGo">Places To Go</a>
+                      <a className="FooterText" href="/PlacesToGo" id={"Places_Link"}>Places To Go</a>
                     </b>
                   </ul>
                 </MDBCol>

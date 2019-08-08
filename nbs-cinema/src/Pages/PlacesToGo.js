@@ -25,7 +25,7 @@ export const PlacesToGo = () =>(
         <CardGroup style={{margin: 25}}>
             <Card>
                 <Card.Body>
-                    <Card.Title><a href="Frankie & Benny's" name="Frankie & Benny's">Frankie & Benny's</a></Card.Title>
+                    <Card.Title><a href="Frankie & Benny's" name="Frankie & Benny's" >Frankie & Benny's</a></Card.Title>
                     <Card.Text>
                         Frankie & Benny's is a chain restaurant serving Italian and American comfort-food classics in a family-friendly atmosphere.
                     </Card.Text>
@@ -47,7 +47,7 @@ export const PlacesToGo = () =>(
                                 Thursday	9am–11pm<br/>
                             </p>
                             <b className="Bfooter">Menu</b>
-                            <p><a href = "https://www.frankieandbennys.com/restaurants/swindon/menu">frankieandbennys.com</a></p>
+                            <p><a href = "https://www.frankieandbennys.com/restaurants/swindon/menu" id={"FB_Link"}>frankieandbennys.com</a></p>
                             <b className="Bfooter">Phone</b>
                             <p>01793 613136</p>
                         </ul></small>
@@ -77,7 +77,7 @@ export const PlacesToGo = () =>(
                                 Thursday	9am–11pm<br/>
                             </p>
                             <b className="Bfooter">Menu</b>
-                            <p><a href = "https://www.hall-woodhousewichelstowe.co.uk/dine/?utm_source=local&utm_medium=organic&utm_content=gmb">hall-woodhousewichelstowe.co.uk</a></p>
+                            <p><a href = "https://www.hall-woodhousewichelstowe.co.uk/dine/?utm_source=local&utm_medium=organic&utm_content=gmb" id={"HW_Link"}>hall-woodhousewichelstowe.co.uk</a></p>
                             <b className="Bfooter">Phone</b>
                             <p>01793 209207</p>
                         </ul></small>
@@ -107,7 +107,7 @@ export const PlacesToGo = () =>(
                                 Thursday	9am–11pm<br/>
                             </p>
                             <b className="Bfooter">Menu</b>
-                            <p><a href = "https://www.chiquito.co.uk/restaurants/south-west/swindon/swindon">chiquito.co.uk</a></p>
+                            <p><a href = "https://www.chiquito.co.uk/restaurants/south-west/swindon/swindon" id={"Chiq_Link"}>chiquito.co.uk</a></p>
                             <b className="Bfooter">Phone</b>
                             <p>01793 482830</p>
                         </ul>
@@ -140,7 +140,7 @@ export const PlacesToGo = () =>(
                                 Thursday	11:30am–10:30pm<br/>
                             </p>
                             <b className="Bfooter">Menu</b>
-                            <p><a href = "https://www.pizzahut.co.uk/restaurants/food/">pizzahut.co.uk</a></p>
+                            <p><a href = "https://www.pizzahut.co.uk/restaurants/food/" id={"PH_Link"}>pizzahut.co.uk</a></p>
                             <b className="Bfooter"></b>
                             <b className="Bfooter">Phone</b>
                             <p>01793 422844</p>
@@ -173,7 +173,7 @@ export const PlacesToGo = () =>(
 
                             </p>
                             <b className="Bfooter">Menu</b>
-                            <p><a href = "https://www.nandos.co.uk/food/menu?utm_source=googlemaps&utm_medium=organic&utm_content=menu&utm_campaign=local">nandos.co.uk</a></p>
+                            <p><a href = "https://www.nandos.co.uk/food/menu?utm_source=googlemaps&utm_medium=organic&utm_content=menu&utm_campaign=local" id={"Nan_Link"}>nandos.co.uk</a></p>
                             <b className="Bfooter">Phone</b>
                             <p>01793 480769</p>
                         </ul></small>
@@ -203,7 +203,7 @@ export const PlacesToGo = () =>(
 
                         </p>
                         <b className="Bfooter">Menu</b>
-                        <p><a href = "http://www.fratellosswindon.co.uk/swindon/menu.html">fratellosswindon.co.uk</a></p>
+                        <p><a href = "http://www.fratellosswindon.co.uk/swindon/menu.html" id={"Frat_Link"}>fratellosswindon.co.uk</a></p>
                         <b className="Bfooter">Phone</b>
                         <p>01793 574444</p>
                     </ul></small>
