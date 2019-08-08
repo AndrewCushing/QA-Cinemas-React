@@ -17,14 +17,20 @@
 
 }
 
+.card-title {
+  font-size: larger;
+}
+
 .card-footer{
   background-color: whitesmoke;
 }
   .card-body{
     background-color: whitesmoke;
+    font-size: medium;
   }
   .Pfooter {
-    font-size: larger;
+    font-size: medium;
+    text-align: initial;
   }
 .Bfooter {
   text-decoration: underline;
@@ -124,6 +130,10 @@
 }
 .input-group-append {
   float: left;
+}
+
+.container {
+  overflow: hidden;
 }
 
 .input-group:-ms-input-placeholder  {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-    MDBNavbar, MDBNavbarBrand,MDBIcon, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline} from "mdbreact";
+    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline} from "mdbreact";
 import styled from 'styled-components';
 const Logo = '/qacinemalogo.png'
 
@@ -9,6 +9,7 @@ const Styles = styled.div`
     background: black;
     margin-bottom: 0px;
     padding:20px;
+    
     }
     
  .nav-item {

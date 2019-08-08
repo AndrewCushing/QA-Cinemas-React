@@ -20,7 +20,7 @@ export default class Classifications extends React.Component {
             });
         }
     }
-
+  
     handleClick = (e) => {
         e.preventDefault();
     };
