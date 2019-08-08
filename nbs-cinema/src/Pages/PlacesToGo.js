@@ -128,7 +128,7 @@ export const PlacesToGo = () =>(
                     <small>
                         <ul>
                             <b className="Bfooter">Address</b>
-                                <p>Greenbridge Retail Park, Drakes Way, Swindon SN3 3SQ</p>
+                                <p>Greenbridge Retail Park, Swindon SN3 3SQ</p>
                             <b className="Bfooter">Hours</b>
                             <p>
                                 Friday	11:30am–11pm<br/>
