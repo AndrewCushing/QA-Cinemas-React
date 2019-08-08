@@ -4,7 +4,6 @@ import MovieDetails from "../component/MovieDetails";
 import ShowingsTable from '../component/ShowingsTable';
 import { BookingJumbotron }  from "../component/BookingJumbotron";
 
-
 class Booking extends Component {
 
     constructor(props) {
