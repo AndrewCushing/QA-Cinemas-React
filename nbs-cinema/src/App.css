@@ -38,6 +38,16 @@
   text-decoration: underline;
 }
 
+.h3, h3 {
+  font-size: 1.75rem;
+  color: antiquewhite;
+}
+
+.h2, h2 {
+  color: antiquewhite;
+  font-size: 1.75rem;
+}
+
 
 #body {
   background-color: #1A181D;

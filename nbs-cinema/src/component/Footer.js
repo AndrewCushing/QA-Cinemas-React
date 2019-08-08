@@ -80,10 +80,10 @@ export default class AppFooter extends Component {
                     Follow us
                   </h5>
                   <div className="mt-2 ">
-                    <a className="btn btn-link" href="#!">
+                    <a className="btn btn-link" href="https://en-gb.facebook.com/TheLunaCinema/" target="__blank">
                       <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="facebook" />
                     </a>
-                    <a className="btn btn-link" href="https://twitter.com/TheLunaCinema?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                    <a className="btn btn-link" href="https://twitter.com/TheLunaCinema?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="__blank">
                       <MDBIcon className="text-white" style ={{paddingLeft:"10px"}}size = "2x" icon="twitter" />
                     </a>
                   </div>
