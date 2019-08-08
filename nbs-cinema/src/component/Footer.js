@@ -33,19 +33,16 @@ export default class AppFooter extends Component {
               <MDBRow className="my-4">
                 <hr className="clearfix w-100 d-md-none" />
                 <MDBCol md="2" lg="2" className="ml-auto">
-                  <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>About</h5>
+                  <h5 className="mb-4 font-weight-bold"  style={{ textDecoration: "underline"}}>Luna Cinemas</h5>
                   <ul className="list-unstyled">
+                    <p>
+                      <a className="FooterText" href="/">Home</a>
+                    </p>
                     <p>
                       <a className="FooterText" href="/About" id={"About_Link"}>About Us</a>
                     </p>
                     <p>
                       <a className="FooterText" href="/Contact">Contact Us</a>
-                    </p>
-                    <p>
-                      <a className="FooterText" href="/Scrum">Scrum Description</a>
-                    </p>
-                    <p>
-                      <a className="FooterText"href="/DiscussionBoard">Discussion Board</a>
                     </p>
                   </ul>
                 </MDBCol>
@@ -57,7 +54,7 @@ export default class AppFooter extends Component {
                       <a className="FooterText" href="/Classifications" id={"Classifications_Link"}>Classifications</a>
                     </p>
                     <p>
-                      <a className="FooterText" href="/Travel" id={"GettingHere_Link"}>Directions</a>
+                      <a className="FooterText" href="/Travel" id={"GettingHere_Link"}>Getting Here</a>
                     </p>
                     <p>
                       <a className="FooterText" href="/PlacesToGo" id={"Places_Link"}>Places To Go</a>
@@ -83,7 +80,7 @@ export default class AppFooter extends Component {
             </MDBContainer>
             <div className="footer-copyright text-center py-3">
               <MDBContainer fluid className="FooterText" >
-                &copy; {new Date().getFullYear()} Luna Cinema's
+                &copy; {new Date().getFullYear()} Luna Cinemas
               </MDBContainer>
             </div>
           </MDBFooter>
