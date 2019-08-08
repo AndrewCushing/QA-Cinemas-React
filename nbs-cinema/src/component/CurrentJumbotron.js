@@ -32,7 +32,7 @@ export const CurrentJumbotron = () => (
         <Jumbo fluid className="jumbo">
             <div className="overlay"></div>
             <Container>
-                <h1> Current Films </h1>
+                <h1> Our Current Film Showings </h1>
             </Container>
         </Jumbo>
     </Styles>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import Review from './Review';
+import './ReviewBoard.css';
 import AddReview from "./AddReview";
 import NoReviewsFound from "./NoReviewsFound";
 import {ReviewJumbotron} from "./ReviewJumbotron";
@@ -26,22 +27,22 @@ export default class ReviewBoard extends Component {
         };
         fetch('http://35.176.119.160:8080/getfilm/'+this.props.match.params.filmId)
             .then(res => res.json() ).catch(console.log).then(results => {
-                const movies = results.contentList;
-                movies[0].classification = classifications[movies[0].classification];
+            const movies = results.contentList;
+            movies[0].classification = classifications[movies[0].classification];
             fetch('http://35.176.119.160:8080/getreviews/'+this.props.match.params.filmId)
                 .then(res => res.json() ).catch(console.log).then(results => {
-                    let reviews = results.contentList;
-                    let reviewArr = [];
-                    for (let i = 0 ; i < reviews.length ; i++){
-                        reviewArr.push(
-                            <Review filmId={reviews[i].filmId} reviewId={reviews[i].id} username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].review}></Review>
-                        )
-                    }
-                    this.setState({
-                        movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
-                        reviews:reviewArr,
-                        filmId:movies[0].id
-                    });
+                let reviews = results.contentList;
+                let reviewArr = [];
+                for (let i = 0 ; i < reviews.length ; i++){
+                    reviewArr.push(
+                        <Review filmId={reviews[i].filmId} reviewId={reviews[i].id} username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].review}></Review>
+                    )
+                }
+                this.setState({
+                    movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
+                    reviews:reviewArr,
+                    filmId:movies[0].id
+                });
             }).catch(()=>{
                 this.setState({
                     movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
@@ -56,20 +57,23 @@ export default class ReviewBoard extends Component {
 
     render() {
         return (<div>
-            <ReviewJumbotron/>
-            <div>
-                <table className="filmTable">
-                    <tbody>
-                    <tr>
-                        <td>
+                <ReviewJumbotron/>
+                <div>
+                    <table className="filmTable">
+
+                        <th className={"filmTable"}>
                             {this.state.movieHeader}
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <AddReview filmId={this.state.filmId}/>
-                {this.state.reviews}
-            </div>
+                        </th>
+                        <tr>
+                            <td>
+                                {this.state.reviews}
+                            </td>
+                        </tr>
+
+
+                    </table>
+                    <AddReview filmId={this.state.filmId}/>
+                </div>
             </div>
 
         )

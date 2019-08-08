@@ -9,7 +9,7 @@ class MovieRow extends React.Component {
                 <Link to ={"/FilmDetails/" + this.props.movie.id}>
                     <Card.Img variant="top"  src={this.props.movie.imagePath}/>
                 </Link>
-                <Card.Body>
+                <Card.Body className ="filmcard-body">
                     <Link to ={"/FilmDetails/" + this.props.movie.id}>
                         <Card.Title>{this.props.movie.title}<Card.Img variant="top" style = {{width:50, paddingLeft:10, marginBottom:10}} src={this.props.movie.classification}/></Card.Title>
                     </Link>

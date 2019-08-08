@@ -1,53 +1,85 @@
-.ContactAdd {
-    text-align: left;
-    color: dimgrey;
-    border-style: solid;
-    padding: 3px;
-}
+
+Ben Tinson 3:22 PM
+                .ContactAdd {
+                    text-align: left;
+                    color: black;
+                    border-style: solid;
+                    background-color: lightsalmon;
+                    padding: 3px;
+                }
 
 
 .EmailAdd {
     text-align: left;
-    color: dimgrey;
+    color: black;
     border-style: solid;
+    background-color: #e6fbff;
     padding: 3px;
 }
 
-h4{
-    text-decoration: underline;
-
+h2.solid {
+    border-style: solid;
 }
 
-h2.solid {border-style: solid;}
+h3{
+
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+    color: black;
+    font: 15px arial, sans-serif;
+}
+
 
 
 
 .emailButton{
-    background-color: lightskyblue;
+    background-color: #2E9FD1;
     border: none;
     border-radius: 6px;
-    color: white;
     padding: 10px 18px;
     text-align: center;
+    font: 12px arial, sans-serif;
     font-size: 16px;
-    color: black;
+    color: white;
     margin: 4px 2px;
     opacity: 0.6;
-    transition: 0.8s;
+    transition: 0.6s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 460px;
+    margin-right: 450px;
 
 }
 
-.emailButton:hover {opacity: 1}
-
-
-form{
-    margin-right: 50px;
-
+.emailButton:hover {
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+
+#emailForm{
+    width: 50%;
+    font: 12px arial, sans-serif;
+    display: inline-block;
+    border-radius: 5px;
+    border-width: thick;
+    background-color: #c6d8f5;
+    background-image: linear-gradient(to bottom right, #c2ecff, whitesmoke);
+
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+}
+
+.form-control{
+    margin: 10px;
+    background-image: linear-gradient(to bottom right, whitesmoke, whitesmoke, rgba(253, 255, 189, 0.55))
+}
 
 textarea {
     resize: none;
@@ -58,7 +90,9 @@ textarea {
 
 input[type=submit] {
     width: 40%;
-    background-color: lightblue;
+    background-color: #335170;
+    transition: 0.6s;
+    font: 16px arial, sans-serif;
     color: white;
     padding: 7px 10px;
     margin: 4px 0;
@@ -68,7 +102,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: lightskyblue;
-
+    transition: 0.6s;
+    background-color: #2E9FD1;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.24), 0 12px 40px 0 rgba(0,0,0,0.19);
 }
 
+
+.EmailResponse{
+    font-size: 24px;
+}

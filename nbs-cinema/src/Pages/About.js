@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import CardGroup from "react-bootstrap/CardGroup";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
+import { AboutJumbotron} from "../component/AboutJumbotron";
 
 class About extends Component {
 
@@ -18,91 +18,70 @@ class About extends Component {
   };
 
   render() {
-    return (<>
-      <h1 style={{ margin: 50 }}> About Luna Cinemas </h1>
+    return (<div>
+        <AboutJumbotron/>
       <CardGroup style={{ margin: 25 }}>
         <Card>
-          <Card.Img variant="top" src={require("../images/Avatars/Andy.png")} />
+          <Card.Img variant="top" src={require("../images/Avatars/Andy.png")} alt="Andy 'Back End' 'GitMaster' 'Integrator' Cushing" />
           <Card.Body>
-            <Card.Title>Andy</Card.Title>
+            <Card.Title>Andy 'Back End' 'GitMaster' 'Integrator' Cushing</Card.Title>
             <Card.Text>
-              This page is about the team that created the
-      site and is an area to provide credits and a way for the team to sign its work.
+    I built the vast majority of the back end, the booking system and much of the functionality in the front end which involves calling the back end.
+        I didn’t do any of the styling as I’m allergic to CSS and bootstrap.
       </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Twitter handle o Email address o Blog, company website, etc.</small>
-          </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src={require("../images/Avatars/arun.png")} />
+          <Card.Img variant="top" src={require("../images/Avatars/arun.png")} alt= "Ahrooran 'Mr React'" />
           <Card.Body>
-            <Card.Title>Arun</Card.Title>
+            <Card.Title>Arun 'Mr React'</Card.Title>
             <Card.Text>
-              This page is about the team that created the
-site and is an area to provide credits and a way for the team to sign its work.{" "}
+    The majority of work I did was the front-end, building multiple pages, as well as focusing on building the payments journey.{" "}
             </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Twitter handle o Email address o Blog, company website, etc.</small>
-          </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src={require("../images/Avatars/BenAvatar.png")} />
+          <Card.Img variant="top" src={require("../images/Avatars/BenAvatar.png")}  alt="Ben 'The Front-Ender' Tinson"/>
           <Card.Body>
-            <Card.Title>Ben</Card.Title>
+            <Card.Title>Ben 'The Front-Ender' Tinson</Card.Title>
             <Card.Text>
-              This page is about the team that created the
-      site and is an area to provide credits and a way for the team to sign its work.
+    Specialises in Design, colouring, gradients and popping buttons. Also partial to a caiprinha on a hot day.
       </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Twitter handle o Email address o Blog, company website, etc.</small>
-          </Card.Footer>
         </Card>
       </CardGroup>
 
-
-
       <CardGroup style={{ margin: 25 }}>
         <Card>
-          <Card.Img variant="top" src={require("../images/Avatars/Carl.png")} />
+          <Card.Img variant="top" src={require("../images/Avatars/Carl.png")} alt="Carl 'I will make it responsive' Stuart" />
           <Card.Body>
-            <Card.Title>Carl</Card.Title>
+            <Card.Title>Carl 'I will make it responsive' Stuart</Card.Title>
             <Card.Text>
-              This page is about the team that created the
-              site and is an area to provide credits and a way for the team to sign its work.
+    From the start I made it my mission to ensure the website was responsive and in working condition, even if did mean kissing goodbye to sleeping before midnight each day. Next mission, to go cold turkey on double espressos!
       </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Twitter handle o Email address o Blog, company website, etc.</small>
-          </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src={require("../images/Avatars/DaleAvatar.png")} />
+          <Card.Img variant="top" src={require("../images/Avatars/DaleAvatar.png")} alt="Dale 'Mr Selenium' Thompson-Cox" />
           <Card.Body>
-            <Card.Title>Dale</Card.Title>
+            <Card.Title>Dale 'Mr Selenium' Thompson-Cox</Card.Title>
             <Card.Text>
-              This page is about the team that created the
-              site and is an area to provide credits and a way for the team to sign its work.
+    Worked on the design of the site through Balsamiq and automated testing using Selenium. Supported "Back End" by working on the Initialiser (provision of data). Mostly just asked "GitMaster" for help though.
       </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Twitter handle o Email address o Blog, company website, etc.</small>
-          </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src={require("../images/Avatars/IanAvatar.png")} />
+          <Card.Img variant="top" src={require("../images/Avatars/IanAvatar.png")} alt="Ian 'Scrum Master' Armstrong"/>
           <Card.Body>
-            <Card.Title>Ian</Card.Title>
+            <Card.Title>Ian 'Scrum Master' Armstrong</Card.Title>
             <Card.Text>
-              This page is about the team that created the
-              site and is an area to provide credits and a way for the team to sign its work.
+    As the senior member of the team, I took charge of the standups and subsequently the became the Scrum Master.
+        I have acted as a guide in the Agile process based on my working experience.
+        I set in place the front end frame work and this has informed the build.
+        I looked at every aspect of the journey and made contributions in each area. Ensured the team regularly met to discuss issues and designs.
+        Took on each challenge - and there were many - and saw these opportunities to their natural conclusion.
       </Card.Text>
           </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Twitter handle o Email address o Blog, company website, etc.</small>
-          </Card.Footer>
         </Card>
       </CardGroup>
       <Card style={{ margin: 25 }}>
@@ -111,10 +90,10 @@ site and is an area to provide credits and a way for the team to sign its work.{
           <Card.Text>
             Thank you for taking your time to look at our cinema website. To find out more, get in touch.
     </Card.Text>
-          <Button type="submit" onClick={this.handleContact} variant="primary">Contact Us</Button>
+          <Button type="submit" onClick={this.handleContact} variant="primary" id={"ContactSub_btn"}>Contact Us</Button>
         </Card.Body>
       </Card>
-    </>
+    </div>
     )
   }
 }
