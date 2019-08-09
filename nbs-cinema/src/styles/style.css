@@ -15,11 +15,10 @@ card-group {
 
 
 
-.RatingsInfoHead{
+#ratingsHeader {
 
-    color: whitesmoke;
-
-    font-size: 16px;
+    color: white;
+    font-size: 30px;
 
 }
 
