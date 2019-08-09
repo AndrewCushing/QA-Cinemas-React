@@ -90,11 +90,11 @@ export default class Classifications extends React.Component {
 
                                         this.toggle("1");
 
-                                    }}
+                                    }} id="Ratings_Info"
 
                                 >
 
-                                    <p className={"RatingsInfoHead"}> Ratings info </p>
+                                    <p className="RatingsInfoHead" id="ratingsHeader"> Ratings info </p>
 
                                 </NavLink>
 
@@ -110,7 +110,7 @@ export default class Classifications extends React.Component {
 
                                         this.toggle("2");
 
-                                    }}
+                                    }} id="U_Info"
 
                                 >
 
@@ -130,7 +130,7 @@ export default class Classifications extends React.Component {
 
                                         this.toggle("3");
 
-                                    }}
+                                    }} id="12/12A_Info"
 
                                 >
 
@@ -152,7 +152,7 @@ export default class Classifications extends React.Component {
 
                                         this.toggle("4");
 
-                                    }}
+                                    }} id="15_Info"
 
                                 >
 
@@ -172,7 +172,7 @@ export default class Classifications extends React.Component {
 
                                         this.toggle("5");
 
-                                    }}
+                                    }} id="18_Info"
 
                                 >
 
