@@ -36,7 +36,7 @@ class EmailService {
         //         reject(error);
         //     });
         // })
-        fetch('http://localhost:8080/sendEmail', {
+        fetch('http://35.176.119.160:8080/sendEmail', {
             method: 'POST',
             headers: { "Accept": "*/*", "Content-Type": "application/json"},
             body: JSON.stringify({"senderName": senderName, "fromEmail": fromEmail, "subject": subject, "message": message})

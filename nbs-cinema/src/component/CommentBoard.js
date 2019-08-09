@@ -25,15 +25,15 @@ export default class CommentBoard extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getfilm/'+this.props.match.params.filmId)
+        fetch('http://35.176.119.160:8080/getfilm/'+this.props.match.params.filmId)
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies[0].classification = classifications[movies[0].classification];
-            fetch('http://localhost:8080/getreview/'+this.props.match.params.reviewId)
+            fetch('http://35.176.119.160:8080/getreview/'+this.props.match.params.reviewId)
                 .then(res => res.json() ).catch(console.log).then(results => {
                 let reviewObject = results.contentList[0];
-                console.log('http://localhost:8080/getcomments/'+this.props.match.params.reviewId);
-                fetch('http://localhost:8080/getcomments/'+this.props.match.params.reviewId)
+                console.log('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId);
+                fetch('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId)
                     .then(res => res.json() ).catch(console.log).then(results => {
                     let commentArr = [];
                     let comments = results.contentList;
