@@ -45,7 +45,7 @@ class GettingThere extends Component {
                     </Media.Body>
                 </Media>
 
-                <h2>Directions from bus/train stations</h2>
+                <h2 className="directions">Directions from bus/train stations</h2>
                 <br/>
 <a href="https://moovitapp.com/?to=Alexandra%20House&tll=51.51253_-1.76825&from=Leigh%20Delamere%20Eastbound%20Motorway%20Services%20(Moto)&fll=51.511688_-2.158799&ref=1&poiType=egnsite&customerId=4908&metroId=2106&lang=en-gb">
                 <img src={ ("/DirectionsImages/1.png") } alt="luna_building" Transformation height="100" width="400" />

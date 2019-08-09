@@ -33,7 +33,6 @@ export const Jumbotron = () => (
       <div className="overlay"></div>
       <Container>
           <h1> Welcome to Luna Cinemas </h1>
-          <h3> “Life is not the amount of breaths you take. It’s the moments that take your breath away.” </h3>
       </Container>
     </Jumbo>
   </Styles>
