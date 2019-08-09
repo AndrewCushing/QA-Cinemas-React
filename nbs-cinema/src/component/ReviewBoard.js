@@ -58,16 +58,9 @@ export default class ReviewBoard extends Component {
         return (<div>
                 <ReviewJumbotron/>
                 <div>
-                    <table className="filmTable">
-                        <tbody>
-                        <tr>
-                            <td>
                                 {this.state.movieHeader}
-                            </td>
-                        </tr>
-                        </tbody>
-                        {this.state.reviews}
-                    </table>
+
+                    {this.state.reviews}
                     <AddReview filmId={this.state.filmId}/>
 
                 </div>

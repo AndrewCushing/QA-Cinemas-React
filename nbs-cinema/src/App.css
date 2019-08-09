@@ -23,6 +23,15 @@
 
 }
 
+.filmcard-body2   {
+
+  background-color: whitesmoke;
+  font-size: medium;
+  min-height: 90px;
+
+
+}
+
 .card-title {
   font-size: larger;
 }

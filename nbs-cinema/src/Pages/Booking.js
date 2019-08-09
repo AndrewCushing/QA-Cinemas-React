@@ -9,16 +9,18 @@ class Booking extends Component {
     constructor(props) {
         super(props);
         this.state={
+            filmId:"",
             movieHeader:"",
             stuffToShow:<p>Loading</p>,
             seatsAvailable:[],
-            seatsToBook:["4:4"]
+            seatsToBook:[]
         };
         this.bookTime = this.bookTime.bind(this);
         this.attemptBooking = this.attemptBooking.bind(this);
         this.addSeatToBooking = this.addSeatToBooking.bind(this);
         this.setButtonArray = this.setButtonArray.bind(this);
         this.getRequestedSeatLayout = this.getRequestedSeatLayout.bind(this);
+        this.showTheShowings = this.showTheShowings.bind(this);
     };
 
     bookTime = (showing, filmId) => (event) => {
@@ -61,9 +63,10 @@ class Booking extends Component {
         return showing;
     }
 
-    setButtonArray(showing, seatsToBook, filmId){
+    setButtonArray(showing, seatsToBook){
         const booleanSeatsArr = showing.seatAvailability;
         let newSeatElementArr = [];
+        let filmId = this.state.filmId;
         newSeatElementArr.push(<div><button onClick={this.showTheShowings(filmId)}>Back to showing times</button><br/><br/><br/></div>);
         for (let i = 0 ; i < booleanSeatsArr.length ; i++){
             for (let j = 0 ; j < booleanSeatsArr[i].length ; j++){
@@ -84,7 +87,7 @@ class Booking extends Component {
             newSeatElementArr.push(<br key={"RowEnd"+i}/>);
         }
         newSeatElementArr.push(<div><br/><br/><br/><button onClick={this.attemptBooking(showing, seatsToBook)}>Book seats</button></div>);
-            this.setState({
+        this.setState({
             stuffToShow:newSeatElementArr
         });
     }
@@ -93,7 +96,14 @@ class Booking extends Component {
         this.showTheShowings(this.props.match.params.id)();
     }
 
-    showTheShowings = (filmId) => () => {
+    showTheShowings = (firstFilmId) => () => {
+        let filmId;
+        if (this.state.filmId){
+            filmId = this.state.filmId;
+        } else {
+            this.setState({filmId:firstFilmId});
+            filmId = firstFilmId;
+        }
         const classifications = {
             ClassU:"/ClassificationImages/U.png",
             ClassPG:"/ClassificationImages/PG.png",
@@ -123,11 +133,11 @@ class Booking extends Component {
 
     render() {
         return (<div>
-            <BookingJumbotron/>
-            <div>
-                {this.state.movieHeader}
-                {this.state.stuffToShow}
-            </div>
+                <BookingJumbotron/>
+                <div>
+                    {this.state.movieHeader}
+                    {this.state.stuffToShow}
+                </div>
             </div>
         )
     }
