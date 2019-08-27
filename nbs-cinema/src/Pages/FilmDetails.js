@@ -20,7 +20,7 @@ class FilmDetails extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://35.176.119.160:8080/getfilm/'+this.props.match.params.id)
+        fetch('http://localhost:8080/getfilm/'+this.props.match.params.id)
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies.forEach(movie => {

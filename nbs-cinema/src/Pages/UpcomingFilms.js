@@ -25,7 +25,7 @@ class UpcomingFilms extends Component {
             Class18:"/ClassificationImages/18.png"
         };
 
-        fetch('http://35.176.119.160:8080/getupcomingfilms')
+        fetch('http://localhost:8080/getupcomingfilms')
 
             .then(res => res.json() ).catch(console.log).then(results => {
 

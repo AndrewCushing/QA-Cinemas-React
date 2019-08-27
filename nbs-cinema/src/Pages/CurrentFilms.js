@@ -22,9 +22,9 @@ class CurrentFilms extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://35.176.119.160:8080/getnewfilms')
-            .then(res => res.json() ).catch(console.log).then(results => {
-
+        fetch('https://localhost:8080/film/getnewfilms')
+            .then(res => {console.log(res); return res.json();}).catch(console.log).then(results => {
+            console.log(results);
             const movies = results.contentList.map(movie => ({
 
                 ...movie,
@@ -38,9 +38,7 @@ class CurrentFilms extends Component {
                 rows: movies
 
             });
-
         });
-
     };
 
 

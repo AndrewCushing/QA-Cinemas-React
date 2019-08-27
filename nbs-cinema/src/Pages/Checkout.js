@@ -55,6 +55,6 @@ const Checkout = ({ email, description, amount }) =>
     token={onToken(amount, description)}
     currency={CURRENCY}
     stripeKey={STRIPE_PUBLISHABLE}
-  />
+  />;
 
 export default Checkout;
