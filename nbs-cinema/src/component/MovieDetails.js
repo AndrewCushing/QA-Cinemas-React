@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ExtraDetails from './MovieDetailsArray.js'
 import Card from "react-bootstrap/Card";
 
-class MovieDetails extends React.Component {
+export default class MovieDetails extends React.Component {
 
     constructor(props){
         super(props);
@@ -12,7 +12,7 @@ class MovieDetails extends React.Component {
         } else {
             this.state = {bookingButton:
                     <Link to ={"/Booking/" + this.props.movie.id}>
-                        <button className="bookButton" id={"Book_btn"}><i class="material-icons" > event_seat</i></button>
+                        <button className="bookButton" id={"Book_btn"}><i class="material-icons"> event_seat</i></button>
                     </Link>,
                 text:
                     <Card.Text><label>Synopsis:</label> {this.props.movie.detailedDescription}<br/>
@@ -27,29 +27,25 @@ class MovieDetails extends React.Component {
 
     render () {
         return (
-        <Card className="card" style={{width:250}} key={this.props.movie.id}>
-            <Link to ={"/FilmDetails/" + this.props.movie.id}>
-                <Card.Img variant="top"  src={this.props.movie.imagePath}/>
-            </Link>
-            <Card.Body>
+            <Card className="card" style={{width:250}} key={this.props.movie.id}>
                 <Link to ={"/FilmDetails/" + this.props.movie.id}>
-                    <Card.Title>{this.props.movie.title}<Card.Img variant="top" style = {{width:50, paddingLeft:10, marginBottom:10}} src={this.props.movie.classification}/></Card.Title>
+                    <Card.Img variant="top"  src={this.props.movie.imagePath}/>
                 </Link>
-                {this.state.text}
-            </Card.Body>
-            <Card.Footer>
-                <small className="text-muted">
-                    {this.state.bookingButton}
-                    <Link to ={"/Reviews/" + this.props.movie.id}>
-                        <button className="infoButton" id={"Reviews_btn"}><i class="material-icons">rate_review</i></button>
+                <Card.Body>
+                    <Link to ={"/FilmDetails/" + this.props.movie.id}>
+                        <Card.Title>{this.props.movie.title}<Card.Img variant="top" style = {{width:50, paddingLeft:10, marginBottom:10}} src={this.props.movie.classification}/></Card.Title>
                     </Link>
-                </small>
-            </Card.Footer>
-        </Card>
-    )
+                    {this.state.text}
+                </Card.Body>
+                <Card.Footer>
+                    <small className="text-muted">
+                        {this.state.bookingButton}
+                        <Link to ={"/Reviews/" + this.props.movie.id}>
+                            <button className="infoButton" id={"Reviews_btn"}><i class="material-icons">rate_review</i></button>
+                        </Link>
+                    </small>
+                </Card.Footer>
+            </Card>
+        )
+    }
 }
-}
-
-
-export default MovieDetails;
-

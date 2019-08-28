@@ -1,14 +1,10 @@
-
 import React, { Component } from 'react';
 import MovieRow from  '../component/MovieRow';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {UpcomingJumbotron} from "../component/UpcomingJumbotron";
 
-
-
-class UpcomingFilms extends Component {
-
+export default class UpcomingFilms extends Component {
 
     constructor(props) {
         super(props);
@@ -24,57 +20,31 @@ class UpcomingFilms extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-
-        fetch('http://localhost:8080/getupcomingfilms')
-
-            .then(res => res.json() ).catch(console.log).then(results => {
-
+        fetch('https://localhost:8080/film/getupcomingfilms')
+            .then(res => res.json()).catch(console.log).then(results => {
             const movies = results.contentList.map(movie => ({
-
                 ...movie,
-
                 classification: classifications[movie.classification]
-
             }));
-
             this.setState({
-
                 rows: movies
-
             });
-
         });
-
     };
 
-
-
     render() {
-
         return (<div>
                 <UpcomingJumbotron/>
-
                 <Row>
-
                     { this.state.rows.map(movie => (
 
                         <Col md="6">
-
                             <MovieRow key={movie.id} movie={movie}/>
-
                         </Col>
-
                     )) }
-
                 </Row>
             </div>
-
         )
-
     }
 
 }
-
-
-
-export default UpcomingFilms;

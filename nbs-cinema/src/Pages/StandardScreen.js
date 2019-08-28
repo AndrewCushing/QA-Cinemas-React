@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Media from "react-bootstrap/Media";
 import '../styles/style.css';
 
-class StandardScreen extends Component {
+export default class StandardScreen extends Component {
 
     constructor(props) {
         super(props);
@@ -12,29 +12,14 @@ class StandardScreen extends Component {
         }
 
     };
-    // scrollToBottom = () => {
-    //     window.scrollTo(0,document.body.scrollHeight);
-    //   }
 
     handleDuluxe = (event) => {
 
         this.props.history.push("/deluxescreen");
     };
 
-    handleHome = (event) => {
-
-        this.props.history.push("/home");
-    };
-
-    handleClose = event => {
-
-        if (window.confirm("Are you sure you want to exit?")) {
-            window.close();
-        }
-    };
-
     render() {
-        var divStyle = {
+        const divStyle = {
             padding: "20px",
             margin: "0px"
         };
@@ -99,5 +84,3 @@ class StandardScreen extends Component {
         )
     }
 }
-
-export default StandardScreen;

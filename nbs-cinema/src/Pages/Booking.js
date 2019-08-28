@@ -129,7 +129,7 @@ class Booking extends Component {
                 stuffToShow:<NotFound/>
             });
         });
-    }
+    };
 
     render() {
         return (<div>

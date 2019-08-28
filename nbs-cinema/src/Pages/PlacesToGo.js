@@ -10,11 +10,6 @@ const PizzaHut = '/PizzaHut.jpg';
 const Nandos = '/Nandos.jpg';
 const Fratellos = '/Fratellos.jpg';
 
-
-
-
-
-
 export const PlacesToGo = () =>(
     <div>
         <PlacesJumbotron/>

@@ -6,8 +6,8 @@ class TestFilms extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {}
-        console.log("This is my intializer")
+        this.state = {};
+        console.log("This is my intializer");
 
      const movies = [
        {id: 0, poster_src: "./CurrentFilmImages/Spider.jpg", classification_src:"./ClassificationImages/12A.png",  title: "Spider-Man: Far From Home", shortoverview: "Following the events of Avengers: Endgame, Spider-Man must step up to take on new threats in a world that has changed forever."},
@@ -16,13 +16,13 @@ class TestFilms extends Component {
        {id: 3, poster_src:"./CurrentFilmImages/Yesterday.jpg", classification_src:"./ClassificationImages/12A.png", title: "Yesterday", shortoverview:"A struggling singer-songwriter wakes up to discover that The Beatles have never existed before he starts performing songs by the greatest band in history to a world that has never heard them."},
      ]
 
-     var movieRows = []
+     var movieRows = [];
 
      movies.forEach((movie) =>{
-         console.log(movie.title)
-         const movieRow = <MovieRow key={movie.id} movie={movie}/>
+         console.log(movie.title);
+         const movieRow = <MovieRow key={movie.id} movie={movie}/>;
          movieRows.push(movieRow)
-         })
+         });
      this.state = {rows: movieRows}
     };
 
@@ -36,7 +36,7 @@ class TestFilms extends Component {
         if (window.confirm("Are you sure you want to exit?")) {
             window.close();
         }
-    }
+    };
 
 
 

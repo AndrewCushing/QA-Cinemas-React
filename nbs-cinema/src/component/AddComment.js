@@ -1,13 +1,9 @@
-
 import React, { Component } from 'react';
 import DiscussionHeader from './DiscussionHeader.js';
 import AddComment from "./AddComment";
 import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
 import {CommentJumbotron} from "./CommentJumbotron";
-
-
-
 
 export default class CommentBoard extends Component {
 
@@ -20,11 +16,9 @@ export default class CommentBoard extends Component {
         };
     };
 
-
     returnFunction = event => {
         window.history.back();
     };
-
 
     componentDidMount(){
         const classifications = {
@@ -83,15 +77,12 @@ export default class CommentBoard extends Component {
                         </tr>
 
                     </table>
-
                     <div>
                         <button className="ReturnButton" id="ReturnButton" type="submit"
                                 onClick={this.returnFunction}> Return </button>
                     </div>
-
                 </div>
             </div>
-
         )
     }
 }
