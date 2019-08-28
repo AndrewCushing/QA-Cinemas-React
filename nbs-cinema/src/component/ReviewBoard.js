@@ -36,7 +36,7 @@ export default class ReviewBoard extends Component {
                 console.log(reviews);
                 for (let i = 0 ; i < reviews.length ; i++){
                     reviewArr.push(
-                        <Review filmId={reviews[i].filmId} reviewId={reviews[i].id} username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].reviewBody}/>
+                        <Review reviewId={reviews[i].id} username={reviews[i].username} rating={reviews[i].rating} review={reviews[i].reviewBody}/>
                     );
                 }
             } else {

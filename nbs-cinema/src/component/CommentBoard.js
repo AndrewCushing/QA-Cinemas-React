@@ -25,31 +25,23 @@ export default class CommentBoard extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://35.176.119.160:8080/getfilm/'+this.props.match.params.filmId)
+        fetch('https://localhost:8080/comments/getcomments/'+this.props.match.params.reviewId)
             .then(res => res.json() ).catch(console.log).then(results => {
-            const movies = results.contentList;
-            movies[0].classification = classifications[movies[0].classification];
-            fetch('http://35.176.119.160:8080/getreview/'+this.props.match.params.reviewId)
-                .then(res => res.json() ).catch(console.log).then(results => {
-                let reviewObject = results.contentList[0];
-                console.log('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId);
-                fetch('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId)
-                    .then(res => res.json() ).catch(console.log).then(results => {
-                    let commentArr = [];
-                    let comments = results.contentList;
-                    console.log(results);
-                    for (let i = 0 ; i < comments.length ; i++){
-                        commentArr.push(
-                            <Comment key={comments[i].id} username={comments[i].username} body={comments[i].body}></Comment>
-                        )
-                    }
-                    commentArr.push(<CommentAdder reviewId={reviewObject.id}/>);
-                    this.setState({
-                        movieHeader:[<DiscussionHeader key={movies[0].id} movie={movies[0]}/>],
-                        review:reviewObject,
-                        comments:commentArr
-                    });
-                });
+            const movie = results.contentList[0];
+            movie.classification = classifications[movie.classification];
+            let reviewObject = results.contentList[1];
+            let commentArr = [];
+            let comments = results.contentList.slice(2,results.contentList.length);
+            for (let i = 0 ; i < comments.length ; i++){
+                commentArr.push(
+                    <Comment key={comments[i].id} username={comments[i].username} body={comments[i].body}/>
+                )
+            }
+            commentArr.push(<CommentAdder reviewId={reviewObject.id}/>);
+            this.setState({
+                movieHeader:[<DiscussionHeader key={movie.id} movie={movie}/>],
+                review:reviewObject,
+                comments:commentArr
             });
         });
     };
@@ -72,7 +64,7 @@ export default class CommentBoard extends Component {
                         <tbody>
                         <tr>
                             <td>
-                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
+                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.reviewBody}/>
                             </td>
                         </tr>
                         </tbody>

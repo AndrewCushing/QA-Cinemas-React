@@ -42,7 +42,7 @@ class LunaCinemaApp extends Component {
                             <Route path="/bbfc" component={() => window.location="https://bbfc.co.uk/"} />
                             <Route path="/Booking/:id" component={Booking} />
                             <Route path="/Classifications" component={Classification} />
-                            <Route path="/CommentBoard/:filmId/:reviewId" component={CommentBoard} />
+                            <Route path="/CommentBoard/:reviewId" component={CommentBoard} />
                             <Route path="/contact" component={Contact} />
                             <Route path="/CurrentFilms" component={CurrentFilms} />
                             <Route path="/DeluxeScreen" component={Deluxe} />
