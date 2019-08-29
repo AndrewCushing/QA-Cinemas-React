@@ -4,13 +4,14 @@ import Review from './Review';
 import AddReview from "./AddReview";
 import NoReviewsFound from "./NoReviewsFound";
 import {ReviewJumbotron} from "./ReviewJumbotron";
+import Loading from "./Loading";
 
 export default class ReviewBoard extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            movieHeader:"",
+            movieHeader:<Loading/>,
             reviews:[]
         };
     };

@@ -29,14 +29,14 @@ export default class CommentBoard extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://35.176.119.160:8080/getfilm/'+this.props.match.params.filmId)
+        fetch('http://localhost:8080/getfilm/'+this.props.match.params.filmId)
             .then(res => res.json() ).catch(console.log).then(results => {
             const movies = results.contentList;
             movies[0].classification = classifications[movies[0].classification];
-            fetch('http://35.176.119.160:8080/getreview/'+this.props.match.params.reviewId)
+            fetch('http://localhost:8080/getreview/'+this.props.match.params.reviewId)
                 .then(res => res.json() ).catch(console.log).then(results => {
                 let reviewObject = results.contentList[0];
-                fetch('http://35.176.119.160:8080/getcomments/'+this.props.match.params.reviewId)
+                fetch('http://localhost:8080/getcomments/'+this.props.match.params.reviewId)
                     .then(res => res.json() ).catch(console.log).then(results => {
                     let commentArr = [];
                     let comments = results.contentList;
@@ -66,7 +66,7 @@ export default class CommentBoard extends Component {
                         </th>
                         <tr>
                             <td className={"ChosenReview"}>
-                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}></ReviewHeader>
+                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.review}/>
                                 <AddComment filmId={this.state.review.filmId} reviewId={this.state.review.id}/>
                             </td>
                         </tr>

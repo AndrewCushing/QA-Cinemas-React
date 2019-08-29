@@ -12,12 +12,10 @@ export default class CommentAdder extends React.Component {
         event.preventDefault();
         const username = document.getElementById("username").value;
         const body = document.getElementById("commentBody").value;
-        fetch('http://35.176.119.160:8080/insertcomment/'+this.props.reviewId+"/"+username+"/"+body)
-            .then(res => res.json() ).catch(()=> {window.alert("Unable to connect to back end!")}).then(results => {
+        fetch('https://localhost:8080/comments/addcomment/'+this.props.reviewId+"/"+username+"/"+body)
+            .then(res => res.json() ).catch(()=> {window.alert("Unable to submit review!")}).then(results => {
             if (results.successful){
                 window.location = window.location;
-            } else {
-                window.alert("Unable to submit review. Unlucky!");
             }
         });
     }

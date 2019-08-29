@@ -4,15 +4,17 @@ import Comment from './Comment';
 import ReviewHeader from "./ReviewHeader";
 import {CommentJumbotron} from "./CommentJumbotron";
 import CommentAdder from "./CommentAdder";
+import Loading from "./Loading";
 
 export default class CommentBoard extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            movieHeader:"",
+            movieHeader:<Loading/>,
             review:"",
-            comments:[]
+            comments:[],
+            reviewHeader:""
         };
     };
 
@@ -41,7 +43,8 @@ export default class CommentBoard extends Component {
             this.setState({
                 movieHeader:[<DiscussionHeader key={movie.id} movie={movie}/>],
                 review:reviewObject,
-                comments:commentArr
+                comments:commentArr,
+                reviewHeader:<ReviewHeader rating={reviewObject.rating} username={reviewObject.username} review={reviewObject.reviewBody}/>
             });
         });
     };
@@ -59,12 +62,11 @@ export default class CommentBoard extends Component {
                         </tr>
                         </tbody>
                     </table>
-
                     <table className="filmTable">
                         <tbody>
                         <tr>
                             <td>
-                                <ReviewHeader rating={this.state.review.rating} username={this.state.review.username} review={this.state.review.reviewBody}/>
+                                {this.state.reviewHeader}
                             </td>
                         </tr>
                         </tbody>

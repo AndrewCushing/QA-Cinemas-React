@@ -17,10 +17,8 @@ export default class AddReview extends React.Component {
         const review = document.getElementById("review").value;
         fetch('https://localhost:8080/reviews/addreview/'+this.props.filmId+"/"+username+"/"+rating+"/"+review)
             .then(res => res.json() ).catch(()=> {window.alert("Unable to connect to back end!")}).then(results => {
-            if (results.successful){
+            if (results != null && results.successful){
                 window.location = 'http://localhost:3000/Reviews/'+this.props.filmId;
-            } else {
-                window.alert("Unable to submit review. Unlucky!");
             }
         });
     }
