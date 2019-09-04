@@ -40,7 +40,7 @@ class Booking extends Component {
         }
         event.preventDefault();
         showing = this.getRequestedSeatLayout(showing, seatsToBook);
-        fetch('http://localhost:8080/booktickets/'+showing.id,{
+        fetch('https://localhost:8080/showings/booktickets/'+showing.id,{
             method: 'POST',
             headers:{'content-type': 'application/json'},
             body: JSON.stringify(seatsToBook)
@@ -112,13 +112,14 @@ class Booking extends Component {
             Class15:"/ClassificationImages/15.png",
             Class18:"/ClassificationImages/18.png"
         };
-        fetch('http://localhost:8080/getshowingsbyfilm/'+filmId)
+        fetch(`https://localhost:8080/showings/getshowings/${filmId}`)
             .then(res => res.json()).catch(console.log).then(results => {
             const film = results.contentList[0];
-            const showings = results.contentList[1];
             film.classification = classifications[film.classification];
             let newStuffToShow = [];
-            if (showings.length>0) {
+            if (results.successful){
+                const showings = results.contentList.splice(1,results.contentList.length-1);
+                film.classification = classifications[film.classification];
                 newStuffToShow.push(<ShowingsTable bookTimeCallback={this.bookTime} showingsArr={showings}/>);
             } else {
                 newStuffToShow.push(<h3>Sorry, there are currently no showings available for this film</h3>);
