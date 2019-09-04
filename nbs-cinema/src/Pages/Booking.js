@@ -13,7 +13,8 @@ class Booking extends Component {
             movieHeader:"",
             stuffToShow:<p>Loading</p>,
             seatsAvailable:[],
-            seatsToBook:[]
+            seatsToBook:[],
+            pricePerSeat:0
         };
         this.bookTime = this.bookTime.bind(this);
         this.attemptBooking = this.attemptBooking.bind(this);
@@ -40,13 +41,13 @@ class Booking extends Component {
         }
         event.preventDefault();
         showing = this.getRequestedSeatLayout(showing, seatsToBook);
-        fetch('https://localhost:8080/showings/booktickets/'+showing.id,{
+        fetch('https://localhost:8080/booking/booktickets/'+showing.id,{
             method: 'POST',
             headers:{'content-type': 'application/json'},
             body: JSON.stringify(seatsToBook)
         }).then(res => res.json()).catch(console.log).then(results => {
             if (results.successful){
-                window.location="http://localhost:3000/payment/"+(results.body.split(":")[1]);
+                window.location="http://localhost:3000/payment/"+(Number(this.state.pricePerSeat)*seatsToBook.length);
             } else {
                 alert("Sorry, some of your seats have been booked by someone else. Please select some of the remaining seats.");
                 this.setButtonArray(results.contentList[0],[], filmId);
@@ -88,7 +89,8 @@ class Booking extends Component {
         }
         newSeatElementArr.push(<div><br/><br/><br/><button onClick={this.attemptBooking(showing, seatsToBook)}>Book seats</button></div>);
         this.setState({
-            stuffToShow:newSeatElementArr
+            stuffToShow:newSeatElementArr,
+            pricePerSeat:showing.pricePerSeat
         });
     }
 
